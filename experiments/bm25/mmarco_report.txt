@@ -1,0 +1,118 @@
+n seperti kecerdasan ilmiah. Kehadiran komunikasi di tengah pikiran ilmiah sama pentingnya dengan keberhasilan Proyek Manhattan seper[85/1383]
+asan ilmiah. Satu - satunya awan yang menggantung di atas prestasi mengesankan para peneliti dan insinyur atom adalah apa sebenarnya tujuan ke
+suksesan mereka; ratusan ribu nyawa yang tidak bersalah dilenyapkan.', 'title': ''}                                                           
+2023-10-14 05:32:42 - Loading Queries...                                                                                                      
+2023-10-14 05:32:44 - Loaded 6980 DEV Queries.                                                                                                
+2023-10-14 05:32:44 - Query Example: Berapa tahun William Bradford melayani sebagai gubernur koloni Plymouth?                                 
+2023-10-14 05:32:44 - Activating Elasticsearch....                                                                                            
+2023-10-14 05:32:44 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mmarco-indo', 'keys': {'title': 'title', 'body': 't
+xt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 1, 'language': 'indonesian'}                               
+que:   0%|                                                                                                             | 0/55 [00:00<?, ?it/s]
+/usr/local/lib/python3.8/dist-packages/elasticsearch/connection/base.py:190: ElasticsearchDeprecationWarning: Elasticsearch built-in security 
+features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearc
+h/reference/7.17/security-minimal-setup.html to enable security.                                                                              
+  warnings.warn(message, category=ElasticsearchDeprecationWarning)                                                                            
+que: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 55/55 [01:03<00:00,  1.15s/it]
+2023-10-14 05:33:48 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                                                 
+2023-10-14 05:33:48 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False
+`` to ignore this.
+2023-10-14 05:33:52 - 
+
+2023-10-14 05:33:52 - NDCG@1: 0.0660
+2023-10-14 05:33:52 - NDCG@3: 0.1048
+2023-10-14 05:33:52 - NDCG@5: 0.1215
+2023-10-14 05:33:52 - NDCG@10: 0.1415
+2023-10-14 05:33:52 - NDCG@100: 0.1857
+2023-10-14 05:33:52 - NDCG@1000: 0.2101
+2023-10-14 05:33:52 - 
+
+2023-10-14 05:33:52 - MAP@1: 0.0641 
+2023-10-14 05:33:52 - MAP@3: 0.0940 
+2023-10-14 05:33:52 - MAP@5: 0.1033 
+2023-10-14 05:33:52 - MAP@10: 0.1116
+
+
+2023-10-14 05:33:52 - MAP@100: 0.1199                                                                                                [59/1389]
+2023-10-14 05:33:52 - MAP@1000: 0.1208
+2023-10-14 05:33:52 - 
+
+2023-10-14 05:33:52 - Recall@1: 0.0641
+2023-10-14 05:33:52 - Recall@3: 0.1334
+2023-10-14 05:33:52 - Recall@5: 0.1735
+2023-10-14 05:33:52 - Recall@10: 0.2350
+2023-10-14 05:33:52 - Recall@100: 0.4475
+2023-10-14 05:33:52 - Recall@1000: 0.6421
+2023-10-14 05:33:52 - 
+
+2023-10-14 05:33:52 - P@1: 0.0660
+2023-10-14 05:33:52 - P@3: 0.0459
+2023-10-14 05:33:52 - P@5: 0.0360
+2023-10-14 05:33:52 - P@10: 0.0245
+2023-10-14 05:33:52 - P@100: 0.0047 
+2023-10-14 05:33:52 - P@1000: 0.0007
+2023-10-14 05:33:52 - 
+
+2023-10-14 05:33:54 - MRR@1: 0.0662 
+2023-10-14 05:33:54 - MRR@3: 0.0968 
+2023-10-14 05:33:54 - MRR@5: 0.1061 
+2023-10-14 05:33:54 - MRR@10: 0.1143
+2023-10-14 05:33:54 - MRR@100: 0.1226
+2023-10-14 05:33:54 - MRR@1000: 0.1234
+
+2023-10-14 05:33:54 - MRR@1000: 0.1234                                                                                               [34/1389]
+2023-10-14 05:33:54 -                                                                                                                         
+                                                                                                                                              
+2023-10-14 05:33:57 - R_cap@1: 0.0662
+2023-10-14 05:33:57 - R_cap@3: 0.1329
+2023-10-14 05:33:57 - R_cap@5: 0.1729
+2023-10-14 05:33:57 - R_cap@10: 0.2341
+2023-10-14 05:33:57 - R_cap@100: 0.4456
+2023-10-14 05:33:57 - R_cap@1000: 0.6408
+2023-10-14 05:33:57 - 
+
+2023-10-14 05:34:00 - Hole@1: 0.9307
+2023-10-14 05:34:00 - Hole@3: 0.9512
+2023-10-14 05:34:00 - Hole@5: 0.9607
+2023-10-14 05:34:00 - Hole@10: 0.9710
+2023-10-14 05:34:00 - Hole@100: 0.9835
+2023-10-14 05:34:00 - Hole@1000: 0.9786
+2023-10-14 05:34:00 - Query : Definisi rezim militer
+
+2023-10-14 05:34:00 - Doc 1: 4677201 [] - Rezim adalah cara yang dapat diterima atau kelompok yang memegang kendali dan berkuasa. Contoh rezim
+ adalah pelatihan militer. Contoh rezim adalah kediktatoran. Rezim. Rezim.                                                                    
+
+2023-10-14 05:34:00 - Doc 2: 7655759 [] - Peran Rezim Militer di Negara-negara Amerika Latin. Guillermo O'Donnell menggunakan istilah 'Bureacr
+ates- Otoritarianisme' untuk menggambarkan rezim militer Argentina dan Brasil tetapi para pakar segera menggunakannya untuk menjelaskan perila
+ku dan kebijakan rezim militer lainnya juga.                           
+
+                                                                                                                                      [9/1389]
+2023-10-14 05:34:00 - Doc 3: 4677203 [] - Rezim adalah cara yang dapat diterima atau kelompok yang memegang kendali dan berkuasa. 1 Contoh rez
+im adalah pelatihan militer. 2 Contoh rezim adalah kediktatoran.       
+
+2023-10-14 05:34:00 - Doc 4: 7807793 [] - Selanjutnya, kekacauan politik menimbulkan rezim diktator seperti Adolf Hitler di Jerman dan militer
+ di Jepang. (Rejim-rezim Totaltarian di Uni Soviet dan Italia mendahului depresi.) Rezim-rezim ini mendorong dunia semakin dekat dengan perang
+ pada tahun 1930-an.               
+
+2023-10-14 05:34:00 - Doc 5: 787239 [] - Perubahan rezim. Perubahan rezim adalah pengganti satu rezim pemerintah dengan rezim lain. Gunakan is
+tilah itu hingga paling tidak 1925. Perubahan rezim dapat menggantikan semua sistem kepemimpinan negara yang paling kritis, aparat administrat
+if, atau birokrasi. Itu bisa menjadi produk yang disengaja dari kekuatan luar, seperti dalam peperangan. Rollback adalah strategi militer untu
+k memaksakan perubahan rezim dengan mengalahkan musuh dan menyingkirkan rezimnya dengan paksa.
+
+2023-10-14 05:34:00 - Doc 6: 4677204 [] - Rezim adalah pemerintahan sebuah negara. Jumlah kebebasan dan pembatasan yang dimiliki warga negara 
+dapat berubah dari rezim ke rezim. Rezim politik mengambil tindakan militernya dan pemerintah merasa dari rejimen kata Latin untuk memerintah.
+ rezim politik memiliki hubungan negatif dengannya yang membuat Anda berpikir tentang pemerintahan totaliter.
+
+2023-10-14 05:34:00 - Doc 7: 1037099 [] - Rezim politik adalah sekumpulan struktur politik yang membentuk sebuah negara bagian. Sistem politik
+ ini berkisar dari demokrasi langsung hingga rezim totaliter, seperti kediktatoran militer.                                                   
+
+2023-10-14 05:34:00 - Doc 8: 7655762 [] - Perhatikan bahwa jumlah pengamatan yang rendah bagi rezim militer tanpa partai (N=25, hanya 3 negara
+) tidak memungkinkan bagi kesimpulan yang kuat. Akan tetapi, ia kurang banyak mengamati rezim - rezim pemberontak, bukan karena jumlah negara 
+mereka yang tinggal sedikit (7 rezim dalam 7 kali percobaan), melainkan umur rata - rata mereka yang pendek.
+
+2023-10-14 05:34:00 - Doc 9: 787238 [] - Perubahan rezim. Perubahan rezim adalah pengganti satu rezim pemerintah dengan rezim lain. Gunakan is
+tilah itu hingga paling tidak 1925. Perubahan rezim bisa menggantikan semua sistem kepemimpinan negara yang paling kritis, aparat administrati
+
+
+2023-10-14 05:34:00 - Doc 10: 1803437 [] - Perang berakhir ketika kudeta militer kidal di Lisbon pada bulan April 1974 menggulingkan rezim Est
+ado Novo dari Portugal, dan rezim baru segera menghentikan semua aksi militer di koloni Afrika, menyatakan niatnya untuk memberikan kemerdekaa
+n tanpa menunda perang berakhir ketika kudeta militer kidal di Lisbon pada bulan April

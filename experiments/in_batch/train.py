@@ -5,6 +5,14 @@ from beir.retrieval.train import TrainRetriever
 import pathlib, os
 import logging
 from pyprojroot import here
+import torch
+
+
+
+with torch.no_grad():
+    torch.cuda.empty_cache()
+
+
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
@@ -27,12 +35,12 @@ pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
 
-retriever = TrainRetriever(model=model, batch_size=96)
+retriever = TrainRetriever(model=model, batch_size=64)
 
 train_samples = retriever.load_train(corpus, queries, qrels)
 train_dataloader = retriever.prepare_train(train_samples, shuffle=True)
 
-train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model, similarity_fct=util.dot_score)
+train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model, scale=1.0, similarity_fct=util.dot_score)
 
 ir_evaluator = retriever.load_dummy_evaluator()
 
