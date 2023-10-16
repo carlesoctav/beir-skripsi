@@ -1,0 +1,92 @@
+2023-10-16 03:59:25 - Loaded 1469399 DEV Documents.
+2023-10-16 03:59:25 - Doc Example: {'text': 'Asam deoksiribonukleat, lebih dikenal dengan singkatan DNA (bahasa Inggris: d</b>eoxyribo<b data-parsoid=\'{"dsr":[417,424,3,3]}\'>n</b>ucleic a</b>cid), adalah sejenis biomolekul yang menyimpan dan menyandi instruksi-instruksi genetika setiap organisme dan banyak jenis virus. Instruksi-instruksi genetika ini berperan penting dalam pertumbuhan, perkembangan, dan fungsi organisme dan virus. DNA merupakan asam nukleat; bersamaan dengan protein dan karbohidrat, asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui. Kebanyakan molekul DNA terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda. Dua unting DNA ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuan-satuan molekul yang disebut nukleotida. Tiap-tiap nukleotida terdiri atas salah satu jenis basa nitrogen (guanina (G), adenina (A), timina (T), atau sitosina (C)), gula monosakarida yang disebut deoksiribosa, dan gugus fosfat. Nukleotida-nukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya. Hasilnya adalah rantai punggung gula-fosfat yang berselang-seling. Menurut kaidah pasangan basa (A dengan T dan C dengan G), ikatan hidrogen mengikat basa-basa dari kedua unting polinukleotida membentuk DNA unting ganda', 'title': ''}
+2023-10-16 03:59:25 - Loading Queries...
+2023-10-16 03:59:25 - Loaded 1224 DEV Queries.
+2023-10-16 03:59:25 - Query Example: Dimana James Hepburn meninggal?
+2023-10-16 03:59:25 - Activating Elasticsearch....
+2023-10-16 03:59:25 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mrtydi-indo', 'keys': {'title': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 1, 'language': 'indonesian'}
+2023-10-16 03:59:25 - Deleting previous Elasticsearch-Index named - mrtydi-indo
+/home/carles/beir-skripsi/.venv/lib/python3.8/site-packages/elasticsearch/connection/base.py:190: ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+  warnings.warn(message, category=ElasticsearchDeprecationWarning)
+2023-10-16 03:59:27 - Creating fresh Elasticsearch-Index named - mrtydi-indo
+  0%|                                                                                   | 0/1469399 [00:00<?, ?docs/s]
+que: 100%|████████████████████████████████████████████████████████████████████████████| 10/10 [00:22<00:00,  2.21s/it]
+2023-10-16 04:02:25 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-10-16 04:02:25 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-10-16 04:02:26 - 
+
+2023-10-16 04:02:26 - NDCG@1: 0.1119
+2023-10-16 04:02:26 - NDCG@3: 0.1749
+2023-10-16 04:02:26 - NDCG@5: 0.1963
+2023-10-16 04:02:26 - NDCG@10: 0.2263
+2023-10-16 04:02:26 - NDCG@100: 0.2882
+2023-10-16 04:02:26 - NDCG@1000: 0.3123
+2023-10-16 04:02:26 - 
+
+2023-10-16 04:02:26 - MAP@1: 0.1119
+2023-10-16 04:02:26 - MAP@3: 0.1589
+2023-10-16 04:02:26 - MAP@5: 0.1708
+2023-10-16 04:02:26 - MAP@10: 0.1830
+2023-10-16 04:02:26 - MAP@100: 0.1945
+2023-10-16 04:02:26 - MAP@1000: 0.1953
+2023-10-16 04:02:26 - 
+
+2023-10-16 04:02:26 - Recall@1: 0.1119
+2023-10-16 04:02:26 - Recall@3: 0.2214
+2023-10-16 04:02:26 - Recall@5: 0.2737
+2023-10-16 04:02:26 - Recall@10: 0.3668
+2023-10-16 04:02:26 - Recall@100: 0.6699
+2023-10-16 04:02:26 - Recall@1000: 0.8619
+2023-10-16 04:02:26 - 
+
+2023-10-16 04:02:26 - P@1: 0.1119
+2023-10-16 04:02:26 - P@3: 0.0738
+2023-10-16 04:02:26 - P@5: 0.0547
+2023-10-16 04:02:26 - P@10: 0.0367
+2023-10-16 04:02:26 - P@100: 0.0067
+2023-10-16 04:02:26 - P@1000: 0.0009
+2023-10-16 04:02:26 - 
+
+2023-10-16 04:02:27 - MRR@1: 0.1119
+2023-10-16 04:02:27 - MRR@3: 0.1589
+2023-10-16 04:02:27 - MRR@5: 0.1708
+2023-10-16 04:02:27 - MRR@10: 0.1830
+2023-10-16 04:02:27 - MRR@100: 0.1945
+2023-10-16 04:02:27 - MRR@1000: 0.1954
+2023-10-16 04:02:27 - 
+
+2023-10-16 04:02:27 - R_cap@1: 0.1119
+2023-10-16 04:02:27 - R_cap@3: 0.2214
+2023-10-16 04:02:27 - R_cap@5: 0.2737
+2023-10-16 04:02:27 - R_cap@10: 0.3668
+2023-10-16 04:02:27 - R_cap@100: 0.6699
+2023-10-16 04:02:27 - R_cap@1000: 0.8619
+2023-10-16 04:02:27 - 
+
+2023-10-16 04:02:28 - Hole@1: 0.8783
+2023-10-16 04:02:28 - Hole@3: 0.9188
+2023-10-16 04:02:28 - Hole@5: 0.9384
+2023-10-16 04:02:28 - Hole@10: 0.9566
+2023-10-16 04:02:28 - Hole@100: 0.9839
+2023-10-16 04:02:28 - Hole@1000: 0.9821
+2023-10-16 04:02:28 - Query : pernahkah Raja Rama IX menikah?
+
+2023-10-16 04:02:28 - Doc 1: 1110623#0 [] - Uang kertas 1.000 baht (฿1.000) adalah nilai uang kertas yang pertama kali dikeluarkan oleh Bank of Thailand pada tahun 1902. Seperti semua uang kertas di Thailand, bagian depan menampilkan Bhumibol Adulyadej atau Raja Rama IX. Bagian sebaliknya juga menampilkan Bhumibol Adulyadej (Raja Rama IX), seorang raja di dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 2: 453587#0 [] - Putra Mahkota Dipangkorn Rasmijoti (; ; RTGS: Thipangkhon Ratsamichot), adalah anggota keluarga kerajaan Thailand. Ia adalah cucu dari mendiang Bhumibol Adulyadej (Rama IX) dan putra keempat dari Raja Maha Vajiralongkorn (Rama X), raja Thailand sejak Desember 2016.
+
+2023-10-16 04:02:28 - Doc 3: 1194738#0 [] - Srinagarindra (; ; ) terlahir dengan nama Sangwan Talapat (; ) adalah anggota dari Keluarga Kerajaan Thailand dan merupakan anggota Wangsa Mahidol, yang merupakan cabang dari keturunan Dinasti Chakri, wangsa ini diawali oleh Pangeran Mahidol Adulyadej dari Songkla, putra Raja Chulalongkorn (Rama V). Srinagarindra adalah ibu dari Galyani Vadhana, Putri Naradhiwas, Raja Ananda Mahidol (Rama VIII), and Raja Bhumibol Adulyadej (Rama IX).
+
+2023-10-16 04:02:28 - Doc 4: 1080908#0 [] - Uang kertas 50 baht (฿50) adalah nilai uang kertas yang pertama kali dikeluarkan oleh Bank of Thailand pada tahun 1902. Seperti semua uang kertas di Thailand, bagian depan menampilkan Bhumibol Adulyadej atau Raja Rama IX. Bagian sebaliknya menampilkan Prajadhipok atau Raja Rama VII, seorang raja di dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 5: 1110622#0 [] - Uang kertas 500 baht (฿500) adalah nilai uang kertas yang pertama kali dikeluarkan oleh Bank of Thailand pada tahun 1902. Seperti semua uang kertas di Thailand, bagian depan menampilkan Bhumibol Adulyadej atau Raja Rama IX. Bagian sebaliknya menampilkan Nangklao atau Raja Rama III, seorang raja di dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 6: 1077501#0 [] - Uang kertas 20 baht (฿20) adalah nilai uang kertas yang pertama kali dikeluarkan oleh Bank of Thailand pada tahun 1902. Seperti semua uang kertas di Thailand, bagian depan menampilkan Bhumibol Adulyadej atau Raja Rama IX. Bagian sebaliknya menampilkan Ananda Mahidol atau Raja Rama VIII, seorang raja di dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 7: 772724#0 [] - Mahitaladhibes Adulyadejvikrom, sang Ayah Pangeran (; ) (), atau gaya resmi Mahidol Adulyadej, Pangeran Songkla adalah Ayah dari Raja Ananda Mahidol (Raja Rama VIII) and Raja Bhumibol Adulyadej (Raja Rama IX) Thailand. Ia juga dikenal sebbagai bapak kesehatan publik dan pengobatan modern Thailand. Ia juga mendirikan Wangsa Mahidol atau sekarang bernama Dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 8: 744057#0 [] - Uang kertas 100 baht (฿100) adalah nilai uang kertas yang pertama kali dikeluarkan oleh Bank of Thailand pada tahun 1902. Seperti semua uang kertas di Thailand, bagian depan menampilkan Bhumibol Adulyadej atau Raja Rama IX. Bagian sebaliknya menampilkan Phrabat Somdet Phra Poramin Maha Chulalongkorn atau Raja Rama V, seorang raja di dinasti Chakri.
+
+2023-10-16 04:02:28 - Doc 9: 252143#15 [] - “Ah Bapa Suci, pernahkah aku tidak setia kepadamu? Pernahkah aku mengingkarimu? Bapa Suci, aku ikut serta denganmu,” pinta Laurensius.
+
+2023-10-16 04:02:28 - Doc 10: 526273#4 [] - Istana ini dijadikan pusat pemerintahan Rattanakosin dan istana kerajaan sejak awal era wangsa Chakri hingga pemerintahan Raja Chulalongkorn (Rama V) yang lebih memilih untuk tinggal di istana Dusit, akan tetapi tetap menjadikan Istana Raja sebagai istana utama dan pusat pemerintahan. Kebiasaan ini diikuti oleh putra-putranya, (Rama VI danRama VII) yang lebih memilih tinggal di istana mereka sendiri. Raja Ananda Mahidol (Rama VIII) pindah ke istana ini sepenuhnya sekembalinya dari luar negeri pada tahun 1945. Akan tetapi sejak kematiannya yang misterius di salah satu bangunan di istana ini, penerusnya sekaligus adiknya, Raja Bhumibol Adulyadej (Rama IX), memutuskan untuk pindah ke Istana Chitralada.

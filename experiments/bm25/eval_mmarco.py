@@ -14,7 +14,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 
 
 
-dataset = "mmarco"
+dataset = "msmarco"
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
 out_dir = here("datasets")
 data_path = util.download_and_unzip(url, out_dir)

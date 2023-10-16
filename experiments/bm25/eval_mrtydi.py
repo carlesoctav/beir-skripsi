@@ -19,12 +19,13 @@ url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip
 out_dir = here("datasets")
 data_path = util.download_and_unzip(url, out_dir)
 
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="dev")
+corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="test")
 
 hostname = "localhost" 
 index_name = "mrtydi-indo" 
 
-initialize = False 
+# if there's hit error change to True
+initialize = True
 
 language = "indonesian" 
 

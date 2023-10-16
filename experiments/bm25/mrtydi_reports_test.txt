@@ -1,0 +1,93 @@
+2023-10-16 04:05:55 - Doc Example: {'text': 'Asam deoksiribonukleat, lebih dikenal dengan singkatan DNA (bahasa Inggris: d</b>eoxyribo<b data-parsoid=\'{"dsr":[417,424,3,3]}\'>n</b>ucleic a</b>cid), adalah sejenis biomolekul yang menyimpan dan menyandi instruksi-instruksi genetika setiap organisme dan banyak jenis virus. Instruksi-instruksi genetika ini berperan penting dalam pertumbuhan, perkembangan, dan fungsi organisme dan virus. DNA merupakan asam nukleat; bersamaan dengan protein dan karbohidrat, asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui. Kebanyakan molekul DNA terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda. Dua unting DNA ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuan-satuan molekul yang disebut nukleotida. Tiap-tiap nukleotida terdiri atas salah satu jenis basa nitrogen (guanina (G), adenina (A), timina (T), atau sitosina (C)), gula monosakarida yang disebut deoksiribosa, dan gugus fosfat. Nukleotida-nukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya. Hasilnya adalah rantai punggung gula-fosfat yang berselang-seling. Menurut kaidah pasangan basa (A dengan T dan C dengan G), ikatan hidrogen mengikat basa-basa dari kedua unting polinukleotida membentuk DNA unting ganda', 'title': ''}
+2023-10-16 04:05:55 - Loading Queries...
+2023-10-16 04:05:55 - Loaded 829 TEST Queries.
+2023-10-16 04:05:55 - Query Example: Siapakah yang menemuka benua Amerika ?
+2023-10-16 04:05:55 - Activating Elasticsearch....
+2023-10-16 04:05:55 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mrtydi-indo', 'keys': {'title': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 1, 'language': 'indonesian'}
+2023-10-16 04:05:55 - Deleting previous Elasticsearch-Index named - mrtydi-indo
+/home/carles/beir-skripsi/.venv/lib/python3.8/site-packages/elasticsearch/connection/base.py:190: ElasticsearchDeprecationWarning: Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+  warnings.warn(message, category=ElasticsearchDeprecationWarning)
+2023-10-16 04:05:58 - Creating fresh Elasticsearch-Index named - mrtydi-indo
+  0%|                                                                                   | 0/1469399 [00:00<?, ?docs/s]
+que: 100%|██████████████████████████████████████████████████████████████████████████████| 7/7 [00:14<00:00,  2.10s/it]
+2023-10-16 04:08:47 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-10-16 04:08:47 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-10-16 04:08:47 - 
+
+2023-10-16 04:08:47 - NDCG@1: 0.1846
+2023-10-16 04:08:47 - NDCG@3: 0.2527
+2023-10-16 04:08:47 - NDCG@5: 0.2860
+2023-10-16 04:08:47 - NDCG@10: 0.3170
+2023-10-16 04:08:47 - NDCG@100: 0.3727
+2023-10-16 04:08:47 - NDCG@1000: 0.3900
+2023-10-16 04:08:47 - 
+
+2023-10-16 04:08:47 - MAP@1: 0.1705
+2023-10-16 04:08:47 - MAP@3: 0.2284
+2023-10-16 04:08:47 - MAP@5: 0.2475
+2023-10-16 04:08:47 - MAP@10: 0.2605
+2023-10-16 04:08:47 - MAP@100: 0.2731
+2023-10-16 04:08:47 - MAP@1000: 0.2737
+2023-10-16 04:08:47 - 
+
+2023-10-16 04:08:47 - Recall@1: 0.1705
+2023-10-16 04:08:47 - Recall@3: 0.3040
+2023-10-16 04:08:47 - Recall@5: 0.3828
+2023-10-16 04:08:47 - Recall@10: 0.4755
+2023-10-16 04:08:47 - Recall@100: 0.7230
+2023-10-16 04:08:47 - Recall@1000: 0.8589
+2023-10-16 04:08:47 - 
+
+2023-10-16 04:08:47 - P@1: 0.1846
+2023-10-16 04:08:47 - P@3: 0.1122
+2023-10-16 04:08:47 - P@5: 0.0849
+2023-10-16 04:08:47 - P@10: 0.0532
+2023-10-16 04:08:47 - P@100: 0.0083
+2023-10-16 04:08:47 - P@1000: 0.0010
+2023-10-16 04:08:47 - 
+
+2023-10-16 04:08:48 - MRR@1: 0.1858
+2023-10-16 04:08:48 - MRR@3: 0.2481
+2023-10-16 04:08:48 - MRR@5: 0.2659
+2023-10-16 04:08:48 - MRR@10: 0.2792
+2023-10-16 04:08:48 - MRR@100: 0.2898
+2023-10-16 04:08:48 - MRR@1000: 0.2903
+2023-10-16 04:08:48 - 
+
+2023-10-16 04:08:48 - R_cap@1: 0.1858
+2023-10-16 04:08:48 - R_cap@3: 0.3028
+2023-10-16 04:08:48 - R_cap@5: 0.3816
+2023-10-16 04:08:48 - R_cap@10: 0.4767
+2023-10-16 04:08:48 - R_cap@100: 0.7230
+2023-10-16 04:08:48 - R_cap@1000: 0.8589
+2023-10-16 04:08:48 - 
+
+2023-10-16 04:08:48 - Hole@1: 0.8034
+2023-10-16 04:08:48 - Hole@3: 0.8794
+2023-10-16 04:08:48 - Hole@5: 0.9071
+2023-10-16 04:08:48 - Hole@10: 0.9398
+2023-10-16 04:08:48 - Hole@100: 0.9871
+2023-10-16 04:08:48 - Hole@1000: 0.9911
+2023-10-16 04:08:48 - Query : Apa nama pesawat terbang pertama yang dimiliki Indonesia?
+
+2023-10-16 04:08:48 - Doc 1: 40140#0 [] - PT Dirgantara Indonesia (DI) (nama bahasa Inggris: Indonesian Aerospace Inc.) adalah industri pesawat terbang yang pertama dan satu-satunya di Indonesia dan di wilayah Asia Tenggara. Perusahaan ini dimiliki oleh Pemerintah Indonesia. DI didirikan pada 26 April 1976 dengan nama PT Industri Pesawat Terbang Nurtanio dan BJ Habibie sebagai Presiden Direktur. Industri Pesawat Terbang Nurtanio kemudian berganti nama menjadi Industri Pesawat Terbang Nusantara (IPTN) pada 11 Oktober 1985. Setelah direstrukturisasi, IPTN kemudian berubah nama menjadi Dirgantara Indonesia pada 24 Agustus 2000.
+
+2023-10-16 04:08:48 - Doc 2: 224597#21 [] - Pesawat latih yang dimiliki oleh Sekolah Tinggi Penerbangan Indonesia terdiri dari jenis :
+
+2023-10-16 04:08:48 - Doc 3: 46116#0 [] - Dakota RI-001 Seulawah adalah pesawat angkut yang merupakan pesawat pertama [1] [2] milik Republik Indonesia. Pesawat jenis Dakota dengan nomor sayap RI-001 yang diberi nama Seulawah ini dibeli dari uang sumbangan rakyat Aceh. Pesawat Dakota RI-001 Seulawah ini adalah cikal bakal berdirinya perusahaan penerbangan niaga pertama, Indonesian Airways. Pesawat ini sangat besar jasanya dalam perjuangan awal pembentukan negara Indonesia.
+
+2023-10-16 04:08:48 - Doc 4: 150517#0 [] - Belalang adalah pesawat produksi LIPNUR cikal bakal dari PT Dirgantara Indonesia. Pesawat ini merupakan versi sayap rendah dari Piper J-3 Cub yang saat itu sudah dimiliki Indonesia. Purwarupa Nu-85 terbang pertama kali pada 17 April 1958 dan produksi pertama Nu-90 dilakukan pada 1959. Pesawat ini digunakan sebagai pesawat latih di TNI AU.
+
+2023-10-16 04:08:48 - Doc 5: 552687#2 [] - Pada awalnya, bandara ini bernama Bandar Udara Gauchar. Nama Gauchar diambil dari lokasi tempat bandar udara ini berada di Kathmandu. Penerbangan formal pertama di bandara ini terjadi pada tahun 1949 dengan pendaratan sebuah pesawat Beechcraft Bonanza yang membawa Duta Besar India. Penerbangan charter pertama terjadi antara Gauchar dan Kalkuta dengan pesawat Douglas DC-3 milik Himalayan Aviation. Penerbangan tersebut berlangsung pada tanggal 20 Februari 1950.
+
+2023-10-16 04:08:48 - Doc 6: 8107#4 [] - Maka pada tanggal 28 Desember 1949, penerbangan bersejarah menggunakan pesawat DC-3 dengan registrasi PK-DPD milik KLM Interinsulair terbang membawa Presiden Soekarno dari Yogyakarta ke Jakarta untuk menghadiri upacara pelantikannya sebagai Presiden Republik Indonesia Serikat (RIS) dengan nama Garuda Indonesian Airways, yang diberikan oleh Presiden Soekarno kepada perusahaan penerbangan pertama ini.
+
+2023-10-16 04:08:48 - Doc 7: 976527#1 [] - Penerbangan Indonesia dari masa ke masa :
+Tahun 1913: Penerbangan Pertama di Indonesia
+Pada tanggal 19 Februari 1913 seorang penerbang asal Belanda bernama J.W.E.R Hilger berhasil menerbangkan sebuah pesawat jenis Fokker dalam kegiatan pameran yang berlangsung di Surabaya. Penerbangan tersebut tercatat sebagai penerbangan pertama di Hindia Belanda (sekarang Indonesia) meskipun berakhir dengan terjadinya kecelakaan namun tidak menewaskan penerbangnya.
+
+2023-10-16 04:08:48 - Doc 8: 1073449#5 [] - Bob kemudian menabung dan membeli sebuah pesawat angkut DC-3 Dakota. Dia memberi nama pesawat itu RI-002. Bob berpendapat nama RI-001 selayaknya diberikan untuk nama kehormatan pesawat pertama yang dimiliki Indonesia. Ketika Bob disewa, Indonesia tak punya satu pun pesawat angkut.
+
+2023-10-16 04:08:48 - Doc 9: 1417999#1 [] - Pesawat ini dinamai Vecihi Hürkuş, pelopor penerbangan Turki dan produsen pesawat pertama Turki.
+
+2023-10-16 04:08:48 - Doc 10: 203051#20 [] - Pesawat tersebut telah digunakan pada bulan Februari 1998 dan pertama kali diterbangkan oleh Grupo TACA pada bulan Maret. Kemudian pada bulan November 2003 telah digunakan oleh Pasific Airliners. Seterusnya, pesawat ini dimiliki oleh Pegasus Aviation dan digunakan oleh TAM sejak Desember 2006. Hingga April 2007, pesawat A320 ini telah terbang selama 20.379 jam dan lebih dari 9.313 penerbangan.
