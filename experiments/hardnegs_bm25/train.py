@@ -1,108 +1,172 @@
-from sentence_transformers import losses, models, SentenceTransformer
+'''
+This example shows how to train a SOTA Bi-Encoder for the MS Marco dataset (https://github.com/microsoft/MSMARCO-Passage-Ranking).
+The model is trained using hard negatives which were specially mined with different dense and lexical search methods for MSMARCO. 
+
+This example has been taken from here with few modifications to train SBERT (MSMARCO-v3) models: 
+(https://github.com/UKPLab/sentence-transformers/blob/master/examples/training/ms_marco/train_bi-encoder-v3.py)
+
+The queries and passages are passed independently to the transformer network to produce fixed sized embeddings.
+These embeddings can then be compared using cosine-similarity to find matching passages for a given query.
+
+For training, we use MultipleNegativesRankingLoss. There, we pass triplets in the format:
+(query, positive_passage, negative_passage)
+
+Negative passage are hard negative examples, that were mined using different dense embedding methods and lexical search methods.
+Each positive and negative passage comes with a score from a Cross-Encoder. This allows denoising, i.e. removing false negative
+passages that are actually relevant for the query.
+
+Running this script:
+python train_msmarco_v3.py
+'''
+
+from sentence_transformers import SentenceTransformer, models, losses, InputExample
 from beir import util, LoggingHandler
 from beir.datasets.data_loader import GenericDataLoader
-from beir.retrieval.search.lexical import BM25Search as BM25
-from beir.retrieval.evaluation import EvaluateRetrieval
 from beir.retrieval.train import TrainRetriever
-import pathlib, os, tqdm
+from torch.utils.data import Dataset
+from tqdm.autonotebook import tqdm
+import pathlib, os, gzip, json
 import logging
+import random
 from pyprojroot import here
 
+#### Just some code to print debug information to stdout
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.INFO,
                     handlers=[LoggingHandler()])
+#### /print debug information to stdout
 
-
+#### Download msmarco.zip dataset and unzip the dataset
 dataset = "mmarco"
-
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
 out_dir = here("datasets")
 data_path = util.download_and_unzip(url, out_dir)
 
-#### Provide the data_path where scifact has been downloaded and unzipped
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="train")
+### Load BEIR MSMARCO training dataset, this will be used for query and corpus for reference.
+corpus, queries, _ = GenericDataLoader(data_path+"/indonesian").load(split="train")
 
+#################################
+#### Parameters for Training ####
+#################################
 
-#### Lexical Retrieval using Bm25 (Elasticsearch) ####
-#### Provide a hostname (localhost) to connect to ES instance
-#### Define a new index name or use an already existing one.
-#### We use default ES settings for retrieval
-#### https://www.elastic.co/
+train_batch_size = 75           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
+max_seq_length = 350            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
+ce_score_margin = 3             # Margin for the CrossEncoder score between negative and positive passagesu
+num_negs_per_system = 5         # We used different systems to mine hard negatives. Number of hard negatives to add from each system
 
-hostname = "localhost" #localhost
-index_name = "mmarco-indo" # germanquad
-language = "indonesian"
+##################################################
+#### Download MSMARCO Hard Negs Triplets File ####
+##################################################
 
-#### Intialize #### 
-# (1) True - Delete existing index and re-index all documents from scratch 
-# (2) False - Load existing index
-initialize = False # False
+triplets_url = "https://sbert.net/datasets/msmarco-hard-negatives.jsonl.gz"
+msmarco_triplets_filepath = os.path.join(data_path, "msmarco-hard-negatives.jsonl.gz")
+if not os.path.isfile(msmarco_triplets_filepath):
+    util.download_url(triplets_url, msmarco_triplets_filepath)
 
-#### Sharding ####
-# (1) For datasets with small corpus (datasets ~ < 5k docs) => limit shards = 1 
-# SciFact is a relatively small dataset! (limit shards to 1)
-number_of_shards = 1
-model = BM25(index_name=index_name, hostname=hostname, language=language, initialize=initialize, number_of_shards=number_of_shards)
+#### Load the hard negative MSMARCO jsonl triplets from SBERT 
+#### These contain a ce-score which denotes the cross-encoder score for the query and passage.
+#### We chose a margin between positive and negative passage scores => above which consider negative as hard negative. 
+#### Finally to limit the number of negatives per passage, we define num_negs_per_system across all different systems.
 
-# (2) For datasets with big corpus ==> keep default configuration
-# model = BM25(index_name=index_name, hostname=hostname, initialize=initialize)
-bm25 = EvaluateRetrieval(model)
+logging.info("Loading MSMARCO hard-negatives...")
 
-#### Index passages into the index (seperately)
-bm25.retriever.index(corpus)
+train_queries = {}
+with gzip.open(msmarco_triplets_filepath, 'rt', encoding='utf8') as fIn:
+    for line in tqdm(fIn, total=502939):
+        data = json.loads(line)
+        print(data)        
+        #Get the positive passage ids
+        pos_pids = [item['pid'] for item in data['pos']]
+        pos_min_ce_score = min([item['ce-score'] for item in data['pos']])
+        ce_score_threshold = pos_min_ce_score - ce_score_margin
+        
+        #Get the hard negatives
+        neg_pids = set()
+        for system_negs in data['neg'].values():
+            negs_added = 0
+            for item in system_negs:
+                if item['ce-score'] > ce_score_threshold:
+                    continue
 
-triplets = []
-qids = list(qrels) 
-hard_negatives_max = 10
+                pid = item['pid']
+                if pid not in neg_pids:
+                    neg_pids.add(pid)
+                    negs_added += 1
+                    if negs_added >= num_negs_per_system:
+                        break
+        
+        if len(pos_pids) > 0 and len(neg_pids) > 0:
+            train_queries[data['qid']] = {'query': queries[data['qid']], 'pos': pos_pids, 'hard_neg': list(neg_pids)}
 
-#### Retrieve BM25 hard negatives => Given a positive document, find most similar lexical documents
-for idx in tqdm.tqdm(range(len(qids)), desc="Retrieve Hard Negatives using BM25"):
-    query_id, query_text = qids[idx], queries[qids[idx]]
-    pos_docs = [doc_id for doc_id in qrels[query_id] if qrels[query_id][doc_id] > 0]
-    pos_doc_texts = [corpus[doc_id]["title"] + " " + corpus[doc_id]["text"] for doc_id in pos_docs]
-    hits = bm25.retriever.es.lexical_multisearch(texts=pos_doc_texts, top_hits=hard_negatives_max+1)
-    for (pos_text, hit) in zip(pos_doc_texts, hits):
-        for (neg_id, _) in hit.get("hits"):
-            if neg_id not in pos_docs:
-                neg_text = corpus[neg_id]["title"] + " " + corpus[neg_id]["text"]
-                triplets.append([query_text, pos_text, neg_text])
+        
+logging.info("Train queries: {}".format(len(train_queries)))
 
-print("Total number of triplets: ", len(triplets))
-print("example triplet: ", triplets[0])
-#### Provide any sentence-transformers or HF model
+for key, value in train_queries.items():
+    print(key, value)
+    break
+
+# We create a custom MSMARCO dataset that returns triplets (query, positive, negative)
+# on-the-fly based on the information from the mined-hard-negatives jsonl file.
+
+class MSMARCODataset(Dataset):
+    def __init__(self, queries, corpus):
+        self.queries = queries
+        self.queries_ids = list(queries.keys())
+        self.corpus = corpus
+
+        for qid in self.queries:
+            self.queries[qid]['pos'] = list(self.queries[qid]['pos'])
+            self.queries[qid]['hard_neg'] = list(self.queries[qid]['hard_neg'])
+            random.shuffle(self.queries[qid]['hard_neg'])
+
+    def __getitem__(self, item):
+        query = self.queries[self.queries_ids[item]]
+        query_text = query['query']
+
+        pos_id = query['pos'].pop(0)    #Pop positive and add at end
+        pos_text = self.corpus[pos_id]["text"]
+        query['pos'].append(pos_id)
+
+        neg_id = query['hard_neg'].pop(0)    #Pop negative and add at end
+        neg_text = self.corpus[neg_id]["text"]
+        query['hard_neg'].append(neg_id)
+
+        return InputExample(texts=[query_text, pos_text, neg_text])
+
+    def __len__(self):
+        return len(self.queries)
+
+# We construct the SentenceTransformer bi-encoder from scratch with mean-pooling
 model_name = "indolem/indobert-base-uncased" 
-word_embedding_model = models.Transformer(model_name, max_seq_length=350)
-pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode="cls")
+word_embedding_model = models.Transformer(model_name, max_seq_length=max_seq_length)
+pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode = "cls")
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
 #### Provide a high batch-size to train better with triplets!
-retriever = TrainRetriever(model=model, batch_size=64)
+retriever = TrainRetriever(model=model, batch_size=train_batch_size)
 
-#### Prepare triplets samples
-train_samples = retriever.load_train_triplets(triplets=triplets)
-train_dataloader = retriever.prepare_train_triplets(train_samples)
+# For training the SentenceTransformer model, we need a dataset, a dataloader, and a loss used for training.
+train_dataset = MSMARCODataset(train_queries, corpus=corpus)
+len(train_dataset)
 
-#### Training SBERT with cosine-product
-train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model)
+train_dataloader = retriever.prepare_train(train_dataset, shuffle=True, dataset_present=True)
 
 #### training SBERT with dot-product
-# train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model, similarity_fct=util.dot_score)
-
-#### Prepare dev evaluator
-# ir_evaluator = retriever.load_ir_evaluator(dev_corpus, dev_queries, dev_qrels)
+train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model, similarity_fct=util.dot_score, scale=1)
 
 #### If no dev set is present from above use dummy evaluator
 ir_evaluator = retriever.load_dummy_evaluator()
 
 #### Provide model save path
-model_save_path = os.path.join(pathlib.Path(__file__).parent.absolute(), "output", "{}-v2-{}-bm25-hard-negs".format(model_name, dataset))
+model_save_path = os.path.join(pathlib.Path(__file__).parent.absolute(), "output", "{}-v3-{}".format(model_name, dataset))
 os.makedirs(model_save_path, exist_ok=True)
 
 #### Configure Train params
-num_epochs = 5
+num_epochs = 1
 evaluation_steps = 10000
-warmup_steps = int(len(train_samples) * num_epochs / retriever.batch_size * 0.1)
+warmup_steps = 0.1 * num_epochs * len(train_dataloader) / train_batch_size
+print(f"==>> warmup_steps: {warmup_steps}")
 
 retriever.fit(train_objectives=[(train_dataloader, train_loss)], 
                 evaluator=ir_evaluator, 
@@ -111,6 +175,3 @@ retriever.fit(train_objectives=[(train_dataloader, train_loss)],
                 warmup_steps=warmup_steps,
                 evaluation_steps=evaluation_steps,
                 use_amp=True)
-
-
-model.save_to_hub("st-indobert-mmarco-bm25-hardnegs", "carles-undergrad-thesis")
