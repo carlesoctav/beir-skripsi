@@ -50,7 +50,7 @@ corpus, queries, _ = GenericDataLoader(data_path+"/indonesian").load(split="trai
 #### Parameters for Training ####
 #################################
 
-train_batch_size = 75           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
+train_batch_size = 10           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
 max_seq_length = 350            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
 ce_score_margin = 3             # Margin for the CrossEncoder score between negative and positive passagesu
 num_negs_per_system = 5         # We used different systems to mine hard negatives. Number of hard negatives to add from each system
@@ -75,7 +75,6 @@ train_queries = {}
 with gzip.open(msmarco_triplets_filepath, 'rt', encoding='utf8') as fIn:
     for line in tqdm(fIn, total=502939):
         data = json.loads(line)
-        print(data)        
         #Get the positive passage ids
         pos_pids = [item['pid'] for item in data['pos']]
         pos_min_ce_score = min([item['ce-score'] for item in data['pos']])
@@ -148,7 +147,8 @@ retriever = TrainRetriever(model=model, batch_size=train_batch_size)
 
 # For training the SentenceTransformer model, we need a dataset, a dataloader, and a loss used for training.
 train_dataset = MSMARCODataset(train_queries, corpus=corpus)
-len(train_dataset)
+
+print(f"==>> train_dataset: {train_dataset}")
 
 train_dataloader = retriever.prepare_train(train_dataset, shuffle=True, dataset_present=True)
 
@@ -165,7 +165,7 @@ os.makedirs(model_save_path, exist_ok=True)
 #### Configure Train params
 num_epochs = 1
 evaluation_steps = 10000
-warmup_steps = 0.1 * num_epochs * len(train_dataloader) / train_batch_size
+warmup_steps = 0.1 * num_epochs * len(train_dataset) / train_batch_size
 print(f"==>> warmup_steps: {warmup_steps}")
 
 retriever.fit(train_objectives=[(train_dataloader, train_loss)], 
