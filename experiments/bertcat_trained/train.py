@@ -24,12 +24,12 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 #### /print debug information to stdout
 
 model_name = 'indolem/indobert-base-uncased'
-train_batch_size = 64
+train_batch_size = 32
 num_epochs = 5
 model_save_path = 'output/training_mm-marco_cross-encoder-'+model_name.replace("/", "-")+'-'+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 pos_neg_ration = 3
 max_train_samples = 500_000
-model = CrossEncoder(model_name, num_labels=1)
+model = CrossEncoder(model_name, num_labels=1, max_length=512)
 
 dataset = "mmarco"
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
@@ -80,9 +80,8 @@ logging.info("Warmup-steps: {}".format(warmup_steps))
 
 # Train the model
 model.fit(train_dataloader=train_dataloader,
-          evaluator=evaluator,
           epochs=num_epochs,
-          evaluation_steps=10000,
+          evaluation_steps=1_000_000_000,
           warmup_steps=warmup_steps,
           output_path=model_save_path,
           use_amp=True)

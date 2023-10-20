@@ -21,7 +21,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 dataset = "mmarco"
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
 out_dir = here("datasets")
-data_path = util.download_and_unzip(url, out_dir)
+data_path = str(here("datasets/mmarco"))
 
 #### Provide the data path where trec-covid has been downloaded and unzipped to the data loader
 # data folder would contain these files: 
@@ -37,11 +37,11 @@ corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="
 #### Provide parameters for Elasticsearch
 hostname = "localhost" #localhost
 index_name = "mmarco-indo" # trec-covid
-initialize = False # False
+initialize = True # False
 language = "indonesian" 
 
 model = BM25(index_name=index_name, hostname=hostname, initialize=initialize,language=language)
-retriever = EvaluateRetrieval(model, score_function="dot")
+retriever = EvaluateRetrieval(model)
 
 #### Retrieve dense results (format of results is identical to qrels)
 results = retriever.retrieve(corpus, queries)
@@ -52,7 +52,7 @@ results = retriever.retrieve(corpus, queries)
 
 #### Reranking using Cross-Encoder models #####
 #### https://www.sbert.net/docs/pretrained_cross-encoders.html
-cross_encoder_model = CrossEncoder('unicamp-dl/mMiniLM-L6-v2-mmarco-v1', max_length = 512)
+cross_encoder_model = CrossEncoder('carles-undergrad-thesis/indobert-crossencoder-mmarco', max_length = 512)
 
 #### Or use MiniLM, TinyBERT etc. CE models (https://www.sbert.net/docs/pretrained-models/ce-msmarco.html)
 # cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
@@ -61,10 +61,10 @@ cross_encoder_model = CrossEncoder('unicamp-dl/mMiniLM-L6-v2-mmarco-v1', max_len
 reranker = Rerank(cross_encoder_model, batch_size=128)
 
 # Rerank top-100 results using the reranker provided
-rerank_results = reranker.rerank(corpus, queries, results, top_k=1000)
+rerank_results = reranker.rerank(corpus, queries, results, top_k=100)
 
 #### Evaluate your retrieval using NDCG@k, MAP@K ...
-ndcg, _map, recall, precision = retriever.evaluate(qrels, rerank_results, retriever.k_values, ignore_identical_ids=False)
+ndcg, _map, recall, precision = EvaluateRetrieval.evaluate(qrels, rerank_results, retriever.k_values)
 
 
 mrr = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="mrr")
