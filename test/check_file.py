@@ -25,7 +25,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 
 model_name = 'indolem/indobert-base-uncased'
 train_batch_size = 32
-num_epochs = 1
+num_epochs = 5
 model_save_path = 'output/training_mm-marco_cross-encoder-'+model_name.replace("/", "-")+'-'+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 pos_neg_ration = 5
 max_train_samples = 100
@@ -54,13 +54,9 @@ with gzip.open(train_filepath, 'rt') as fIn:
         qid, pos_id, neg_id = line.strip().split()
 
         query = queries[qid]
-        if (cnt % (pos_neg_ration+1)) == 0:
-            passage = corpus[pos_id]["text"]
-            label = 1
-        else:
-            passage = corpus[neg_id]["text"]
-            label = 0
-
+        
+        passage = corpus[pos_id]["text"]
+        label = 1
         train_samples.append(InputExample(texts=[query, passage], label=label))
         cnt += 1
 
@@ -90,6 +86,3 @@ model.fit(train_dataloader=train_dataloader,
 
 #Save latest model
 model.save(model_save_path+'-latest')
-
-model.model.push_to_hub('carles-undergrad-thesis/indobert-crossencoder-mmarco')
-model.tokenizer.push_to_hub('carles-undergrad-thesis/indobert-crossencoder-mmarco')

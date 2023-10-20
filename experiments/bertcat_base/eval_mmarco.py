@@ -31,6 +31,10 @@ data_path = util.download_and_unzip(url, out_dir)
 
 corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="dev")
 
+print(f"==>> corpus: {corpus}")
+print(f"==>> queries: {queries}")
+
+print(f"==>> qrels: {qrels}")
 #########################################
 #### (1) RETRIEVE Top-100 docs using BM25
 #########################################
