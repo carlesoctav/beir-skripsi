@@ -8,6 +8,7 @@ import pathlib, os, gzip, json
 import logging
 import random
 from pyprojroot import here
+from torch.utils.data import Dataset, DataLoader
 
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
@@ -27,8 +28,8 @@ corpus, queries, _ = GenericDataLoader(data_path+"/indonesian").load(split="trai
 #### Parameters for Training ####
 #################################
 
-train_batch_size = 10       # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
-max_seq_length = 350            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
+train_batch_size = 32       # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
+max_seq_length = 256           # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
 
 
 triplets_url = "https://sbert.net/datasets/msmarco-hard-negatives.jsonl.gz"
@@ -105,7 +106,7 @@ retriever = TrainRetriever(model=model, batch_size=train_batch_size)
 
 # For training the SentenceTransformer model, we need a dataset, a dataloader, and a loss used for training.
 train_dataset = MSMARCODataset(train_queries, corpus=corpus)
-train_dataloader = retriever.prepare_train(train_dataset, shuffle=True, dataset_present=True)
+train_dataloader = DataLoader(train_dataset, shuffle=True, batch_size=train_batch_size, num_workers=16)
 
 #### Training SBERT with dot-product (default) using Margin MSE Loss
 train_loss = losses.MarginMSELoss(model=retriever.model)
@@ -123,11 +124,9 @@ evaluation_steps = 10000
 warmup_steps = int(len(train_dataset) * num_epochs / train_batch_size * 0.1)    #10% 
 
 retriever.fit(train_objectives=[(train_dataloader, train_loss)], 
-                evaluator=ir_evaluator, 
                 epochs=num_epochs,
                 output_path=model_save_path,
                 warmup_steps=warmup_steps,
-                evaluation_steps=evaluation_steps,
                 use_amp=True)
 
 model.save_to_hub("indobert-mmarco-margin-mse", "carles-undergrad-thesis")
