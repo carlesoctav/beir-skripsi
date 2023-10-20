@@ -1,124 +1,145 @@
-(…)marco/resolve/main/tokenizer_config.json: 100%|████████████████████████| 1.26k/1.26k [00:00<00:00, [92/1821]
-(…)ossencoder-mmarco/resolve/main/vocab.txt: 100%|███████████████████████████| 234k/234k [00:00<00:00, 713kB/s]
-(…)coder-mmarco/resolve/main/tokenizer.json: 100%|██████████████████████████| 737k/737k [00:00<00:00, 1.12MB/s]
-(…)rco/resolve/main/special_tokens_map.json: 100%|█████████████████████████████| 125/125 [00:00<00:00, 253kB/s]
-2023-10-20 05:24:47 - Use pytorch device: cuda                                                                 
-2023-10-20 05:24:52 - Starting To Rerank Top-100....                                                           
-Batches: 100%|█████████████████████████████████████████████████████████████| 5394/5394 [12:11<00:00,  7.37it/s]
-2023-10-20 05:37:14 - For evaluation, we ignore identical query and document ids (default), please explicitly s
-et ``ignore_identical_ids=False`` to ignore this.                                                              
-2023-10-20 05:37:14 -                                                                                          
-                                                                                                               
-2023-10-20 05:37:14 - NDCG@1: 0.1095                                                                           
-2023-10-20 05:37:14 - NDCG@3: 0.1699                                                                           
-2023-10-20 05:37:14 - NDCG@5: 0.1960                                                                           
-2023-10-20 05:37:14 - NDCG@10: 0.2190                                                                          
-2023-10-20 05:37:14 - NDCG@100: 0.2419                                                                         
-2023-10-20 05:37:14 - NDCG@1000: 0.2419                                                                        
-2023-10-20 05:37:14 -                                                                                          
-                                                                                                               
-2023-10-20 05:37:14 - MAP@1: 0.1060                                                                            
-2023-10-20 05:37:14 - MAP@3: 0.1531                                                                            
-2023-10-20 05:37:14 - MAP@5: 0.1677                                                                            
-2023-10-20 05:37:14 - MAP@10: 0.1774                                                                           
-2023-10-20 05:37:14 - MAP@100: 0.1826                                                                          
-2023-10-20 05:37:14 - MAP@1000: 0.1826                                                                         
-2023-10-20 05:37:14 -                                                                                          
+100%|███████████████████████████████████████████████████████████████████| 8841823/8841823 [00:43<00:00, 2045[107/1908]
+2023-10-20 10:45:58 - Loaded 8841823 DEV Documents.
+2023-10-20 10:45:58 - Doc Example: {'text': 'Kehadiran komunikasi di tengah pikiran ilmiah sama pentingnya dengan kebe
+rhasilan Proyek Manhattan seperti kecerdasan ilmiah. Kehadiran komunikasi di tengah pikiran ilmiah sama pentingnya den
+gan keberhasilan Proyek Manhattan seperti kecerdasan ilmiah. Satu - satunya awan yang menggantung di atas prestasi men
+gesankan para peneliti dan insinyur atom adalah apa sebenarnya tujuan kesuksesan mereka; ratusan ribu nyawa yang tidak
+ bersalah dilenyapkan.', 'title': ''}
+2023-10-20 10:45:58 - Loading Queries...
+2023-10-20 10:46:01 - Loaded 6980 DEV Queries.
+2023-10-20 10:46:01 - Query Example: Berapa tahun William Bradford melayani sebagai gubernur koloni Plymouth?
+2023-10-20 10:46:01 - Activating Elasticsearch....
+2023-10-20 10:46:01 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mmarco-indo', 'keys': {'tit
+le': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 'default', 
+'language': 'indonesian'}
+que:   0%|                                                                                     | 0/55 [00:00<?, ?it/s]
+/usr/local/lib/python3.8/dist-packages/elasticsearch/connection/base.py:190: ElasticsearchDeprecationWarning: Elastics
+earch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. 
+See https://www.elastic.co/guide/en/elasticsearch/reference/7.17/security-minimal-setup.html to enable security.
+  warnings.warn(message, category=ElasticsearchDeprecationWarning)
+que: 100%|████████████████████████████████████████████████████████████████████████████| 55/55 [01:01<00:00,  1.12s/it]
+2023-10-20 10:47:05 - Use pytorch device: cuda
+2023-10-20 10:47:45 - Starting To Rerank Top-1000....
+Batches:   2%|█▏                                                                | 475/26727 [02:21<2:31:56,  2.88it/s]
+Batches:   2%|█▏                                                                | 476/26727 [02:21<2:20:09,  3.12it/s]
+Batches: 100%|████████████████████████████████████████████████████████████████| 26727/26727 [2:11:06<00:00,  3.40it/s]
+2023-10-20 13:01:31 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
 
+2023-10-20 10:47:05 - Use pytorch device: cuda                                                               [87/1908]
+2023-10-20 10:47:45 - Starting To Rerank Top-1000....                                                                 
+Batches:   2%|█▏                                                                | 475/26727 [02:21<2:31:56,  2.88it/s]
+Batches:   2%|█▏                                                                | 476/26727 [02:21<2:20:09,  3.12it/s]
+Batches: 100%|████████████████████████████████████████████████████████████████| 26727/26727 [2:11:06<00:00,  3.40it/s]
+2023-10-20 13:01:31 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-20 13:01:36 -                                                                                                 
+                                                                                                                      
+2023-10-20 13:01:36 - NDCG@1: 0.1052                                                                                  
+2023-10-20 13:01:36 - NDCG@3: 0.1667                                                                                  
+2023-10-20 13:01:36 - NDCG@5: 0.1940                                                                                  
+2023-10-20 13:01:36 - NDCG@10: 0.2243                                                                                 
+2023-10-20 13:01:36 - NDCG@100: 0.2707                                                                                
+2023-10-20 13:01:36 - NDCG@1000: 0.2786                                                                               
+2023-10-20 13:01:36 - 
 
+2023-10-20 13:01:36 - MAP@1: 0.1019
+2023-10-20 13:01:36 - MAP@3: 0.1500
+2023-10-20 13:01:36 - MAP@5: 0.1652
+2023-10-20 13:01:36 - MAP@10: 0.1778
+2023-10-20 13:01:36 - MAP@100: 0.1874
+2023-10-20 13:01:36 - MAP@1000: 0.1878
+2023-10-20 13:01:36 - 
 
-2023-10-20 05:37:14 - Recall@1: 0.1060                                                                [65/1821]
-2023-10-20 05:37:14 - Recall@3: 0.2145
-2023-10-20 05:37:14 - Recall@5: 0.2771
-2023-10-20 05:37:14 - Recall@10: 0.3467
-2023-10-20 05:37:14 - Recall@100: 0.4465
-2023-10-20 05:37:14 - Recall@1000: 0.4465
-2023-10-20 05:37:14 - 
+2023-10-20 13:01:36 - Recall@1: 0.1019
 
-2023-10-20 05:37:14 - P@1: 0.1095
-2023-10-20 05:37:14 - P@3: 0.0742
-2023-10-20 05:37:14 - P@5: 0.0576
-2023-10-20 05:37:14 - P@10: 0.0362
-2023-10-20 05:37:14 - P@100: 0.0047
-2023-10-20 05:37:14 - P@1000: 0.0005
-2023-10-20 05:37:14 - 
+2023-10-20 13:01:36 - Recall@1: 0.1019                                                                       [62/1908]
+2023-10-20 13:01:36 - Recall@3: 0.2105
+2023-10-20 13:01:36 - Recall@5: 0.2765
+2023-10-20 13:01:36 - Recall@10: 0.3688
+2023-10-20 13:01:36 - Recall@100: 0.5829
+2023-10-20 13:01:36 - Recall@1000: 0.6421
+2023-10-20 13:01:36 - 
 
-2023-10-20 05:37:16 - MRR@1: 0.0662
-2023-10-20 05:37:16 - MRR@3: 0.0968
-2023-10-20 05:37:16 - MRR@5: 0.1061
-2023-10-20 05:37:16 - MRR@10: 0.1143
-2023-10-20 05:37:16 - MRR@100: 0.1226
-2023-10-20 05:37:16 - MRR@1000: 0.1234
-2023-10-20 05:37:16 - 
+2023-10-20 13:01:36 - P@1: 0.1052
+2023-10-20 13:01:36 - P@3: 0.0731
+2023-10-20 13:01:36 - P@5: 0.0576
+2023-10-20 13:01:36 - P@10: 0.0386
+2023-10-20 13:01:36 - P@100: 0.0062
+2023-10-20 13:01:36 - P@1000: 0.0007
+2023-10-20 13:01:36 - 
 
-2023-10-20 05:37:18 - R_cap@1: 0.0662
-2023-10-20 05:37:18 - R_cap@3: 0.1329
+2023-10-20 13:01:39 - MRR@1: 0.1047
+2023-10-20 13:01:39 - MRR@3: 0.1538
+2023-10-20 13:01:39 - MRR@5: 0.1689
+2023-10-20 13:01:39 - MRR@10: 0.1814
+2023-10-20 13:01:39 - MRR@100: 0.1908
+2023-10-20 13:01:39 - MRR@1000: 0.1912
+2023-10-20 13:01:40 - 
 
-2023-10-20 05:37:18 - R_cap@5: 0.1729                                                                 [39/1821]
-2023-10-20 05:37:18 - R_cap@10: 0.2341
-2023-10-20 05:37:18 - R_cap@100: 0.4456
-2023-10-20 05:37:18 - R_cap@1000: 0.6408
-2023-10-20 05:37:18 - 
+2023-10-20 13:01:43 - R_cap@1: 0.1047
+2023-10-20 13:01:43 - R_cap@3: 0.2101
 
-2023-10-20 05:37:20 - Hole@1: 0.9307
-2023-10-20 05:37:20 - Hole@3: 0.9512
-2023-10-20 05:37:20 - Hole@5: 0.9607
-2023-10-20 05:37:20 - Hole@10: 0.9710
-2023-10-20 05:37:20 - Hole@100: 0.9835
-2023-10-20 05:37:20 - Hole@1000: 0.9786
-2023-10-20 05:37:20 - Query : Apa arti difusi sederhana?
+2023-10-20 13:01:43 - R_cap@5: 0.2760                                                                        [36/1908]
+2023-10-20 13:01:43 - R_cap@10: 0.3680                                                                                
+2023-10-20 13:01:43 - R_cap@100: 0.5817                                                                               
+2023-10-20 13:01:43 - R_cap@1000: 0.6408                                                                              
+2023-10-20 13:01:43 -                                                                                                 
+                                                                                                                      
+2023-10-20 13:01:47 - Hole@1: 0.8920                                                                                  
+2023-10-20 13:01:47 - Hole@3: 0.9235                                                                                  
+2023-10-20 13:01:47 - Hole@5: 0.9386                                                                                  
+2023-10-20 13:01:47 - Hole@10: 0.9564                                                                                 
+2023-10-20 13:01:47 - Hole@100: 0.9816                                                                                
+2023-10-20 13:01:47 - Hole@1000: 0.9786                                                                               
+2023-10-20 13:01:47 - Query : Apa akar dari semua kejahatan                                                           
+                                                                                                                      
+2023-10-20 13:01:47 - Rank 1: 7213594 [] - Secara pribadi, saya percaya akar dari semua kejahatan adalah keegoisan dan
+ keegoisan diungkapkan dalam segala cara. Sebaliknya adalah cinta yang mengorbankan diri sendiri. Seseorang juga dapat
+ berbicara tentang akar segala kejahatan dalam hal dusta. ♪ And to my mind the root of evil is to deny Godvine reveal 
+♪
 
-2023-10-20 05:37:20 - Rank 1: 3405478 [] - Difusi sederhana berarti bagian molekul atau ion antara molekul dala
-m membran sel, atau tanpa terikat pada protein yang membawa, bergerak melalui energi kinetik. Air, urea dan zat
- air larut melewati ruang ini.
+2023-10-20 13:01:47 - Rank 2: 7213591 [] - Akar dari semua setan berasal dari manusia. Manusia itu sendiri adalah akar
+ dari semua kejahatan. Sekarang saya tidak mencoba untuk mengatakan bahwa setiap pria, wanita, dan anak secara inheren
+ jahat tetapi tidak dapat dibantah bahwa bahkan tidak akan ada konsep kejahatan jika bukan untuk manusia.
 
-2023-10-20 05:37:20 - Rank 2: 4910866 [] - Difusi sederhana memaksudkan difusi zat tanpa bantuan protein transp
-ortasi. Difusi yang diparasit memaksudkan difusi zat - zat melintasi membran sel dengan bantuan protein transpo
-rtasi. Dialisis memaksudkan difusi zat terlarut di membran permeabel selektif.
+2023-10-20 13:01:47 - Rank 3: 5451019 [] - """Ya, karena cinta akan uang adalah akar dari semua kejahatan,"" artinya, 
+bukan berarti setiap kejahatan harus berasal dari ""cinta uang,"" tetapi bahwa tidak ada yang dapat dibayangkan kejaha
+tan yang dapat terjadi pada anak laki-laki dan perempuan dari laki-laki yang tidak mungkin musim semi dari keserakahan
 
-2023-10-20 05:37:20 - Rank 3: 1869424 [] - Simcellie. Warisan Mendelian yang sederhana. Difusi sederhana adalah
- pergerakan zat dari daerah konsentrasi tinggi ke daerah konsentrasi rendah. Pada umumnya, difusi air, gas, dan
- molekul - molekul kecil yang tidak terisi di membran plasma dapat terjadi karena tidak adanya protein transpor
-.Difusi plasma mencakup membran plasma dan saluran protein vakuolar serta transpor.enerally, sederhana difusi D
+2023-10-20 13:01:47 - Rank 3: 5451019 [] - """Ya, karena cinta akan uang adalah akar dari semua kejahatan,"" [13/1908]
+bukan berarti setiap kejahatan harus berasal dari ""cinta uang,"" tetapi bahwa tidak ada yang dapat dibayangkan kejaha
+tan yang dapat terjadi pada anak laki-laki dan perempuan dari laki-laki yang tidak mungkin musim semi dari keserakahan
+ cinta emas dan kekayaan."
 
+2023-10-20 13:01:47 - Rank 4: 8380731 [] - Contoh Kalimat & Contoh. 1 Simone Weil: Kejahatan adalah akar misteri, rasa
+ sakit adalah akar dari pengetahuan. Jadi menurutmu uang adalah akar dari semua kejahatan. Apakah Anda pernah bertanya
+ apa akar dari semua uang. 3 Med Yones: Dalam tradisi agama, cinta akan uang adalah akar segala kejahatan. Dalam ekono
+mi, kelangkaan adalah akar dari semua kejahatan.
 
- 2023-10-20 05:37:20 - Rank 4: 1869423 [] - Difusi sederhana adalah pergerakan zat dari daerah konsentr[11/1821]
-i ke daerah konsentrasi rendah.ener, difusi sederhana air, gas, dan molekul kecil lainnya yang tidak terisi mel
-alui membran plasma dapat terjadi karena tidak adanya protein transportasi. Difusi yang difasilitasi mencakup m
-embran plasma dan saluran protein vacuolar dan transporter.
+2023-10-20 13:01:47 - Rank 5: 3611440 [] - Simone Weil: Kejahatan adalah akar misteri, rasa sakit adalah akar dari pen
+getahuan. Jadi menurutmu uang adalah akar dari semua kejahatan. Apakah Anda pernah bertanya apa akar dari semua uang. 
+Med Yones: Dalam tradisi agama, cinta akan uang adalah akar segala kejahatan.
 
-2023-10-20 05:37:20 - Rank 5: 5823879 [] - Difusi adalah proses yang meluas dan penting yang terjadi dalam sist
-em hidup maupun non-hidup. 1 Difusi sederhana memaksudkan difusi zat tanpa bantuan protein transportasi. Difusi
- yang diparasit memaksudkan difusi zat - zat melintasi membran sel dengan bantuan protein transportasi.
+2023-10-20 13:01:47 - Rank 6: 1599590 [] - "Ringkasan Cepat. Kata akar Latin yang berarti ""buruk"" atau ""jahat."" Ak
+ar ini adalah kata yang berasal dari banyak kosakata bahasa Inggris, termasuk mal, mal treat, dan mal ice. Anda dapat 
+mengingat bahwa mal berarti ""buruk"" melalui fungsi mal, atau ""buruk"" bekerja bagian, dan bahwa itu berarti ""jahat
+"" melalui es mal, atau sengaja ""jahat"" dilakukan untuk yang lain."
 
-2023-10-20 05:37:20 - Rank 6: 2538914 [] - Apa Difusi Sederhana Itu? Dalam suatu larutan atau gas yang memiliki
- sejumlah partikel dan area partikel - partikel yang lebih rendah, partikel - partikel itu akan berdifusi, atau
- bergerak, dari daerah yang lebih tinggi ke daerah konsentrasi yang lebih rendah. Ini dikenal sebagai difusi se
-derhana, atau difusi pasif. Difusi sederhana tidak memerlukan energi. Sebaliknya, itu terjadi dengan gerakan ac
-ak. Gerakan acak didefinisikan sebagai gerakan yang terjadi secara kebetulan karena tidak ada tata tertib atau 
-sistem reguler dimana pergerakan partikel bergeser dalam solusi atau gas.
+2023-10-20 13:01:47 - Rank 7: 4715621 [] - akar akar akar: akar utama tanaman, yang langsung mengalir ke bumi hingga k
+edalaman yang cukup dalam tanpa membelah. Akar kejahatan, akar akar dari yang berkembang kejahatan masyarakat modern, 
+adalah ide laba. Salah satunya adalah rasa hormat terhadap otoritas, yang hilang adalah akar dari Bolshevism.
 
-2023-10-20 05:37:20 - Rank 7: 6243333 [] - Difusi sederhana hanya dapat memindahkan bahan ke arah gradien konse
-ntrasi; difusi yang difasilitasi menggerakkan bahan dengan dan terhadap gradien konsentrasi. Difusi sederhana t
-idak dapat jenuh; tingkat difusi yang difasilitasi dibatasi oleh jumlah protein membran fungsional dan dapat je
-nuh *.
+2023-10-20 13:01:47 - Rank 8: 7867039 [] - Apa akar segala macam kejahatan? Jawaban 1 Ada kepercayaan bahwa uang adala
+h akar dari semua jahat Jawaban 2 1 Timotius 6:10 - Karena cinta uang adalah akar dari segala macam kejahatan, untuk y
+ang beberapa ha... telah menyimpang dari iman dalam keserakahan mereka, dan menusuk diri melalui dengan banyak penderi
 
-2023-10-20 05:37:20 - Rank 8: 116078 [] - Difusi memaksudkan pergerakan molekul dari tempat yang lebih tinggi k
-e tempat yang lebih rendah. Difusi bisa jadi difusi sederhana atau. Difusi sederhana adalah salah satu yang ter
-jadi tanpa dibantu. Difusi yang bersifat facilitasi sebagai kontras adalah difusi yang dibantu dengan cara yang
- dibutuhkan molekul pembawa. Sebagai contoh, molekul kutub menyebar melintasi membran sel melalui molekul pemba
-wa dalam membran sel.
+2023-10-20 13:01:47 - Rank 9: 5451020 [] - 10. Cinta akan uang bukan uang itu sendiri, tapi cinta itu sendiri, keingin
+an untuk menjadi kaya (1Ti 6:9) adalah akar (Ellicott dan Middleton: bukan sebagai English Version, 'akar') dari semua
+ kejahatan. (So the Greek plural). Orang yang paling kaya mungkin tidak kaya dalam arti yang buruk; yang termiskin mun
+gkin ingin menjadi begitu (Ps 62:10).
 
-
-2023-10-20 05:37:20 - Rank 9: 1216873 [] - Difusi sederhana adalah ketika molekul kecil non-polar melewati memb
-ran sel ke dalam sel, tidak membutuhkan aktivitas sel. Difusi yang diparasit harus memiliki saluran protein, da
-n melibatkan protein pembawa.
-
-2023-10-20 05:37:20 - Rank 10: 501895 [] - Jawaban Terbaik: Difusi Sederhana. Salah satu cara dasar zat dapat m
-asuk dan keluar sel adalah dengan difusi sederhana. Difusi adalah pergerakan molekul dari daerah konsentrasi ti
-nggi ke daerah konsentrasi rendah melalui gerakan molekuler acak. Animasi itu mengilustrasikan difusi molekul -
-molekul besar berbola - bola merah ke dalam bola - bola biru Rolex.
-
-
-
+2023-10-20 13:01:47 - Rank 10: 583029 [] - "Ringkasan Cepat. Kata akar Latin yang berarti ""buruk"" atau ""jahat."" Ak
+ar ini adalah asal usul dari banyak kosakata bahasa Inggris, termasuk kata - kata yang salah bentuk, perlakuan yang sa
+lah, dan niat jahat. Anda dapat mengingat bahwa mal berarti ""buruk"" melalui kerusakan, atau ""buruk"" bagian kerja, 
+dan bahwa itu berarti ""jahat"" melalui kedengkian, atau sengaja ""jahat"" dilakukan untuk yang lain."
 

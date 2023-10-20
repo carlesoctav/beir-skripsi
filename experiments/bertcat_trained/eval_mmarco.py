@@ -58,18 +58,18 @@ cross_encoder_model = CrossEncoder('carles-undergrad-thesis/indobert-crossencode
 # cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
 # cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-TinyBERT-L-6')
 
-reranker = Rerank(cross_encoder_model, batch_size=128)
+reranker = Rerank(cross_encoder_model, batch_size=256)
 
 # Rerank top-100 results using the reranker provided
-rerank_results = reranker.rerank(corpus, queries, results, top_k=100)
+rerank_results = reranker.rerank(corpus, queries, results, top_k=1000)
 
 #### Evaluate your retrieval using NDCG@k, MAP@K ...
 ndcg, _map, recall, precision = EvaluateRetrieval.evaluate(qrels, rerank_results, retriever.k_values)
 
 
-mrr = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="mrr")
-recall_cap = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="r_cap")
-hole = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="hole")
+mrr = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metric="mrr")
+recall_cap = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metric="r_cap")
+hole = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metric="hole")
 
 
 #### Print top-k documents retrieved ####
