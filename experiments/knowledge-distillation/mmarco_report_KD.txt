@@ -1,0 +1,109 @@
+Time taken to retrieve: 4270.47 seconds                                                                                              [81/1496]
+2023-10-21 05:20:34 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                                                 
+2023-10-21 05:20:34 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False
+`` to ignore this.
+2023-10-21 05:20:37 - 
+
+2023-10-21 05:20:37 - NDCG@1: 0.0264
+2023-10-21 05:20:37 - NDCG@3: 0.0435
+2023-10-21 05:20:37 - NDCG@5: 0.0506
+2023-10-21 05:20:37 - NDCG@10: 0.0611
+2023-10-21 05:20:37 - NDCG@100: 0.0950
+2023-10-21 05:20:37 - NDCG@1000: 0.1269
+2023-10-21 05:20:37 - 
+
+2023-10-21 05:20:37 - MAP@1: 0.0259 
+2023-10-21 05:20:37 - MAP@3: 0.0389 
+2023-10-21 05:20:37 - MAP@5: 0.0429 
+2023-10-21 05:20:37 - MAP@10: 0.0471
+2023-10-21 05:20:37 - MAP@100: 0.0530
+2023-10-21 05:20:37 - MAP@1000: 0.0540
+2023-10-21 05:20:37 - 
+
+2023-10-21 05:20:37 - Recall@1: 0.0259
+2023-10-21 05:20:37 - Recall@3: 0.0559
+2023-10-21 05:20:37 - Recall@5: 0.0730
+2023-10-21 05:20:37 - Recall@10: 0.1056
+
+
+2023-10-21 05:20:37 - Recall@100: 0.2746                                                                                             [55/1496]
+2023-10-21 05:20:37 - Recall@1000: 0.5337                                                                                                     
+2023-10-21 05:20:37 -                                                                                                                         
+                                                                                                                                              
+2023-10-21 05:20:37 - P@1: 0.0264                                                                                                             
+2023-10-21 05:20:37 - P@3: 0.0192                                                                                                             
+2023-10-21 05:20:37 - P@5: 0.0151
+2023-10-21 05:20:37 - P@10: 0.0109
+2023-10-21 05:20:37 - P@100: 0.0029 
+2023-10-21 05:20:37 - P@1000: 0.0006
+2023-10-21 05:20:37 - 
+
+2023-10-21 05:20:40 - MRR@1: 0.0264 
+2023-10-21 05:20:40 - MRR@3: 0.0397 
+2023-10-21 05:20:40 - MRR@5: 0.0437 
+2023-10-21 05:20:40 - MRR@10: 0.0481
+2023-10-21 05:20:40 - MRR@100: 0.0541
+2023-10-21 05:20:40 - MRR@1000: 0.0551
+2023-10-21 05:20:41 - 
+
+2023-10-21 05:20:44 - R_cap@1: 0.0264
+2023-10-21 05:20:44 - R_cap@3: 0.0559
+2023-10-21 05:20:44 - R_cap@5: 0.0730
+2023-10-21 05:20:44 - R_cap@10: 0.1056
+2023-10-21 05:20:44 - R_cap@100: 0.2746
+2023-10-21 05:20:44 - R_cap@1000: 0.5337
+
+
+2023-10-21 05:20:47 - Hole@1: 0.9714                                                                                                 [27/1496]
+2023-10-21 05:20:47 - Hole@3: 0.9793
+2023-10-21 05:20:47 - Hole@5: 0.9836
+2023-10-21 05:20:47 - Hole@10: 0.9876
+2023-10-21 05:20:47 - Hole@100: 0.9957
+2023-10-21 05:20:47 - Hole@1000: 0.9981
+2023-10-21 05:20:47 - Query : Apa itu?!. populasi El Salvador
+
+2023-10-21 05:20:47 - Rank 1: 3990876 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memilik
+i populasi kira - kira 6,29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri 
+dari Mestizos, keturunan Eropa dan Indigenus Amerika.el salaáor], Pipil america
+
+2023-10-21 05:20:47 - Rank 2: 2040745 [] - Menurut laporan Sensus pada Juli 2007, El Salvador diperkirakan memiliki populasi 6.948.073 orang. 
+90% penduduk El Salvador adalah orang Spanyol dan India, yang disebut 'Mestizo'. 1% populasi berasal dari sebuah kelompok pribumi.
+
+2023-10-21 05:20:47 - Rank 3: 4894633 [] - El Salvador memiliki kepadatan penduduk 342 orang per kilometer persegi (885 / persegi mil), yang b
+erada di peringkat ke - 47 di dunia. Ibu kota dan kota terbesar adalah San Salvador, dengan populasi kota yang berpenduduk 568.000 orang dan p
+opulasi metropolitan 2,4 juta orang. San Salvador memiliki populasi Yahudi terbesar kedua di Amerika Tengah.
+
+2023-10-21 05:20:47 - Rank 4: 4894635 [] - El Salvador Penduduk 2015. El Salvador adalah negeri yang paling kecil tetapi padat penduduknya di 
+Amerika Tengah dengan jumlah penduduk diperkirakan 6,42 juta orang pada 2015, dari perkiraan 2013 tentang 6.140.000 orang. Ini menjadikan nega
+ra terbesar ke-108 oleh populasi, tetapi 153 dari total daerah.
+
+2023-10-21 05:20:47 - Rank 5: 2040737 [] - Total penduduk El Salvador diperkirakan berjumlah 6,2 juta orang pada 2016, menurut angka sensus te
+rbaru. Sewaktu mengenang kembali, pada tahun 1950, El Salvador memiliki populasi 2,2 juta orang. Populasi El Salvador menggambarkan 0,09 pers$
+n populasi total dunia yang konon berarti bahwa satu orang di setiap 1119 orang di planet ini adalah penduduk El Salvador. Halaman ini menyedi
+
+2023-10-21 05:20:47 - Rank 6: 3541271 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memilik
+i populasi sekitar 6.29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri dari
+ Mestizos Eropa dan Indigenous Amerika. Pada 2013, El Salvador memiliki populasi sekitar 6. Populasinya sebagian besar terdiri dari Mestizos o
+rang Eropa dan Indigenus keturunan Amerika.
+
+2023-10-21 05:20:47 - Rank 7: 2040736 [] - Menurut laporan Sensus pada Juli 2007, El Salvador diperkirakan memiliki populasi. Dari 6.948.073 o
+rang. 90% penduduk El Salvador adalah orang Spanyol dan India, yang disebut 'Mestizo'. 1% populasi berasal dari sebuah kelompok pribumi.
+
+2023-10-21 05:20:47 - Rank 8: 2345277 [] - Populasi El Salvador adalah 6.218.000 orang pada 2010, dibandingkan dengan 2.200,000 orang pada tah
+un 1950. Pada 2010, persentase penduduk di bawah usia 15 tahun 32,1%, 61% berusia antara 15 dan 65 tahun, sedangkan 6,9% berusia 65 tahun atau
+ lebih. Ibu kota San Salvador memiliki populasi sekitar 2,1 juta orang selama periode kolonial, El Salvador adalah bagian dari Jenderal Kapten
+ Guatemala, yang juga dikenal sebagai Kerajaan Guatemala (Spanyol: Reino de Guatemala), yang diciptakan pada tahun 1609 sebagai divisi adminis
+tratif di Spanyol Baru
+
+2023-10-21 05:20:47 - Rank 9: 2040739 [] - San Salvador, ibu kota El Salvador memiliki penduduk 1,4 juta jiwa. 48% penduduk tinggal di pedesaa
+n negeri itu. Selama bertahun - tahun, jumlah penduduk di El Salvador semakin banyak. Pada tahun 2006, penduduk El Salvador berjumlah 6.82.378
+ orang dan pada tahun 2000 berjumlah 6.435600 orang. Menurut catatan, pertumbuhan tahunan penduduk di negeri itu antara tahun 1991 hingga 1997
+ adalah 2.2%. Menurut perkiraan tahun 2005, angka pertumbuhan tahunan populasi adalah 1,7%. Persentase kelompok etnis yang berbeda yang tingga
+l di El Salvador adalah:
+
+2023-10-21 05:20:47 - Rank 10: 2345281 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memili
+ki populasi sekitar 6.29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri dar
+i Mestizos Eropa dan Indigenous Amerika. selama periode kolonial, El Salvador adalah bagian dari Kapten
+
+
+

@@ -46,7 +46,7 @@ data_path = util.download_and_unzip(url, out_dir)
 # (2) nfcorpus/queries.jsonl (format: jsonlines)
 # (3) nfcorpus/qrels/test.tsv (format: tsv ("\t"))
 
-corpus, queries, qrels = GenericDataLoader(data_folder=data_path).load(split="test")
+corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").load(split="dev")
 
 # Dense Retrieval using Different Faiss Indexes (Flat or ANN) ####
 # Provide any Sentence-Transformer or Dense Retriever model.

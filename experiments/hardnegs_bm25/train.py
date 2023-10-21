@@ -77,11 +77,17 @@ with gzip.open(msmarco_triplets_filepath, 'rt', encoding='utf8') as fIn:
         data = json.loads(line)
         #Get the positive passage ids
         pos_pids = [item['pid'] for item in data['pos']]
+        pos_min_ce_score = min([item['ce-score'] for item in data['pos']])
+        ce_score_threshold = pos_min_ce_score - ce_score_margin
+        
         #Get the hard negatives
         neg_pids = set()
         for system_negs in data['neg'].values():
             negs_added = 0
             for item in system_negs:
+                if item['ce-score'] > ce_score_threshold:
+                    continue
+
                 pid = item['pid']
                 if pid not in neg_pids:
                     neg_pids.add(pid)
