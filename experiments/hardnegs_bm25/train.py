@@ -50,8 +50,8 @@ corpus, queries, _ = GenericDataLoader(data_path+"/indonesian").load(split="trai
 #### Parameters for Training ####
 #################################
 
-train_batch_size = 10           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
-max_seq_length = 350            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
+train_batch_size = 32           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
+max_seq_length = 250            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
 ce_score_margin = 3             # Margin for the CrossEncoder score between negative and positive passagesu
 num_negs_per_system = 5         # We used different systems to mine hard negatives. Number of hard negatives to add from each system
 
@@ -77,17 +77,11 @@ with gzip.open(msmarco_triplets_filepath, 'rt', encoding='utf8') as fIn:
         data = json.loads(line)
         #Get the positive passage ids
         pos_pids = [item['pid'] for item in data['pos']]
-        pos_min_ce_score = min([item['ce-score'] for item in data['pos']])
-        ce_score_threshold = pos_min_ce_score - ce_score_margin
-        
         #Get the hard negatives
         neg_pids = set()
         for system_negs in data['neg'].values():
             negs_added = 0
             for item in system_negs:
-                if item['ce-score'] > ce_score_threshold:
-                    continue
-
                 pid = item['pid']
                 if pid not in neg_pids:
                     neg_pids.add(pid)
@@ -169,10 +163,8 @@ warmup_steps = int(0.1 * num_epochs * len(train_dataset) / train_batch_size )   
 print(f"==>> warmup_steps: {warmup_steps}")
 
 retriever.fit(train_objectives=[(train_dataloader, train_loss)], 
-                evaluator=ir_evaluator, 
                 epochs=num_epochs,
                 output_path=model_save_path,
-                warmup_steps=warmup_steps,
                 evaluation_steps=evaluation_steps,
                 use_amp=True)
 
