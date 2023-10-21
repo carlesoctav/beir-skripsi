@@ -1,0 +1,144 @@
+2023-10-21 12:43:05 - NDCG@1: 0.3305                                                                                  
+2023-10-21 12:43:05 - NDCG@3: 0.4293                                                                                  
+2023-10-21 12:43:05 - NDCG@5: 0.4589                                                                                  
+2023-10-21 12:43:05 - NDCG@10: 0.4893                                                                                 
+2023-10-21 12:43:05 - NDCG@100: 0.5050                                                                                
+2023-10-21 12:43:05 - NDCG@1000: 0.5050                                                                               
+2023-10-21 12:43:05 -                                                                                                 
+                                                                                                                      
+2023-10-21 12:43:05 - MAP@1: 0.2978                                                                                   
+2023-10-21 12:43:05 - MAP@3: 0.3964                                                                                   
+2023-10-21 12:43:05 - MAP@5: 0.4142                                                                                   
+2023-10-21 12:43:05 - MAP@10: 0.4272                                                                                  
+2023-10-21 12:43:05 - MAP@100: 0.4315                                                                                 
+2023-10-21 12:43:05 - MAP@1000: 0.4315
+2023-10-21 12:43:05 - 
+
+2023-10-21 12:43:05 - Recall@1: 0.2978
+2023-10-21 12:43:05 - Recall@3: 0.5014
+2023-10-21 12:43:05 - Recall@5: 0.5698
+2023-10-21 12:43:05 - Recall@10: 0.6598
+2023-10-21 12:43:05 - Recall@100: 0.7230
+2023-10-21 12:43:05 - Recall@1000: 0.7230
+2023-10-21 12:43:05 -
+
+
+2023-10-21 12:43:05 - P@1: 0.3305                                                                             [89/419]
+2023-10-21 12:43:05 - P@3: 0.1890                                                                                     
+2023-10-21 12:43:05 - P@5: 0.1300                                                                                     
+2023-10-21 12:43:05 - P@10: 0.0753
+2023-10-21 12:43:05 - P@100: 0.0083
+2023-10-21 12:43:05 - P@1000: 0.0008
+2023-10-21 12:43:05 - 
+
+2023-10-21 12:43:05 - MRR@1: 0.3305
+2023-10-21 12:43:05 - MRR@3: 0.4200
+2023-10-21 12:43:05 - MRR@5: 0.4352
+2023-10-21 12:43:05 - MRR@10: 0.4477
+2023-10-21 12:43:05 - MRR@100: 0.4512
+2023-10-21 12:43:05 - MRR@1000: 0.4512
+2023-10-21 12:43:05 - 
+
+2023-10-21 12:43:05 - R_cap@1: 0.3305
+2023-10-21 12:43:05 - R_cap@3: 0.5014
+2023-10-21 12:43:05 - R_cap@5: 0.5698
+2023-10-21 12:43:05 - R_cap@10: 0.6598
+2023-10-21 12:43:05 - R_cap@100: 0.7230
+2023-10-21 12:43:05 - R_cap@1000: 0.7230
+2023-10-21 12:43:05 - 
+
+
+
+2023-10-21 12:43:05 - Hole@1: 0.6550                                                                                  
+2023-10-21 12:43:05 - Hole@3: 0.7998                                                                                  
+2023-10-21 12:43:05 - Hole@5: 0.8606
+2023-10-21 12:43:05 - Hole@10: 0.9170
+2023-10-21 12:43:05 - Hole@100: 0.9871
+2023-10-21 12:43:05 - Hole@1000: 0.0987
+2023-10-21 12:43:05 - Query : Kapan Komando Divisi IX Banteng dibentuk?
+
+2023-10-21 12:43:05 - Rank 1: 876577#2 [] - Dewan Banteng terbentuk setelah melalui dua kali pertemuan para perwira ak
+tif maupun pensiunan yang berasal dari Divisi IX Banteng, suatu divisi dalam Angkatan Perang Republik Indonesia (APRI)
+ yang dibentuk pada masa Perang Kemerdekaan tahun 1945 - 1950 melawan kolonialis Belanda. Sebelumnya divisi yang telah
+ dibubarkan pemerintah itu membawahi teritorial Sumatera Tengah (Sumbar, Riau, Kepulauan Riau dan Jambi sekarang). Sal
+ah satu resimen Komando Divisi IX Banteng yaitu Resimen 6 dianggap sebagai pasukan terbaik di Sumatera.
+
+2023-10-21 12:43:05 - Rank 2: 1081999#0 [] - Komando Divisi IX Banteng adalah suatu komando militer yang dibentuk pada
+ masa perang kemerdekaan (1945 - 1950) di Sumatera Tengah yang wilayah operasinya meliputi empat provinsi sekarang, ya
+itu Sumatera Barat, Riau, Jambi dan Kepulauan Riau. Komando Divisi IX Banteng mempunyai pasukan yang banyak karena ada
+nya Sekolah Pendidikan Opsir di Bukittinggi yang pendiriannya diprakarsai oleh para perwira didikan Jepang dimasa pend
+udukan, bahkan salah satu pasukannya yaitu Resimen 6 dianggap sebagai pasukan terbaik di Sumatera.[1]
+
+2023-10-21 12:43:05 - Rank 3: 1032897#1 [] - Hal lain yang menimbulkan ketidakpuasan adalah perlakuan pemerintah pusat
+ terhadap Komando Divisi IX Banteng. Divisi IX Banteng adalah suatu divisi dalam Angkatan Perang Republik Indonesia ya
+ng dibentuk pada masa Perang Kemerdekaan tahun 1945 - 1950 melawan kolonialis Belanda, dan membawahi teritorial Sumate
+ra Tengah, yang terdiri dari Sumatera Barat, Riau, Kepulauan Riau serta Jambi sekarang ini. Divisi IX Banteng mempunya
+i pasukan yang banyak karena adanya Sekolah Pendidikan Opsir di Bukittinggi, bahkan salah satu pasukannya yaitu Resime
+n 6 dianggap sebagai pasukan terbaik di Sumatera.
+
+2023-10-21 12:43:05 - Rank 4: 1081999#4 [] - Penciutan Komando Divisi IX Banteng yang akhirnya hanya berbentuk Resimen
+ Infanteri 4 TT I BB itu menimbulkan rasa kecewa dan terhina pada para perwira dan prajurit Divisi IX Banteng yang tel
+ah berjuang mempertaruhkan nyawa bagi kemerdekaan bangsa Indonesia. Ditambah dengan kondisi para prajurit dan masyarak
+at pada umumnya yang memprihatinkan, kekecewaan tersebut akhirnya terakumulasi dalam pembentukan Dewan Banteng pada ta
+nggal 20 Desember 1956 yang punya beberapa tujuan, diantaranya membangun daerah yang dianggap tertinggal dibanding pem
+bangunan di pulau Jawa, menuntut pengembalian Komando Divisi IX Banteng di Sumatera Tengah dan beberapa tuntutan lainn
+ya. Dewan ini diprakarsai oleh Kolonel Ismail Lengah (mantan Panglima Divisi IX Banteng) bersama dengan ratusan perwir
+a aktif dan pensiunan yang berasal dari Komando Divisi IX Banteng yang telah dibubarkan tersebut. Sedangkan Letnan Kol
+onel Ahmad Husein yang menjabat Komandan Resimen Infanteri 4 TT I BB diangkat sebagai ketua Dewan Banteng yang telah d
+ibentuk itu.
+
+
+
+2023-10-21 12:43:05 - Rank 5: 43790#2 [] - Kodam IX/Udayana yang dibentuk secara formal tanggal 27 Mei 1957 adalah sal
+ah satu Komando Utama di wilayah Nusa Tenggara yang membawahi 3 Komando Resort Militer (Korem yaitu Korem 161/Wira Sak
+ti di Kupang, Korem 162/Wira Bhakti di Mataram dan Korem 163/Wira Satya di Denpasar. Letak Kodam IX/Udayana sangat str
+ategis, karena wilayah teritorialnya terdiri dari provinsi Bali, NTB dan NTT. Kodam IX/Udayana bagian dari TNI merupak
+an kompartemen strategis mengemban tugas pokok mengamankan kedaulatan Negara dan keutuhan wilayah NKRI dari berbagai b
+entuk ancaman dan gangguan yang datang dari luar maupun dari dalam negeri seperti pemberontakan dan gerakan separatis.
+ Dengan tugas pokok tersebut prajurit Kodam IX/Udayana harus mampu menjadi penangkal sekaligus dapat digerakkan setiap
+ saat untuk menghancurkan seluruh kekuatan musuh serta memulihkan kondisi keamanan nasional.
+
+2023-10-21 12:43:05 - Rank 6: 1032897#0 [] - Dewan Banteng adalah suatu dewan yang dibentuk oleh beberapa orang tokoh 
+militer mantan pimpinan dan anggota Komando Divisi IX Banteng yang telah dibubarkan beserta tokoh sipil yang berasal d
+ari Sumatera Tengah. Dewan ini diprakarsai oleh Kolonel Ismail Lengah (mantan Panglima Divisi IX Banteng) dan dibentuk
+ pada tanggal 20 Desember 1956 dengan ketua Letnan Kolonel Ahmad Husein. Tujuan dari pembentukan Dewan Banteng adalah 
+untuk pembangunan daerah yang dianggap tertinggal dibanding pembangunan di pulau Jawa.
+Sejumlah perwira aktif dan perwira pensiunan mantan anggota Divisi IX Banteng di Sumatera Tengah menggagas pembentukan
+ Dewan Banteng di Jakarta pada 21 September 1956. Gagasan itu didorong oleh kenyataan yang mereka lihat bahwa setelah 
+kemerdekaan nasib para prajurit sangat mengenaskan, padahal mereka itu dulunya adalah para pejuang yang bertaruh nyawa
+ ketika merebut dan mempertahankan kemerdekaan pada tahun 1945 - 1950. Begitupun kondisi masyarakat pada umumnya yang 
+jauh dari sejahtera. Kondisi yang ada di daerah mereka pandang jauh berbeda dibanding pembangunan di pulau Jawa, padah
+al sumber devisa terbanyak berasal dari daerah.
+
+
+
+2023-10-21 12:43:05 - Rank 7: 1030898#0 [] - Kolonel Ismail Lengah adalah seorang tokoh militer, pejuang kemerdekaan I
+ndonesia dan tokoh Pemerintahan Revolusioner Republik Indonesia (PRRI). Pada tahun 1956 Ismail Lengah menjabat sebagai
+ Panglima Komando Divisi IX Banteng sebelum meletusnya peristiwa PRRI. Komando Divisi IX Banteng adalah salah satu div
+isi dalam Angkatan Perang Republik Indonesia (APRI) dengan teritorial Sumatera Tengah yang meliputi provinsi Sumatera 
+Barat, Riau, Kepulauan Riau dan Jambi sekarang. Salah satu pasukannya, yaitu Resimen 6 Divisi IX Banteng dianggap seba
+gai pasukan terbaik di Sumatera. Ismail Lengah menjabat posisi panglima dengan pangkat Kolonel ketika itu.
+
+2023-10-21 12:43:05 - Rank 8: 43790#0 [] - Komando Daerah Militer IX/Udayana merupakan Komando Kewilayahan Pertahanan 
+yang meliputi provinsi Bali, Nusa Tenggara Barat dan Nusa Tenggara Timur. Pangdam IX/Udayana yang sekarang menjabat ad
+alah Mayor Jenderal TNI
+Benny Susianto dilantik tanggal 4 Januari 2018 menggantikan Mayor Jenderal TNI Komaruddin Simanjuntak.
+
+2023-10-21 12:43:05 - Rank 9: 1081999#1 [] - Pasukan-pasukan dari Divisi IX Banteng berperan penting dalam perang keme
+rdekaan melawan Belanda setelah usainya Perang Dunia II, dimana Belanda dan sekutu kembali masuk ke Indonesia dan mela
+kukan agresi yang dikenal sebagai Agresi Militer Belanda I dari 21 Juli 1947 sampai 5 Agustus 1947 dan Agresi Militer 
+Belanda II pada 19 Desember 1948.
+
+2023-10-21 12:43:05 - Rank 10: 1032897#5 [] - Pada tanggal 20 Desember 1956 dibentuklah suatu dewan untuk mengujudkan 
+hasil-hasil pertemuan yang kedua itu. Dewan itu dinamakan "Dewan Banteng", yang tetap mengambil nama dari Divisi Bante
+ng yang telah dibubarkan. Dewan Banteng tidak hanya didukung oleh para perwira militer mantan anggota Divisi Banteng, 
+tetapi juga oleh semua partai politik yang ada di Sumatera Tengah kecuali Partai Komunis Indonesia (PKI). Bahkan Dewan
+ itu juga didukung oleh semua elemen masyarakat Sumatera Tengah, seperti ulama, kaum intelektual, pemuda, kaum adat, s
+ehingga melahirkan semboyan ketika itu yang berbunyi : "Timbul Tenggelam Bersama Dewan Banteng". Namun dalam pendirian
+nya Dewan Banteng tetap mengakui Pemerintahan Republik Indonesia dibawah Presiden Soekarno dan Perdana Menteri Djuanda
+ serta Jenderal A.H. Nasution sebagai Kepala Staf Angkatan Darat (KSAD).Setelah itu Ahmad Husein sebagai Ketua Dewan B
+anteng, mengambil alih jabatan Gubernur Sumatera Tengah dari tangan Gubernur Ruslan Mulyoharjo. Tindakan Ahmad Husein 
+itu tidak mendapatkan hukuman, malah Pemerintah Pusat memenuhi tuntutan Dewan Banteng dengan membentuk Komando Militer
+ di Sumatera Tengah yaitu Komando Militer Daerah Sumatera Tengah (KMDST) yang terlepas dari Komando Tentara Teritorium
+ (TT) I Bukit Barisan yang berkedudukan di Medan, sedangkan Ahmad Husein diangkat menjadi Panglima KMDST dengan pangka
+t Kolonel. Dalam hal ini beberapa tuntutan Dewan Banteng dipenuhi oleh pemerintah pusat.

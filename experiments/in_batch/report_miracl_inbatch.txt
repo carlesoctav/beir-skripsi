@@ -1,0 +1,121 @@
+2023-10-21 11:55:46 - NDCG@1: 0.2875                                                                          [93/178]
+2023-10-21 11:55:46 - NDCG@3: 0.2958                                                                                  
+2023-10-21 11:55:46 - NDCG@5: 0.3162                                                                                  
+2023-10-21 11:55:46 - NDCG@10: 0.3557                                                                                 
+2023-10-21 11:55:46 - NDCG@100: 0.4451                                                                                
+2023-10-21 11:55:46 - NDCG@1000: 0.4758                                                                               
+2023-10-21 11:55:46 -                                                                                                 
+                                                                                                                      
+2023-10-21 11:55:46 - MAP@1: 0.1284                                                                                   
+2023-10-21 11:55:46 - MAP@3: 0.2061                                                                                   
+2023-10-21 11:55:46 - MAP@5: 0.2338                                                                                   
+2023-10-21 11:55:46 - MAP@10: 0.2603                                                                                  
+2023-10-21 11:55:46 - MAP@100: 0.2886                                                                                 
+2023-10-21 11:55:46 - MAP@1000: 0.2908                                                                                
+2023-10-21 11:55:46 - 
+
+2023-10-21 11:55:46 - Recall@1: 0.1284
+2023-10-21 11:55:46 - Recall@3: 0.2661
+2023-10-21 11:55:46 - Recall@5: 0.3466
+2023-10-21 11:55:46 - Recall@10: 0.4542
+2023-10-21 11:55:46 - Recall@100: 0.7481
+2023-10-21 11:55:46 - Recall@1000: 0.9201
+
+
+2023-10-21 11:55:46 - P@1: 0.2875                                                                                     
+2023-10-21 11:55:46 - P@3: 0.2181                                                                                     
+2023-10-21 11:55:46 - P@5: 0.1773
+2023-10-21 11:55:46 - P@10: 0.1252
+2023-10-21 11:55:46 - P@100: 0.0233
+2023-10-21 11:55:46 - P@1000: 0.0029
+2023-10-21 11:55:46 - 
+
+2023-10-21 11:55:46 - MRR@1: 0.2875
+2023-10-21 11:55:46 - MRR@3: 0.3852
+2023-10-21 11:55:46 - MRR@5: 0.4092
+2023-10-21 11:55:46 - MRR@10: 0.4262
+2023-10-21 11:55:46 - MRR@100: 0.4337
+2023-10-21 11:55:46 - MRR@1000: 0.4341
+2023-10-21 11:55:46 - 
+
+2023-10-21 11:55:47 - R_cap@1: 0.2875
+2023-10-21 11:55:47 - R_cap@3: 0.3118
+2023-10-21 11:55:47 - R_cap@5: 0.3610
+2023-10-21 11:55:47 - R_cap@10: 0.4543
+2023-10-21 11:55:47 - R_cap@100: 0.7481
+2023-10-21 11:55:47 - R_cap@1000: 0.9201
+2023-10-21 11:55:47 - 
+
+2023-10-21 11:55:47 - Hole@1: 0.6948
+2023-10-21 11:55:47 - Hole@3: 0.7635
+2023-10-21 11:55:47 - Hole@5: 0.8029
+2023-10-21 11:55:47 - Hole@10: 0.8567
+2023-10-21 11:55:47 - Hole@100: 0.9636
+2023-10-21 11:55:47 - Hole@1000: 0.9897
+2023-10-21 11:55:47 - Query : Apa ibukota Bohemia?
+
+
+2023-10-21 11:55:47 - Rank 1: 212637#0 [Bohemia] - Provinsi Bohemia (bahasa Ceko "Čechy"; bahasa Jerman "Böhmen"; baha
+sa Polski "Czechy") adalah sebuah daerah di Eropa Tengah. Daerah ini mencakup kurang lebih dua pertiga wilayah Republi
+k Ceko. Wilayah lain yang membentuk Republik Ceko adalah Moravia dan Silesia Ceko.                                    
+                                                                                                                      
+2023-10-21 11:55:47 - Rank 2: 695052#4 [Wilayah Mahkota Bohemia] - Di era modern, sisa inti bekas wilayah mahkota Cisl
+eithania, Bohemia, Moravia, dan Silesia Ceko (sampai tahun 1918: Austria Silesia) biasanya ditujukan kepada Wilayah-wi
+layah Ceko.
+
+2023-10-21 11:55:47 - Rank 3: 4599#0 [Praha] - Praha adalah ibu kota Republik Ceko dan memiliki penduduk sekitar 1,5 j
+uta jiwa. Kota ini dibelah sungai Vltava atau disebut pula "Moldau" dalam bahasa Jerman. Beberapa bangunan terkenal di
+ kota ini antara lain adalah Jembatan Charles atau Karluvmost dalam bahasa setempat, Kastil Praha, Jam Astronomi di Ba
+lai Kota dan Menara Televisi Žižkov.
+Praha adalah ibukota dan kota terbesar di Republik Ceko, berada di wilayah tengah Bohemia dan Sungai Vlatava yang terl
+etak di tengah-tengah wilayah Republik Ceko. Setelah Velvet Revolution (Revolusi Beludru (Indonesia) atau Ceko: sameto
+vá revoluce yang terjadi 17 November - 29 Desember 1989), terjadilah perpecahan pada negara Czechslovakia pada akhir t
+ahun 1992 dimana Praha salah satunya ditetapkan sebagai ibukota Republik Ceko (Bahasa Inggris: Czech Republic).
+Praha telah berdiri sejak abad kesebelas sebagai ibukota Bohemia yang merupakan tempat tinggalnya para pangeran dan ra
+ja-raja Ceko, Romawi, dan Jerman. Wilayah Praha seluas 496 km persegi dengan jumlah penduduk 1.286.008. Sejak tahun 20
+04, Praha ditetapkan sebagai wilayah metropolitan berdasarkan Eurostat. Sebagai daerah yang memiliki pertumbuhan ekono
+mi transisi yang cepat dan wilayah terkaya di Republik Ceko Praha merupakan kota yang memiliki tingkat biaya hidup yan
+g relatif rendah dibandingkan dengan kota-kota besar lainnya di Uni Eropa. Pada tahun 2010 Survey MERCER menempatkan P
+raha pada posisi ke-70 sebagai kota yang terus meningkat tingkat kualitas hidupnya dan tercepat di wilayah Eropa Timur
+.
+Tidak dapat dimungkiri, Praha dikenal sebagai kota yang paling cantik di Eropa. Pusat kota yang bersejarah, dan Kastil
+ Praha (Bahasa Inggris: Prague Castle, Bahasa Ceko: Pražský hrad) adalah komplek kastil terbesar di dunia dan juga mer
+upakan bangunan yang dilindungi oleh UNESCO .
+
+
+
+2023-10-21 11:55:47 - Rank 4: 212637#2 [Bohemia] - Pada masa Kekaisaran Romawi Suci bangsa Jerman, Bohemia merupakan s
+atu-satunya kerajaan anggota dengan mayoritas penduduk tidak berbahasa Jerman yang memiliki hak untuk memilih raja (at
+au kaisar) Jerman.
+
+2023-10-21 11:55:47 - Rank 5: 552852#0 [Kerajaan Bohemia] - Kerajaan Bohemia (; ; ) adalah negara yang terletak di wil
+ayah Bohemia, Eropa Tengah. Kebanyakan wilayahnya kini merupakan bagian dari Republik Ceko. Kerajaan ini merupakan bag
+ian dari Kekaisaran Romawi Suci hingga pembubaran kekaisaran tersebut tahun 1806, lalu menjadi bagian dari Kekaisaran 
+Austria, lalu Austria-Hongaria dari 1867. Dengan kekalahan Blok Poros pada Perang Dunia I, baik kerajaan Bohemia dan A
+ustria-Hongaria dibubarkan dan Bohemia menjadi bagian dari Republik Cekoslowakia.
+
+2023-10-21 11:55:47 - Rank 6: 695052#0 [Wilayah Mahkota Bohemia] - Wilayah Mahkota Bohemia (; ; ), juga disebut Wilaya
+h Mahkota Santo Wenceslaus ("země Koruny svatováclavské") atau hanya Mahkota Bohemia ("Koruna česká") atau Wilayah Mah
+kota Ceko ("České korunní země"), ditujukan ke area yang berkaitan dengan hubungan-hubungan feodal di bawah pimpinan g
+abungan raja-raja Bohemia. Oleh karena itu istilah tersebut tidak merujuk pada fisik mahkota yang dikenakan oleh para 
+penguasa Bohemia - Mahkota Santo Wenceslaus - namun pada negara Bohemia itu sendiri.
+
+2023-10-21 11:55:47 - Rank 7: 2561581#0 [Orang Bohemia] - Orang Bohemia (, ) adalah seorang pemukim Bohemia, sebuah ka
+wasan di Republik Ceko atau bekas Kerajaan Bohemia, sebuah kawasan dari bekas Takhta Bohemia (daratan Takhta Bohemia).
+ Dalam bahasa Inggris, kata ""Bohemian"" dipakai untuk menyebut orang Ceko serta bahasa Ceko sebelum kata "Ceko" () mu
+lai timbul pada awal abad ke-20.
+
+
+2023-10-21 11:55:47 - Rank 8: 212637#1 [Bohemia] - Bohemia memiliki wilayah seluas 52.750 km² dan penduduk sebanyak 8,
+25 juta dari 12,3 juta jiwa penduduk Ceko. Bohemia berbatasan dengan Jerman di sebelah utara, barat dan barat daya. Se
+mentara itu di sebelah timur laut berbataan dengan Polandia. Di sebelah selatan Bohemia berbatasan dengan Austria dan 
+di sebelah timur dengan Moravia.
+
+2023-10-21 11:55:47 - Rank 9: 695052#1 [Wilayah Mahkota Bohemia] - Mahkota Bohemia bukan sebuah serikat pribadi dan ju
+ga bukan sebuah federasi dari anggota-anggota yang sama. Namun lebih merupakan Kerajaan Bohemia yang memiliki sebuah s
+tatus yang lebih tinggi daripada negara-negara konstituen lain. Selain mahkota Bohemia, tidak ada lembaga negara umum.
+
+2023-10-21 11:55:47 - Rank 10: 695009#1 [Wilayah-wilayah Ceko] - Istilah wilayah-wilayah Ceko digunakan untuk menggamb
+arkan beberapa perbedaan suku. Beberapa sumber menggunakan istilah untuk mengartikan wilayah dibawah pemerintahan Kera
+jaan Bohemia, Wilayah-wilayah Mahkota Bohemia. Wilayah ini termasuk Lusatia (sekarang di Jerman) dan keseimbangan Sile
+sia, semua yang memerintah dari Praha pada satu waktu (1292/1327–1635/1742).

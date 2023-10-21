@@ -1,0 +1,120 @@
+Time taken to retrieve: 909.72 seconds                                                                                
+2023-10-21 11:38:34 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 11:38:34 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 11:38:34 -   
+
+2023-10-21 11:38:34 - NDCG@1: 0.4146                                                                                  
+2023-10-21 11:38:34 - NDCG@3: 0.3668                                                                                  
+2023-10-21 11:38:34 - NDCG@5: 0.3700                                                                                  
+2023-10-21 11:38:34 - NDCG@10: 0.3977                                                                                 
+2023-10-21 11:38:34 - NDCG@100: 0.4776                                                                                
+2023-10-21 11:38:34 - NDCG@1000: 0.5085                                                                               
+2023-10-21 11:38:34 -                                                                                                 
+                                                                                                                      
+2023-10-21 11:38:34 - MAP@1: 0.1787                                                                                   
+2023-10-21 11:38:34 - MAP@3: 0.2573                                                                                   
+2023-10-21 11:38:34 - MAP@5: 0.2820                                                                                   
+2023-10-21 11:38:34 - MAP@10: 0.3054                                                                                  
+2023-10-21 11:38:34 - MAP@100: 0.3297                                                                                 
+2023-10-21 11:38:34 - MAP@1000: 0.3319                                                                                
+2023-10-21 11:38:34 -                                      
+
+2023-10-21 11:38:34 - Recall@1: 0.1787                                                                                
+2023-10-21 11:38:34 - Recall@3: 0.3043                                                                                
+2023-10-21 11:38:34 - Recall@5: 0.3678                                                                                
+2023-10-21 11:38:34 - Recall@10: 0.4552                                                                               
+2023-10-21 11:38:34 - Recall@100: 0.7266                                                                              
+2023-10-21 11:38:34 - Recall@1000: 0.8987                                                                             
+2023-10-21 11:38:34 -
+
+2023-10-21 11:38:34 - P@1: 0.4146                                                                                     
+2023-10-21 11:38:34 - P@3: 0.2611                                                                                     
+2023-10-21 11:38:34 - P@5: 0.1963                                                                                     
+2023-10-21 11:38:34 - P@10: 0.1290                                                                                    
+2023-10-21 11:38:34 - P@100: 0.0225                                                                                   
+2023-10-21 11:38:34 - P@1000: 0.0029                                                                                  
+2023-10-21 11:38:34 -                                      
+
+2023-10-21 11:38:34 - MRR@1: 0.4146                                                                                   
+2023-10-21 11:38:34 - MRR@3: 0.4901                                                                                   
+2023-10-21 11:38:34 - MRR@5: 0.5070                                                                                   
+2023-10-21 11:38:34 - MRR@10: 0.5170                                                                                  
+2023-10-21 11:38:34 - MRR@100: 0.5238                                                                                 
+2023-10-21 11:38:34 - MRR@1000: 0.5241
+
+
+2023-10-21 11:38:35 - R_cap@1: 0.4146                                                                                 
+2023-10-21 11:38:35 - R_cap@3: 0.3637                                                                                 
+2023-10-21 11:38:35 - R_cap@5: 0.3850                                                                                 
+2023-10-21 11:38:35 - R_cap@10: 0.4553                                                                                
+2023-10-21 11:38:35 - R_cap@100: 0.7266                                                                               
+2023-10-21 11:38:35 - R_cap@1000: 0.8987                                                                              
+2023-10-21 11:38:35 -                                      
+
+2023-10-21 11:38:35 - Hole@1: 0.5563                                                                                  
+2023-10-21 11:38:35 - Hole@3: 0.7135                                                                                  
+2023-10-21 11:38:35 - Hole@5: 0.7810                                                                                  
+2023-10-21 11:38:35 - Hole@10: 0.8491                                                                                 
+2023-10-21 11:38:35 - Hole@100: 0.9638                                                                                
+2023-10-21 11:38:35 - Hole@1000: 0.9896                                                                               
+2023-10-21 11:38:35 - Query : suku arab manakah yang pertama kali datang ke indonesia?
+
+
+2023-10-21 11:38:35 - Rank 1: 78760#14 [Arab-Indonesia] - Di antara marga-marga Hadramaut yang pertama-tama ke Indones
+ia adalah keluarga Basyaiban, yaitu "Sayyid Abdurrahman bin Abu Hafs Umar Basyaiban BaAlawi" pada abad ke-17 Masehi.  
+                                                                                                                      
+2023-10-21 11:38:35 - Rank 2: 78760#0 [Arab-Indonesia] - Suku Arab-Indonesia () adalah penduduk Indonesia yang memilik
+i darah Arab dan Pribumi Indonesia. Pada awal kedatangan, mereka umumnya tinggal di perkampungan Arab yang tersebar di
+ berbagai kota di Indonesia. Pada zaman penjajahan Belanda mereka dianggap sebagai bangsa Timur Asing bersama dengan s
+uku Tionghoa-Indonesia dan suku India-Indonesia.                                                                      
+                                                                                                                      
+2023-10-21 11:38:35 - Rank 3: 237056#1 [Bahweres] - Pendatang bermarga ini pertama kali datang ke Indonesia sekitar ta
+hun 1500-an tepatnya di Ambon. Ahmad Bahweres sangat dikenal dikalangan penjajah Portugis karena pengaruhnya yang besa
+r terhadap penduduk Muslim Ambon yang berpusat di Batu Merah, Sirimau, Ambon. Menurut sebuah kisah, Salim Bahweres per
+nah dihadiahkan sebuah pulau, yaitu pulau Morotai,yang oleh keluarganya dibiarkan karena tidak mau turut campur dalam 
+urusan kedaulatan Indonesia, sebab pada masa itu kedaulatan negara masih belum jelas. Marga inilah yang pertama kali m
+endirikan masjid An-nur di batu merah Ambon. 
+
+
+2023-10-21 11:38:35 - Rank 4: 96346#0 [717] - Bangsa Arab datang ke indonesia dan menyebarkan islamisme
+
+2023-10-21 11:38:35 - Rank 5: 347911#25 [Pribumi-Nusantara] - Jamaah haji Indonesia telah lama tinggal di Hijaz, sebua
+h wilayah di sepanjang pantai barat Arab Saudi. Di antara mereka adalah Ahmad Khatib, yang menjabat sebagai Imam dari 
+sekolah hukum Syafi'i di masjid yang dikenal sebagai Masjidil Haram, Mekkah. Saat ini, kebanyakan orang Indonesia di A
+rab Saudi adalah pekerja rumah tangga anggota Tenaga Kerja Wanita, dengan minoritas jenis tenaga kerja migran lain dan
+ mahasiswa. Sebagian besar ekstensi "santri" belajar di Saudi, serta Universitas Al Azhar di Kairo.
+
+2023-10-21 11:38:35 - Rank 6: 78760#16 [Arab-Indonesia] - Kaum Arab Hadramaut yang datang pada abad ke-18 dan sesudahn
+ya, tidak banyak melakukan pernikahan dengan penduduk asli sebagaimana gelombang kedatangan yang sebelumnya. Mereka da
+tang sudah membawa nama marga-marga yang terbentuk belakangan (sekitar abad 16-17). Keturunan kaum Arab Hadramaut yang
+ datang belakangan ini, masih mudah dikenali melalui nama-nama khas marga mereka. Warga Arab-Indonesia sampai saat ini
+ turut berperan aktif dalam bidang keagamaan Islam dan berbagai bidang kehidupan lainnya di Indonesia.
+
+2023-10-21 11:38:35 - Rank 7: 78760#3 [Arab-Indonesia] - Terdapat pula warga keturunan Arab yang berasal dari negara-n
+egara Timur Tengah dan Afrika lainnya di Indonesia, misalnya dari Mesir, Arab Saudi, Sudan atau Maroko; akan tetapi ju
+mlahnya lebih sedikit daripada mereka yang berasal dari Hadramaut.
+
+
+2023-10-21 11:38:35 - Rank 8: 78760#13 [Arab-Indonesia] - Di Indonesia, sejak zaman dahulu telah banyak kaum keturunan
+ Arab yang menjadi pejuang, ulama dan dai. Di antara para penyebar agama yang menonjol ialah Walisongo, yang diduga ku
+at (Van Den Berg, 1886) merupakan keturunan Arab Hadramaut dan atau merupakan murid-murid mereka. Kaum Arab Hadramaut 
+yang datang sekitar abad 15 dan sebelumnya mempunyai perbedaan mendasar dengan mereka yang datang pada gelombang berik
+utnya (abad 18 dan sesudahnya). Sebagaimana disebutkan oleh Van Den Berg, kaum pendahulu ini banyak berasimilasi denga
+n penduduk asli, terutama dari keluarga kerajaan Hindu. Hal ini dilakukan dalam rangka mempercepat penyebaran agama Is
+lam, sehingga keturunan mereka sudah hampir tak bisa dikenali sebagai keturunan Arab Hadramaut.
+
+2023-10-21 11:38:35 - Rank 9: 319516#1 [Sumpah Pemuda Keturunan Arab] - Pemerintah Kolonial Belanda membagi 3 strata m
+asyarakat di Nusantara. Kelas paling atas adalah warga kulit putih (Eropa, Amerika, Jepang, dll), kelas dua warga Timu
+r Asing (Arab, India, Tionghoa, dll) dan kelas tiga adalah pribumi Indonesia. Orang-orang Arab yang hijrah ke Indonesi
+a mayoritas berasal dari Hadramauth, Yaman Selatan. Orang-orang arab yang datang ke Nusantara itu seluruhnya laki-laki
+ dan karena kendala jarak serta karena tradisi arab (wanita tidak ikut bepergian) maka mereka datang tanpa membawa ist
+ri atau saudara wanita. Orang-orang arab itu menikah dengan wanita pribumi. Jika orang Eropa menyebut pribumi dengan i
+stilah "inlander" (artinya 'orang pedalaman'), keturunan Arab menyebut pribumi dengan istilah "ahwal" (artinya 'saudar
+a ibu'), sebab memang banyak keturunan Arab yang ibunya pribumi.
+
+2023-10-21 11:38:35 - Rank 10: 78760#2 [Arab-Indonesia] - Sejak itu berkembanglah keturunannya hingga menjadi kabilah 
+terbesar di Hadramaut, dan dari kota Hadramaut inilah asal-mula utama dari berbagai koloni Arab yang menetap dan berca
+mpur menjadi warganegara di Indonesia dan negara-negara Asia lainnya. Selain di Indonesia, Orang Hadhrami ini juga ban
+yak terdapat di Oman, India, Pakistan, Filipina Selatan, Malaysia, dan Singapura.
+

@@ -1,0 +1,128 @@
+2023-10-21 12:08:04 - NDCG@1: 0.3802                                                                                  
+2023-10-21 12:08:04 - NDCG@3: 0.3857                                                                                  
+2023-10-21 12:08:04 - NDCG@5: 0.4094                                                                                  
+2023-10-21 12:08:04 - NDCG@10: 0.4556                                                                                 
+2023-10-21 12:08:04 - NDCG@100: 0.5363                                                                                
+2023-10-21 12:08:04 - NDCG@1000: 0.5363                                                                               
+2023-10-21 12:08:04 -                                                                                                 
+                                                                                                                      
+2023-10-21 12:08:04 - MAP@1: 0.1695                                                                                   
+2023-10-21 12:08:04 - MAP@3: 0.2712                                                                                   
+2023-10-21 12:08:04 - MAP@5: 0.3088                                                                                   
+2023-10-21 12:08:04 - MAP@10: 0.3440                                                                                  
+2023-10-21 12:08:04 - MAP@100: 0.3774                                                                                 
+2023-10-21 12:08:04 - MAP@1000: 0.3774                                                                                
+2023-10-21 12:08:04 -
+
+
+2023-10-21 12:08:04 - Recall@1: 0.1695
+2023-10-21 12:08:04 - Recall@3: 0.3470
+2023-10-21 12:08:04 - Recall@5: 0.4449
+2023-10-21 12:08:04 - Recall@10: 0.5699
+2023-10-21 12:08:04 - Recall@100: 0.8112
+2023-10-21 12:08:04 - Recall@1000: 0.8112
+2023-10-21 12:08:04 - 
+
+2023-10-21 12:08:04 - P@1: 0.3802
+2023-10-21 12:08:04 - P@3: 0.2868
+2023-10-21 12:08:04 - P@5: 0.2319
+2023-10-21 12:08:04 - P@10: 0.1617
+2023-10-21 12:08:04 - P@100: 0.0256
+2023-10-21 12:08:04 - P@1000: 0.0026
+2023-10-21 12:08:04 - 
+
+2023-10-21 12:08:04 - MRR@1: 0.3802
+2023-10-21 12:08:04 - MRR@3: 0.4951
+2023-10-21 12:08:04 - MRR@5: 0.5181
+2023-10-21 12:08:04 - MRR@10: 0.5312
+2023-10-21 12:08:04 - MRR@100: 0.5364
+2023-10-21 12:08:04 - MRR@1000: 0.5364
+
+
+2023-10-21 12:08:04 - R_cap@1: 0.3802                                                                                 
+2023-10-21 12:08:04 - R_cap@3: 0.4054                                                                                 
+2023-10-21 12:08:04 - R_cap@5: 0.4625
+2023-10-21 12:08:04 - R_cap@10: 0.5701
+2023-10-21 12:08:04 - R_cap@100: 0.8112
+2023-10-21 12:08:04 - R_cap@1000: 0.8112
+2023-10-21 12:08:04 - 
+
+2023-10-21 12:08:04 - Hole@1: 0.6083
+2023-10-21 12:08:04 - Hole@3: 0.6937
+2023-10-21 12:08:04 - Hole@5: 0.7469
+2023-10-21 12:08:04 - Hole@10: 0.8174
+2023-10-21 12:08:04 - Hole@100: 0.9540
+2023-10-21 12:08:04 - Hole@1000: 0.0954
+
+
+
+2023-10-21 12:08:04 - Query : apakah nama ibukota Etiopia ?                                                           
+                                                                                                                      
+2023-10-21 12:08:04 - Rank 1: 6364#4 [Etiopia] - Nama "Etiopia" konon berasal dari "Ityopp'is", yaitu nama anak cucu H
+am, pembentuk kota Aksum. Nama lama "Abbesinia" atau "Habsyah" berasal dari kelompok suku "Habesha", yaitu kaum yang m
+endiami kawasan Etiopia sejak tahun 3000 SM.
+
+2023-10-21 12:08:04 - Rank 2: 6364#2 [Etiopia] - Kini Etiopia merupakan negara berbentuk republik dan mengambil bagian
+ secara aktif dalam aktivitas-aktivitas kerja sama internasional. Ibukotanya Addis Ababa merupakan pusat administrasi 
+Kesatuan Afrika (AU).
+
+2023-10-21 12:08:04 - Rank 3: 2029929#0 [Mek'ele] - Mekelle (, ), juga ditransliterasikan menjadi Makale atau Meqele, 
+adalah ibukota Region Tigray di Etiopia. Kota ini terletak 780 kilometer di sebelah utara ibukota Etiopia Addis Ababa 
+pada koordinat , dengan ketinggian 2084 meter di atas permukaan laut. Secara administratif, Mekelle dianggap sebagai Z
+ona Khusus, yang terbagi menjadi empat sub-kota, yaitu Adi Haki (ዓዲ ሓቂ), Ayder (ዓይደር), Hadinet (ሓድነት), Hawelti (ሓወልቲ),
+ Kedamay Weyane (ቀዳማይ ወያነ), Quiha (ኲሓ), dan Semien (ሰሜን). Kota ini merupakan pusat ekonomi, budaya, dan poitik di Etio
+pia utara.
+
+2023-10-21 12:08:04 - Rank 4: 2720999#0 [Harar] - Harar (Harari: ሐረር), dikenal oleh penduduknya dengan sebutan Gēy (Ha
+rari: ጌይ), adalah sebuah kota yang dikelilingi tembok di Etiopia timur. Kota ini pernah menjadi ibu kota provinsi Hara
+rghe dan kini merupakan ibu kota Region Harari. Kota ini terletak di puncak bukit di Dataran Tinggi Etiopia timur, sek
+itar lima ratus kilometer dari ibu kota Etiopia, Addis Ababa. Kota yang terletak di ketinggian 1.885 meter ini memilik
+i jumlah penduduk sekitar 122.000 jiwa berdasarkan hasil sensus tahun 2005.
+
+
+
+2023-10-21 12:08:04 - Rank 5: 2593721#1 [Perang Etiopia-Adal] - Islam diperkenalkan ke Tanduk Afrika lebih awal dari j
+azirah Arab, tak lama setelah hijrah. Pada akhir abad ke-9, Al-Yaqubi menulis bahwa umat Islam hidup di pesisir utara 
+Somalia. Dia juga menyebutkan bahwa ibu kota kerajaan Adal berada di kota tersebut, menunjukkan bahwa Kesultanan Adal 
+dengan Zeila sebagai markas besarnya sudah ada sejak abad ke-9 atau ke-10. Menurut I.M. Lewis, kesultanan tersebut dip
+erintah oleh dinasti Somali setempat, yang juga memerintah atas Kesultanan Mogadishu yang didirikan di wilayah Benadir
+ di selatan. Sejarah Adal sejak periode pembentukannya ditandai oleh serangkaian pertempuran dengan tetangganya Abyssi
+nia (Kekaisaran Etiopia). Para pejuang Ahmed menggunakan busur dan panah.
+
+2023-10-21 12:08:04 - Rank 6: 81397#15 [Nama] - Nama yang diturunkan dari nama orang-orang pada zaman dahulu biasanya 
+bersumber dari ajaran agama ataupun sejarah suatu daerah.
+
+2023-10-21 12:08:04 - Rank 7: 6364#0 [Etiopia] - Republik Demokratik Federal Etiopia (Ityop'iya, bahasa Amhara: ኢትዮጵያ)
+ atau Etiopia adalah sebuah negara yang terletak di Afrika. 
+
+2023-10-21 12:08:04 - Rank 8: 2720993#0 [Hararghe] - Hararghe (; Harari: ሐረርጌይ, Oromo: "Harargee", ) adalah sebuah pro
+vinsi yang terletak di Etiopia timur. Provinsi ini beribukota di Harar. Provinsi ini mencakup wilayah Ogaden milik Eti
+opia. Provinsi Hararghe berbatasan dengan Provinsi Sidamo di selatan, Provinsi Arsi di barat daya, Shewa di barat, Wol
+lo di barat laut, Somaliland Prancis di timur laut, dan Somalia di timur. Hararghe merupakan tanah air suku Harla.
+
+2023-10-21 12:08:04 - Rank 9: 2455333#0 [Upaya kudeta Etiopia 1960] - Upaya kudeta Etiopia 1960 adalah upaya kudeta ya
+ng dilancarkan di Etiopia pada tanggal 13 Desember 1960. Tujuannya adalah untuk menjatuhkan Kaisar Haile Selassie yang
+ sedang berkunjung ke Brasil pada saat itu. Empat pelaku kudeta yang dikepalai oleh Germame Neway dan kakaknya yang be
+rnama Brigadir Jenderal Mengistu Neway (yang merupakan komandan Kebur Zabangna, pengawal pribadi kekaisaran) menyander
+a beberapa menteri dan tokoh-tokoh penting lainnya dan menguasai sebagian besar Addis Ababa, ibukota Etiopia. Para pem
+impin kudeta menyatakan penumbangan rezim Haile Selassie dan mengumumkan pendirian pemerintahan yang baru dan lebih pr
+ogresif di bawah kekuasaan anak laki-laki Haile Selassie, Putra Mahkota Asfaw Wossen, yang akan menyelesaikan masalah 
+ekonomi dan sosial yang dihadapi Etiopia. Walaupun mahasiswa Universitas Haile Selassie berdemonstrasi untuk menyataka
+n dukungan mereka, satuan-satuan militer lain masih tetap setia kepada Selassie dan memadamkan upaya kudeta ini. Pada 
+tanggal 17 Desember, kelompok loyalis telah merebut kembali Addis Ababa dan para pelaku kudeta sudah tewas atau telah 
+melarikan diri.
+
+
+2023-10-21 12:08:04 - Rank 10: 2350422#2 [Sida-sida dari Etiopia] - Dalam Versi Raja James dan Versi Douay-Rheims, ora
+ng Etiopia tersebut berkata, "Aku percaya bahwa Yesus Kristus adalah Putera Allah" (), namun kalimat tersebut dicantum
+kan dalam sejumlah versi bahasa Inggris modern. Hubbard mencatat bahwa bagian tersebut "tidak tercantum dalam sejumlah
+ manuskrip tua [terutama yang tergolong jenis teks Alexandria])", meskipun orang Etiopia tersebut masih menjadi "salah
+ satu orang percaya paling menonjol dalam Kisah Para Rasul." J. A. Alexander (1857) berpendapat, ayat ini, meskipun as
+li, dihilangkan oleh banyak penyalin, "karena tidak sesuai dengan kebiasaan untuk menunda baptisan, yang menjadi lazim
+, atau, paling tidak, sering dilakukan, sebelum akhir abad ke-3." Karenanya ayat ini dihilangkan atau dipindahkan ke c
+atatan kaki dalam banyak versi Alkitab bahasa Inggris modern. Namun ada di banyak naskah kuno, khususnya Teks Bizantin
+, termasuk naskah Codex Laudianus atau E (~ 550 M). Kata-katanya dikutip oleh Irenaeus (~ tahun 180 M), Cyprian (~ tah
+un 250 M), Ambrosiaster (~384), Pacian (392 M), Ambrose (397 M), Augustinus (430 M), Venerable Bede dari Inggris (735 
+M) dan Theophylact (1077); serta dijumpai dalam "Old Latin" (Vetus Latina; abad ke-2) maupun Vulgata (380-400). Dalam 
+catatannya Erasmus menulis bahwa ia mengambil pembacaan ini dari marjin naskah 4ap dan memasukkannya ke dalam Textus R
+eceptus.

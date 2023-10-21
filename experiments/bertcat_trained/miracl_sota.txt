@@ -1,0 +1,113 @@
+2023-10-21 12:15:40 - NDCG@1: 0.5271                                                                                  
+2023-10-21 12:15:40 - NDCG@3: 0.4761                                                                                  
+2023-10-21 12:15:40 - NDCG@5: 0.4896                                                                                  
+2023-10-21 12:15:40 - NDCG@10: 0.5300                                                                                 
+2023-10-21 12:15:40 - NDCG@100: 0.5961                                                                                
+2023-10-21 12:15:40 - NDCG@1000: 0.5961                                                                               
+2023-10-21 12:15:40 -                                                                                                 
+                                                                                                                      
+2023-10-21 12:15:40 - MAP@1: 0.2331                                                                                   
+2023-10-21 12:15:40 - MAP@3: 0.3453                                                                                   
+2023-10-21 12:15:40 - MAP@5: 0.3852                                                                                   
+2023-10-21 12:15:40 - MAP@10: 0.4214                                                                                  
+2023-10-21 12:15:40 - MAP@100: 0.4498                                                                                 
+2023-10-21 12:15:40 - MAP@1000: 0.4498                                                                                
+2023-10-21 12:15:40 - 
+
+2023-10-21 12:15:40 - Recall@1: 0.2331
+2023-10-21 12:15:40 - Recall@3: 0.4034
+2023-10-21 12:15:40 - Recall@5: 0.4952
+2023-10-21 12:15:40 - Recall@10: 0.6146
+2023-10-21 12:15:40 - Recall@100: 0.8112
+2023-10-21 12:15:40 - Recall@1000: 0.8112
+2023-10-21 12:15:40 - 
+
+2023-10-21 12:15:40 - P@1: 0.5271
+2023-10-21 12:15:40 - P@3: 0.3413
+2023-10-21 12:15:40 - P@5: 0.2654
+2023-10-21 12:15:40 - P@10: 0.1760
+2023-10-21 12:15:40 - P@100: 0.0256
+2023-10-21 12:15:40 - P@1000: 0.0026
+2023-10-21 12:15:40 - 
+
+2023-10-21 12:15:40 - MRR@1: 0.5271
+2023-10-21 12:15:40 - MRR@3: 0.6116
+2023-10-21 12:15:40 - MRR@5: 0.6282
+2023-10-21 12:15:40 - MRR@10: 0.6376
+2023-10-21 12:15:40 - MRR@100: 0.6414
+2023-10-21 12:15:40 - MRR@1000: 0.6414
+2023-10-21 12:15:40 - 
+
+2023-10-21 12:15:40 - R_cap@1: 0.5271
+2023-10-21 12:15:40 - R_cap@3: 0.4753
+2023-10-21 12:15:40 - R_cap@5: 0.5167
+2023-10-21 12:15:40 - R_cap@10: 0.6148
+2023-10-21 12:15:40 - R_cap@100: 0.8112
+2023-10-21 12:15:40 - R_cap@1000: 0.8112
+2023-10-21 12:15:40 - 
+
+2023-10-21 12:15:40 - Hole@1: 0.4552
+2023-10-21 12:15:40 - Hole@3: 0.6371
+2023-10-21 12:15:40 - Hole@5: 0.7131
+2023-10-21 12:15:40 - Hole@10: 0.8019
+2023-10-21 12:15:40 - Hole@100: 0.9540
+2023-10-21 12:15:40 - Hole@1000: 0.0954
+
+2023-10-21 12:15:40 - Query : Apakah yang dimaksud dengan Revolusi ?                                                  
+                                                                                                                      
+2023-10-21 12:15:40 - Rank 1: 283549#0 [Revolusi (disambiguasi)] - Revolusi adalah perubahan politik atau sosial yang 
+cepat.                                                                                                                
+
+2023-10-21 12:15:40 - Rank 2: 58104#2 [Revolusi] - Menurut Kamus Besar Bahasa Indonesia revolusi /re·vo·lu·si/ /révolu
+si/ n *1 perubahan ketatanegaraan (pemerintahan atau keadaan sosial) yg dilakukan dng kekerasan (spt dng perlawanan be
+rsenjata);
+
+2023-10-21 12:15:40 - Rank 3: 58104#4 [Revolusi] - Dalam pengertian umum, revolusi mencakup jenis perubahan apapun yan
+g memenuhi syarat-syarat tersebut. Misalnya Revolusi Industri yang mengubah wajah dunia menjadi modern. Dalam definisi
+ yang lebih sempit, revolusi umumnya dipahami sebagai perubahan politik.
+
+
+ 2023-10-21 12:15:40 - Rank 4: 58104#0 [Revolusi] - Revolusi adalah perubahan sosial dan kebudayaan yang berlangsung se
+cara cepat dan menyangkut dasar atau pokok-pokok kehidupan masyarakat. Di dalam revolusi, perubahan yang terjadi dapat
+ direncanakan atau tanpa direncanakan terlebih dahulu dan dapat dijalankan tanpa kekerasan atau melalui kekerasan. Uku
+ran kecepatan suatu perubahan sebenarnya relatif karena revolusi pun dapat memakan waktu lama. Misalnya revolusi indus
+tri di Inggris yang memakan waktu puluhan tahun, namun dianggap 'cepat' karena mampu mengubah sendi-sendi pokok kehidu
+pan masyarakat —seperti sistem kekeluargaan dan hubungan antara buruh dan majikan— yang telah berlangsung selama ratus
+an tahun. Revolusi menghendaki suatu upaya untuk merobohkan, menjebol, dan membangun dari sistem lama kepada suatu sis
+tem yang sama sekali baru. Revolusi senantiasa berkaitan dengan dialektika, logika, romantika, menjebol dan membangun.
+
+2023-10-21 12:15:40 - Rank 5: 283549#1 [Revolusi (disambiguasi)] - Revolusi juga dapat merujuk ada:
+
+2023-10-21 12:15:40 - Rank 6: 58104#1 [Revolusi] - Dialektika revolusi mengatakan bahwa revolusi merupakan suatu usaha
+ menuju perubahan menuju kemaslahatan rakyat yang ditunjang oleh beragam faktor, tak hanya figur pemimpin, namun juga 
+segenap elemen perjuangan beserta sarananya. Logika revolusi merupakan bagaimana revolusi dapat dilaksanakan berdasark
+an suatu perhitungan mapan, bahwa revolusi tidak bisa dipercepat atau diperlambat, ia akan datang pada waktunya. Kader
+-kader revolusi harus dibangun sedemikian rupa dengan kesadaran kelas dan kondisi nyata di sekelilingnya. Romantika re
+volusi merupakan nilai-nilai dari revolusi, beserta kenangan dan kebesarannya, di mana ia dibangun. Romantika ini meny
+angkut pemahaman historis dan bagaimana ia disandingkan dengan pencapaian terbesar revolusi, yaitu kemaslahatan rakyat
+. Telah banyak tugu peringatan dan museum yang melukiskan keperkasaan dan kemasyuran ravolusi di banyak negara yang te
+lah menjalankan revolusi seperti yang terdapat di Vietnam, Rusia, China, Indonesia, dan banyak negara lainnya. Menjebo
+l dan membangun merupakan bagian integral yang menjadi bukti fisik revolusi. Tatanan lama yang busuk dan menyesatkan s
+erta menyengsarakan rakyat, diubah menjadi tatanan yang besar peranannya untuk rakyat, seperti di Venezuela, setelah H
+ugo Chavez menjadi presiden ia segera merombak tatanan agraria, di mana tanah untuk rakyat sungguh diutamakan yang men
+yingkirkan dominasi para tuan tanah di banyak daerah di negeri itu.
+
+2023-10-21 12:15:40 - Rank 7: 25058#8 [Revolusi Industri] - Revolusi Industri adalah perubahan besar, secara cepat, da
+n radikal yang mempengaruhi kehidupan corak manusia sering disebut revolusi. Istilah revolusi biasanya digunakan dalam
+ melihat perubahan politik atau sistem pemerintahan. Namun, Revolusi Industri di Inggris pada hakikatnya adalah peruba
+han dalam cara pembuatan barang-barang yang semula dikerjakan dengan tangan (tenaga manusia) kemudian digantikan denga
+n tenaga mesin. Dengan demikian, barang-barang dapat dihasilkan dalam jumlah banyak dengan waktu yang relatif singkat.
+
+2023-10-21 12:15:40 - Rank 8: 58104#8 [Revolusi] - Revolusi umumnya mensyaratkan hadirnya seorang pemimpin kharismatik
+, berperannya sebuah partai pelopor ("avant garde"), adanya sebuah elemen ideologi
+
+
+2023-10-21 12:15:40 - Rank 9: 58104#5 [Revolusi] - Sejarah modern mencatat dan mengambil rujukan revolusi mula-mula pa
+da Revolusi Perancis, kemudian Revolusi Amerika. Namun, Revolusi Amerika lebih merupakan sebuah pemberontakan untuk me
+ndapatkan kemerdekaan nasional, ketimbang sebuah revolusi masyarakat yang bersifat domestik seperti pada Revolusi Pera
+ncis. Begitu juga dengan revolusi pada kasus perang kemerdekaan Vietnam dan Indonesia. Maka konsep revolusi kemudian s
+ering dipilah menjadi dua: revolusi sosial dan revolusi nasional.
+
+2023-10-21 12:15:40 - Rank 10: 58104#7 [Revolusi] - Karakter kekerasan pada ciri revolusi dipahami sebagai sebagai aki
+bat dari situasi ketika perubahan tata nilai dan norma yang mendadak telah menimbulkan kekosongan nilai dan norma yang
+ dianut masyarakat.
