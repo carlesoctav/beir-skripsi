@@ -1,0 +1,106 @@
+Time taken to retrieve: 6768.84 seconds                                                                               
+2023-10-21 09:21:53 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 09:21:53 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 09:21:56 -                                                                                                 
+                                                                                                                      
+2023-10-21 09:21:56 - NDCG@1: 0.1327                                                                                  
+2023-10-21 09:21:56 - NDCG@3: 0.1981                                                                                  
+2023-10-21 09:21:56 - NDCG@5: 0.2225                                                                                  
+2023-10-21 09:21:56 - NDCG@10: 0.2494                                                                                 
+2023-10-21 09:21:56 - NDCG@100: 0.3008                                                                                
+2023-10-21 09:21:56 - NDCG@1000: 0.3221                                                                               
+2023-10-21 09:21:56 -                                                                                                 
+                                                                                                                      
+2023-10-21 09:21:56 - MAP@1: 0.1293                                                                                   
+2023-10-21 09:21:56 - MAP@3: 0.1802                                                                                   
+2023-10-21 09:21:56 - MAP@5: 0.1937                                                                                   
+2023-10-21 09:21:56 - MAP@10: 0.2050                                                                                  
+2023-10-21 09:21:56 - MAP@100: 0.2150                                                                                 
+2023-10-21 09:21:56 - MAP@1000: 0.2158                                                                                
+2023-10-21 09:21:56 - 
+
+2023-10-21 09:21:56 - Recall@1: 0.1293
+2023-10-21 09:21:56 - Recall@3: 0.2459
+2023-10-21 09:21:56 - Recall@5: 0.3046
+2023-10-21 09:21:56 - Recall@10: 0.3861
+2023-10-21 09:21:56 - Recall@100: 0.6303
+2023-10-21 09:21:56 - Recall@1000: 0.7998
+2023-10-21 09:21:56 - 
+
+2023-10-21 09:21:56 - P@1: 0.1327
+2023-10-21 09:21:56 - P@3: 0.0847
+2023-10-21 09:21:56 - P@5: 0.0632
+2023-10-21 09:21:56 - P@10: 0.0402
+2023-10-21 09:21:56 - P@100: 0.0066
+2023-10-21 09:21:56 - P@1000: 0.0008
+2023-10-21 09:21:56 - 
+
+2023-10-21 09:22:03 - R_cap@1: 0.1322
+2023-10-21 09:22:03 - R_cap@3: 0.2460
+2023-10-21 09:22:03 - R_cap@5: 0.3047
+2023-10-21 09:22:03 - R_cap@10: 0.3861
+2023-10-21 09:22:03 - R_cap@100: 0.6303
+2023-10-21 09:22:03 - R_cap@1000: 0.7998
+2023-10-21 09:22:03 - 
+
+2023-10-21 09:22:05 - Hole@1: 0.8652
+2023-10-21 09:22:05 - Hole@3: 0.9132
+2023-10-21 09:22:05 - Hole@5: 0.9349
+2023-10-21 09:22:05 - Hole@10: 0.9581
+2023-10-21 09:22:05 - Hole@100: 0.9918
+2023-10-21 09:22:05 - Hole@1000: 0.9977
+
+
+2023-10-21 09:22:06 - Query : # what are two main gases in #
+
+2023-10-21 09:22:06 - Rank 1: 2192361 [] - Dua kali tembakan. Gas atau Kayu. Kebakaran ganda begitu memikat sehingga m
+ereka memaksa Anda untuk merancang kamar - kamar di sekitarnya. Kau bisa melihat api dan berbagi panas di dua kamar. L
+uar biasa. Kau bisa memilih api gas sisi ganda atau api sisi ganda. Dengan tingkat panas puncak jangkauan 8,4kW sampai
+ 20kW, Anda dapat menyesuaikan dengan api ganda di sisi rumah Anda. Gas atau kayu. Semua api sisi ganda berbagi panas 
+mereka dan api mereka antara kamar dan perapian DX multikamar kami akan berbagi sisa panas dengan rumah Anda.
+
+2023-10-21 09:22:06 - Rank 2: 5304558 [] - Edit. Share to: the main three gass in air are nitrogen, oksigen and inert 
+gass 78% of air is made up of nitrogen, 21% is oxygen, just under 1% is argon and the left part is made up o... f othe
+r gases like carbon dioksida and water Perkiraan: + 11 orang lain mendapati hal ini berguna.
+
+2023-10-21 09:22:06 - Rank 3: 8823615 [] - Perhatikan baik-baik pembakar gas pada rentang bahan bakar ganda Wolf atau 
+jangkauan gas, di atas atau di atas. Mereka disebut dua kali lipat, pembakar disegel. ♪ See the two tiers of flame por
+ts on each burner, one above the other? ♪ Satu memberikan panas yang lebih tinggi; yang lain datang untuk pengaturan p
+anas yang lebih rendah. # Turn it way up for high-Btu searing heat. #
+
+2023-10-21 09:22:06 - Rank 4: 8234314 [] - Sudah pengalaman saya dengan kayu terbakar pipa perapian bahwa harus ada se
+tidaknya satu inci antara pipa flue dinding ganda dan bahan yang mudah terbakar. Dinding ganda berarti sebenarnya ada 
+dua pipa dengan ruang udara di antara mereka. Kurasa ventilasi gas alami dinding ganda akan serupa.
+
+
+
+2023-10-21 09:22:06 - Rank 5: 4831701 [] - A: kaca mata ganda pada dasarnya adalah dua kaca jendela yang dipasangkan d
+engan aman ke dalam bingkai. Yang penting adalah ruang antara panel jendela karena ini adalah di mana lapisan gas Argo
+n dimasukkan. Seperti gas Argon lebih padat daripada udara, itu berhenti udara dingin datang ke rumah Anda dan berhent
+i udara hangat keluar. Ganda glazing bekerja dengan menjebak gas argon antara dua panel kaca dalam bingkai jendela. As
+ the gas is denser than air, it keeps cold air out. Idealnya, jendela luar Anda akan memungkinkan udara panas masuk se
+dangkan jendela internal Anda akan membelokkan udara panas, berarti jendela itu tetap di dan kemudian meningkatkan efi
+siensi energi.
+
+2023-10-21 09:22:06 - Rank 6: 4217137 [] - Ukiran gas alam yang dikombinasikan memiliki dua bagian gabungan: yang pert
+ama adalah sebuah turbin sederhana yang menghasilkan daya sendiri, dan yang kedua adalah turbin uap yang terpisah yang
+ menghasilkan daya yang dihasilkan menggunakan panas knalpot dari proses pembakaran. [9]
+
+2023-10-21 09:22:06 - Rank 7: 4822408 [] - A) A B) B C D) D Ans: A 21. Metanolysis dari 4-bromo-2-metil-2-pentene memb
+erikan dua produk substitusi isomerik. .Chapter 10 Conjugation di Alkadienes and Allylic Systems: Jawaban Prof Sivagur
+u Jayaraman 19.
+
+2023-10-21 09:22:06 - Rank 8: 7537925 [] - Gas campuran pan-el biasanya hanya memiliki satu campuran CO2-kaya tersedia
+, dengan panel campuran ganda biasanya akomodatif nitrogen bir dengan campuran kedua. Panel pencampuran gas sekarang t
+ersedia yang menawarkan tiga campuran bir nitro dan dua campuran yang berbeda CO2 kaya secara teratur untuk bir berkar
+bonasi. Ternyata, bir berkarbonasi yang paling teratur dapat dibagi menjadi dua kelompok biasa kadar karbonasi.
+
+2023-10-21 09:22:06 - Rank 9: 8394018 [] - Flame gas dan minyak, dalam pembakar ganda. Pembakar gas adalah alat yang d
+igunakan untuk menghasilkan api, untuk memanaskan produk menggunakan bahan bakar gas seperti asetilen, gas alam, atau 
+propana. Beberapa pembakar memiliki inlet udara untuk mencampur gas bahan bakar dengan udara, untuk memungkinkan pemba
+karan lengkap. Acetylene umumnya digunakan dalam kombinasi dengan oksigen.
+
+2023-10-21 09:22:06 - Rank 10: 5707662 [] - Pasangan yang tepat terhubung ke dua tabung: yang satu membawa gas ke tong
+ dan yang satu membiarkan bir mengalir keluar dalam perjalanan ke gelas Anda. Plugs ke atas tong dan memiliki sedikit 
+pegangan bahwa Anda menarik ke bawah untuk membuka katup dan memulai aliran gas ke wilayah udara tong.
