@@ -1,0 +1,106 @@
+Time taken to retrieve: 918.41 seconds                                                                                
+2023-10-21 08:45:51 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 08:45:51 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 08:45:51 -                                                                                                 
+                                                                                                                      
+2023-10-21 08:45:51 - NDCG@1: 0.3209                                                                                  
+2023-10-21 08:45:51 - NDCG@3: 0.4264                                                                                  
+2023-10-21 08:45:51 - NDCG@5: 0.4648                                                                                  
+2023-10-21 08:45:51 - NDCG@10: 0.4891                                                                                 
+2023-10-21 08:45:51 - NDCG@100: 0.5269                                                                                
+2023-10-21 08:45:51 - NDCG@1000: 0.5394                                                                               
+2023-10-21 08:45:51 -                                                                                                 
+                                                                                                                      
+2023-10-21 08:45:51 - MAP@1: 0.2893                                                                                   
+2023-10-21 08:45:51 - MAP@3: 0.3903                                                                                   
+2023-10-21 08:45:51 - MAP@5: 0.4141                                                                                   
+2023-10-21 08:45:51 - MAP@10: 0.4251                                                                                  
+2023-10-21 08:45:51 - MAP@100: 0.4333                                                                                 
+2023-10-21 08:45:51 - MAP@1000: 0.4338                                                                                
+2023-10-21 08:45:51 -                                                                                                 
+                                                                                                                      
+2023-10-21 08:45:51 - Recall@1: 0.2893                                                                                
+2023-10-21 08:45:51 - Recall@3: 0.5022
+2023-10-21 08:45:51 - Recall@5: 0.5915                                                                                
+2023-10-21 08:45:51 - Recall@10: 0.6624                                                                               
+2023-10-21 08:45:51 - Recall@100: 0.8327                                                                              
+2023-10-21 08:45:51 - Recall@1000: 0.9290                                                                             
+2023-10-21 08:45:51 -                                                                                                 
+                                                                                                                      
+2023-10-21 08:45:51 - P@1: 0.3209                                                                                     
+2023-10-21 08:45:51 - P@3: 0.1886                                                                                     
+2023-10-21 08:45:51 - P@5: 0.1346                                                                                     
+2023-10-21 08:45:51 - P@10: 0.0761                                                                                    
+2023-10-21 08:45:51 - P@100: 0.0096                                                                                   
+2023-10-21 08:45:51 - P@1000: 0.0011                                                                                  
+2023-10-21 08:45:51 -                                                                                                 
+                                                                                                                      
+2023-10-21 08:45:52 - MRR@1: 0.3209                                                                                   
+2023-10-21 08:45:52 - MRR@3: 0.4194                                                                                   
+2023-10-21 08:45:52 - MRR@5: 0.4372                                                                                   
+2023-10-21 08:45:52 - MRR@10: 0.4463                                                                                  
+2023-10-21 08:45:52 - MRR@100: 0.4536                                                                                 
+2023-10-21 08:45:52 - MRR@1000: 0.4540                                                                                
+2023-10-21 08:45:52 -
+
+
+2023-10-21 08:45:52 - R_cap@1: 0.3209
+2023-10-21 08:45:52 - R_cap@3: 0.5022
+2023-10-21 08:45:52 - R_cap@5: 0.5915
+2023-10-21 08:45:52 - R_cap@10: 0.6624
+2023-10-21 08:45:52 - R_cap@100: 0.8327
+2023-10-21 08:45:52 - R_cap@1000: 0.9290
+2023-10-21 08:45:52 - 
+
+2023-10-21 08:45:52 - Hole@1: 0.6647
+2023-10-21 08:45:52 - Hole@3: 0.7969
+2023-10-21 08:45:52 - Hole@5: 0.8538
+2023-10-21 08:45:52 - Hole@10: 0.9157
+2023-10-21 08:45:52 - Hole@100: 0.9874
+2023-10-21 08:45:52 - Hole@1000: 0.9974
+2023-10-21 08:45:52 - Query : Dimana Arung Palakka lahir?
+
+
+2023-10-21 08:45:52 - Query : Dimana Arung Palakka lahir?
+
+2023-10-21 08:45:52 - Rank 1: 143711#20 [] - Arung Palakka lahir sekitar tahun 1635 di Desa Lamatta, daerah Mario Wawo
+ Soppeng, sebagai pewaris takhta Kerajaan Bone. Ketika umurnya delapan tahun, Bone diperangi Kerajaan Gowa dan berhasi
+l menaklukkannya. Sejak berumur 11 tahun Arung Palakka dan keluarganya dibawa sebagai sandera ke Istana Gowa. Mereka b
+eruntung karena menjadi pelayan Karaeng Pattinggaloang, tokoh penting dan jenius di Kerajaan Gowa. Di bawah asuhannya,
+ Arung Palakka tumbuh menjadi pangeran yang mengesankan dalam olah otak maupun olahraga.
+
+2023-10-21 08:45:52 - Rank 2: 143711#3 [] - Arung Palakka meninggal di Bontoala, Kesultanan Gowa, pada tanggal 6 April
+ 1696 dan dimakamkan di Bontobiraeng.[2]
+
+2023-10-21 08:45:52 - Rank 3: 143711#2 [] - Arung Palakka La Tenri tatta lahir di Lamatta, Mario-ri Wawo, Soppeng, pad
+a tanggal 15 September 1634 sebagai anak dari pasangan La Pottobune', Arung Tana Tengnga, dan istrinya, We Tenri Suwi,
+ Datu Mario-ri Wawo, anak dari La Tenri Ruwa Paduka Sri Sultan Adam, Arumpone Bone.[2]
+
+2023-10-21 08:45:52 - Rank 4: 143711#0 [] - Arung Palakka ([1]) adalah Sultan Bone yang menjabat pada tahun 1672-1696.
+ Saat masih berkedudukan sebagai pangeran, ia memimpin kerajaannya meraih kemerdekaan dari Kesultanan Gowa pada tahun 
+1666. Ia bekerja sama dengan Belanda saat merebut Makassar. Palakka pula yang menjadikan suku Bugis sebagai kekuatan m
+aritim besar yang bekerja sama dengan Belanda dan mendominasi kawasan tersebut selama hampir seabad lamanya.[1]
+
+2023-10-21 08:45:52 - Rank 5: 143711#5 [] - Arung Palakka adalah seorang jagoan yang ditakuti di seantero Batavia. Lel
+aki gagah berambut panjang dan matanya menyala-nyala ini memiliki nama yang menggetarkan seluruh jagoan dan pendekar d
+i Batavia. Keperkasaan seakan dititahkan untuk selalu bersemayam bersamanya. Pria Bugis Bone dengan badik yang sanggup
+memburai usus ini sudah malang melintang di Batavia sejak tahun 1660-an, ketika ia bersama pengikutnya melarikan diri
+dari cengkeraman & keperkasaan Sultan Hasanuddin.
+
+2023-10-21 08:45:52 - Rank 6: 143711#14 [] - Menggantikan ibunya sebagai Datu Mario-ri Wawo ke-15. Mendapat gelar Arun
+g Palakka sebagai hadiah membebaskan rakyatnya dari penjajahan Makassar. Diakui oleh Belanda sebagai Arung Pattiru, Pa
+lette dan Palakka di Bone and Datu Mario-ri Wawo di Soppeng, Bantaeng dan Bontoala, 1670.[2]
+
+2023-10-21 08:45:52 - Rank 7: 143711#7 [] - Nama Arung Palakka terdapat pada sebuah Arsip Nasional Republik Indonesia 
+(ANRI), berisikan data sejarah tentang Batavia pada masa silam dengan sejarah yang kelam. Berbagai referensi itu menyi
+mpan sekelumit kisah tentang pria yang patungnya dipahat dan berdiri gagah di tengah Kota Watampone.
+
+2023-10-21 08:45:52 - Rank 8: 666229#0 [] - Watang Palakka adalah salah satu kelurahan di Kecamatan Tanete Riattang Ba
+rat, Kabupaten Bone, Sulawesi Selatan, Indonesia.
+
+2023-10-21 08:45:52 - Rank 9: 382907#0 [] - Palakka adalah desa di kecamatan Barru, Barru, Sulawesi Selatan, Indonesia
+.
+
+2023-10-21 08:45:52 - Rank 10: 288150#0 [] - Palajau adalah desa di kecamatan Arungkeke, Jeneponto, Sulawesi Selatan, 
+Indonesia.      

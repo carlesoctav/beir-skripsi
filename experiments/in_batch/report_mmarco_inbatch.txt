@@ -1,0 +1,114 @@
+Time taken to retrieve: 6835.88 seconds                                                                      [85/1973]
+2023-10-21 07:56:11 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 07:56:11 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 07:56:15 -                                                                                                 
+                                                                                                                      
+2023-10-21 07:56:15 - NDCG@1: 0.1168                                                                                  
+2023-10-21 07:56:15 - NDCG@3: 0.1787                                                                                  
+2023-10-21 07:56:15 - NDCG@5: 0.2052                                                                                  
+2023-10-21 07:56:15 - NDCG@10: 0.2343                                                                                 
+2023-10-21 07:56:15 - NDCG@100: 0.2924                                                                                
+2023-10-21 07:56:15 - NDCG@1000: 0.3164
+2023-10-21 07:56:15 - 
+
+2023-10-21 07:56:15 - MAP@1: 0.1135
+2023-10-21 07:56:15 - MAP@3: 0.1614
+2023-10-21 07:56:15 - MAP@5: 0.1762
+2023-10-21 07:56:15 - MAP@10: 0.1882
+2023-10-21 07:56:15 - MAP@100: 0.1992
+2023-10-21 07:56:15 - MAP@1000: 0.2001
+2023-10-21 07:56:15 - 
+
+2023-10-21 07:56:15 - Recall@1: 0.1135
+2023-10-21 07:56:15 - Recall@3: 0.2249
+2023-10-21 07:56:15 - Recall@5: 0.2889
+2023-10-21 07:56:15 - Recall@10: 0.3776
+
+2023-10-21 07:56:15 - Recall@10: 0.3776                                                                      [60/1973]
+2023-10-21 07:56:15 - Recall@100: 0.6577                                                                              
+2023-10-21 07:56:15 - Recall@1000: 0.8470                                                                             
+2023-10-21 07:56:15 -                                                                                                 
+                                                                                                                      
+2023-10-21 07:56:15 - P@1: 0.1168                                                                                     
+2023-10-21 07:56:15 - P@3: 0.0775
+2023-10-21 07:56:15 - P@5: 0.0598
+2023-10-21 07:56:15 - P@10: 0.0392
+2023-10-21 07:56:15 - P@100: 0.0069
+2023-10-21 07:56:15 - P@1000: 0.0009
+2023-10-21 07:56:15 - 
+
+2023-10-21 07:56:18 - MRR@1: 0.1169
+2023-10-21 07:56:18 - MRR@3: 0.1656
+2023-10-21 07:56:18 - MRR@5: 0.1805
+2023-10-21 07:56:18 - MRR@10: 0.1926
+2023-10-21 07:56:18 - MRR@100: 0.2033
+2023-10-21 07:56:18 - MRR@1000: 0.2041
+
+2023-10-21 07:56:22 - R_cap@1: 0.1169
+2023-10-21 07:56:22 - R_cap@3: 0.2250
+2023-10-21 07:56:22 - R_cap@5: 0.2889
+2023-10-21 07:56:22 - R_cap@10: 0.3778
+2023-10-21 07:56:22 - R_cap@100: 0.6577
+
+2023-10-21 07:56:22 - R_cap@10: 0.3778                                                                       [36/1973]
+2023-10-21 07:56:22 - R_cap@100: 0.6577
+2023-10-21 07:56:22 - R_cap@1000: 0.8470
+2023-10-21 07:56:22 - 
+
+2023-10-21 07:56:24 - Hole@1: 0.8812
+2023-10-21 07:56:24 - Hole@3: 0.9207
+2023-10-21 07:56:24 - Hole@5: 0.9388
+2023-10-21 07:56:24 - Hole@10: 0.9595
+2023-10-21 07:56:24 - Hole@100: 0.9920
+2023-10-21 07:56:24 - Hole@1000: 0.9981
+2023-10-21 07:56:25 - Query : Kasus bisa tiba di pengadilan tertinggi melalui masing-masing cara kecuali
+
+2023-10-21 07:56:25 - Rank 1: 7120332 [] - Sebuah kasus bisa tiba di pengadilan tertinggi melalui masing-masing cara k
+ecuali ___. - 3621928
+
+2023-10-21 07:56:25 - Rank 2: 7120331 [] - Sebuah kasus bisa tiba di pengadilan tertinggi melalui masing-masing cara k
+ecuali: Dengan perintah dari cabang eksekutif Pengadilan tertinggi memegang posisi tertinggi dalam cabang peradilan da
+n memiliki wewenang untuk menilai hukum bahkan cabang eksekutif itu sendiri. Jadi mereka tidak memiliki hak untuk meme
+rintahkan pengadilan tertinggi dalam bentuk apapun.
+
+2023-10-21 07:56:25 - Rank 3: 7120338 [] - 2017-05-11T02:30:35-04:00. Sebuah kasus dapat tiba di pengadilan tertinggi 
+melalui masing-masing cara kecuali: Atas perintah dari cabang eksekutif. Mahkamah Agung memegang kedudukan tertinggi d
+i dalam cabang pengadilan dan memiliki wewenang untuk menghakimi bahkan cabang eksekutif itu sendiri. Jadi mereka tida
+k memiliki hak untuk memerintahkan pengadilan tertinggi dalam bentuk apapun.
+
+2023-10-21 07:56:25 - Rank 4: 6452230 [] - Tiga Kasus Ways mencapai Mahkamah Agung. Banding ke Pengadilan Banding Kepu
+tusan. Sejauh ini, kasus - kasus yang paling umum mencapai Mahkamah Agung adalah permohonan untuk mengambil keputusan 
+yang dikeluarkan oleh salah satu Mahkamah Banding AS yang duduk di bawah Mahkamah Agung. 94 distrik pengadilan federal
+ dibagi menjadi 12 wilayah, masing - masing memiliki pengadilan banding.
+
+2023-10-21 07:56:25 - Rank 5: 6452229 [] - Keyakinan suara 315. Ada dua cara untuk mencapai Mahkamah Agung. Cara perta
+ma adalah yang paling umum: Suatu kasus pertama kali terdengar oleh pengadilan. Jika salah satu pihak tidak suka hasil
+nya, mereka akan mengajukan banding. Kemudian, kasus ini didengar oleh pengadilan banding, yang memiliki kuasa untuk m
+embatalkan keputusan pengadilan.
+
+
+2023-10-21 07:56:25 - Rank 6: 6452227 [] - Jurisdiksi Mahkamah Agung. Ada tiga rute terpisah yang kemudian menuju ke M
+ahkamah Agung. Kasus pertama, dan yang paling tidak umum, adalah kasus di bawah yurisdiksi Mahkamah yang semula. Yuris
+diksi asli berarti Mahkamah Agung mendengar kasus ini secara langsung, tanpa kasus akan melalui tahap menengah.
+
+2023-10-21 07:56:25 - Rank 7: 7120330 [] - Ada tiga cara untuk mencapai Mahkamah Agung Amerika Serikat. Ini termasuk: 
+yuridiksi asli. Kasus-kasus ini berasal dari Mahkamah Agung daripada naik banding. Sangat sedikit kasus Mahkamah (seki
+tar 5%) datang dengan cara ini. Ini adalah kasus - kasus seperti yang melibatkan dua negara bagian dalam konflik satu 
+sama lain.
+
+2023-10-21 07:56:25 - Rank 8: 8691183 [] - Pengadilan tertinggi, mengikuti kebiasaannya, tidak memberikan penjelasan m
+engapa semua kasus ditolak sebelumnya. Beberapa hari, dari dokumen pengadilan atau bahkan mungkin bocor oleh mantan pe
+tugas, kita mungkin mencari tahu yang mana dari para hakim ingin mendengar kasus-kasus pernikahan sesama jenis dan yan
+g tidak. Untuk saat ini, tidak masuk akal untuk berspekulasi mengapa empat keadilan yang diperlukan tidak memilih untu
+k mendengar setidaknya salah satu dari tujuh banding.
+
+2023-10-21 07:56:25 - Rank 9: 184366 [] - Kasus di pengadilan negara juga bisa dilanjutkan dari pengadilan tingkat sid
+ang melalui banding di pengadilan tambahan dan kemudian ke pengadilan tertinggi negara. Sistem yang berbeda menetapkan
+ fungsi yang berbeda untuk pengadilan tertinggi negara, yang biasanya pengadilan terakhir, tetapi hal ini tidak terjad
+i di setiap negara bagian.
+
+2023-10-21 07:56:25 - Rank 10: 6487379 [] - 1 Terdakwa mungkin akan didakwa untuk kedua kalinya sebelum pengadilan tin
+gkat tinggi di negara-negara yang memiliki dua tingkat pengadilan. 2 Pihak - pihak tersebut dapat langsung mengajukan 
+negosiasi atau pengadilan di pengadilan yang mengadakan pemeriksaan awal. Hakim mungkin menetapkan tanggal berikutnya 
+untuk konferensi pra pengadilan, pengadilan, atau kedua - duanya.
