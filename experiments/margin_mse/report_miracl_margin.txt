@@ -1,0 +1,111 @@
+Time taken to retrieve: 913.51 seconds                                                                                
+2023-10-21 11:20:55 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 11:20:55 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 11:20:55 -                                                                                                 
+                                                                                                                      
+2023-10-21 11:20:55 - NDCG@1: 0.3573                                                                                  
+2023-10-21 11:20:55 - NDCG@3: 0.3453                                                                                  
+2023-10-21 11:20:55 - NDCG@5: 0.3543                                                                                  
+2023-10-21 11:20:55 - NDCG@10: 0.3876                                                                                 
+2023-10-21 11:20:55 - NDCG@100: 0.4652                                                                                
+2023-10-21 11:20:55 - NDCG@1000: 0.4970
+2023-10-21 11:20:55 - 
+
+2023-10-21 11:20:55 - MAP@1: 0.1628
+2023-10-21 11:20:55 - MAP@3: 0.2464
+2023-10-21 11:20:55 - MAP@5: 0.2702
+2023-10-21 11:20:55 - MAP@10: 0.2941
+2023-10-21 11:20:55 - MAP@100: 0.3183
+2023-10-21 11:20:55 - MAP@1000: 0.3205
+2023-10-21 11:20:55 -
+
+2023-10-21 11:20:55 - Recall@1: 0.1628
+2023-10-21 11:20:55 - Recall@3: 0.3037
+2023-10-21 11:20:55 - Recall@5: 0.3686
+2023-10-21 11:20:55 - Recall@10: 0.4660
+2023-10-21 11:20:55 - Recall@100: 0.7200
+2023-10-21 11:20:55 - Recall@1000: 0.8994
+2023-10-21 11:20:55 - 
+
+2023-10-21 11:20:55 - P@1: 0.3573
+2023-10-21 11:20:55 - P@3: 0.2493
+2023-10-21 11:20:55 - P@5: 0.1900
+2023-10-21 11:20:55 - P@10: 0.1272
+2023-10-21 11:20:55 - P@100: 0.0224
+2023-10-21 11:20:55 - P@1000: 0.0029
+2023-10-21 11:20:55 - 
+
+2023-10-21 11:20:55 - MRR@1: 0.3573
+2023-10-21 11:20:55 - MRR@3: 0.4491
+2023-10-21 11:20:55 - MRR@5: 0.4681
+2023-10-21 11:20:55 - MRR@10: 0.4815
+2023-10-21 11:20:55 - MRR@100: 0.4880
+2023-10-21 11:20:55 - MRR@1000: 0.4883
+2023-10-21 11:20:56 - 
+
+2023-10-21 11:20:56 - R_cap@1: 0.3573                                                                                 
+2023-10-21 11:20:56 - R_cap@3: 0.3552                                                                                 
+2023-10-21 11:20:56 - R_cap@5: 0.3831                                                                                 
+2023-10-21 11:20:56 - R_cap@10: 0.4661
+2023-10-21 11:20:56 - R_cap@100: 0.7200
+2023-10-21 11:20:56 - R_cap@1000: 0.8994
+2023-10-21 11:20:56 - 
+
+2023-10-21 11:20:56 - Hole@1: 0.6250
+2023-10-21 11:20:56 - Hole@3: 0.7288
+2023-10-21 11:20:56 - Hole@5: 0.7898
+2023-10-21 11:20:56 - Hole@10: 0.8547
+2023-10-21 11:20:56 - Hole@100: 0.9657
+2023-10-21 11:20:56 - Hole@1000: 0.9907
+2023-10-21 11:20:56 - Query : Apakah mata uang Tiongkok ?
+
+2023-10-21 11:20:56 - Rank 1: 1167792#0 [Uang kertas 10 yuan] - Uang kertas 10 yuan (¥10) adalah nilai uang kertas yan
+g dikeluarkan oleh People's Bank of China. Seperti semua uang kertas di Republik Rakyat Tiongkok (kecuali Hong Kong), 
+bagian depan menampilkan Mao Zedong, Presiden Republik Rakyat Tiongkok pertama. Bagian sebaliknya menampilkan 3 ngarai
+ di Sungai Yangtze.
+
+2023-10-21 11:20:56 - Rank 2: 1116921#0 [Uang kertas 100 yuan] - Uang kertas 100 yuan (¥100) adalah nilai uang kertas 
+yang dikeluarkan oleh People's Bank of China. Seperti semua uang kertas di Republik Rakyat Tiongkok (kecuali Hong Kong
+), bagian depan menampilkan Mao Zedong, Presiden Republik Rakyat Tiongkok pertama. Bagian sebaliknya menampilkan bangu
+nan Balai Agung Rakyat yang terdapat di Beijing.
+
+2023-10-21 11:20:56 - Rank 3: 1128693#0 [Uang kertas 20 yuan] - Uang kertas 20 yuan (¥20) adalah nilai uang kertas yan
+g dikeluarkan oleh People's Bank of China. Seperti semua uang kertas di Republik Rakyat Tiongkok (kecuali Hong Kong), 
+bagian depan menampilkan Mao Zedong, Presiden Republik Rakyat Tiongkok pertama. Bagian sebaliknya menampilkan gugusan 
+bukit karst di Sungai Li yang terdapat di Guilin.
+
+2023-10-21 11:20:56 - Rank 4: 456179#0 [Tiongkok Terbuka 2009 (bulu tangkis)] - Tiongkok Terbuka 2009 (bahasa Inggris:
+ LI NING China Open Super Series 2009) adalah turnamen bulu tangkis ke-12 dari BWF Super Series 2009. Turnamen ini mer
+upakan turnamen ke-15 dari Tiongkok Terbuka. Turnamen ini diadakan di Pusat Olahraga Yuanshen, Pudong, Shanghai, Tiong
+kok pada 17 - 22 November 2009. Sponsor utama dari turnamen yang memperebutkan total uang hadiah 250.000 dolar Amerika
+ ini adalah perusahaan peralatan olahraga Tiongkok Li-Ning. 
+
+ 2023-10-21 11:20:56 - Rank 5: 445061#0 [Yuan Manchukuo] - Yuan Manchukuo (满洲国圆) adalah mata uang resmi Kekaisaran 
+Manchukuo dari Juni 1932 hingga Agustus 1945.
+
+2023-10-21 11:20:56 - Rank 6: 2697407#3 [Bank Sentral Manchou] - Berdasarkan Undang-undang Mata Uang tahun 1932 yang m
+engesahkan pembentukan bank ini, Manchukuo menggunakan satuan mata uang yuan Manchukuo, yang mengandung 23,91 gram per
+ak murni, logam yang menjadi dasar mata uang Tiongkok secara tradisional.
+
+2023-10-21 11:20:56 - Rank 7: 2474761#7 [Pemikiran ekonomi kuno] - Gerakan pembaruan/perbaikan sistem ekonomi Tiongkok
+ yang terbesar salah satunya dilakukan oleh kaisar Qin Shi Huang (260 – 210 SM), yang memerintah antara 221 – 210 SM. 
+Mata uang koin telah distandardisasi di seantero wilayah Warring yang dipersatukan di bawah satu pusat birokrasi yang 
+kuat. Standardisasi pada pembuatan uang logam juga telah dilakukan, di samping diperkenalkannya jenis koin baru, koin 
+tembaga bulat yang memiliki lubang persegi di tengahnya. Pertanian dan perniagaan bernilai sangat penting bagi ekonomi
+. Tidak kalah penting ialah penyetaraan dalam sistem pengukuran dan berat, dan penyusunan/kodifikasi hukum. Reformasi 
+di bidang ekonomi tersebut juga membawa keuntungan dilihat dari segi pertukaran kebudayaan dengan bangsa lain. Tokoh b
+esar di bidang ekonomi Tiongkok kuno bernama Wang Anshi (1021–1086), hidup pada periode pertengahan Dinasti Song (960 
+– 1279). Serangkaian pembaruan yang dilakukan faksi politik kelompok kebijakan baru ("the New Policies Group") yang me
+naungi Wang Anshi berpusat pada pembaruan di bidang militer dan birokrasi, selain daripada bidang ekonomi, dan dilakuk
+an sebagai bentuk reaksi perlawanan terhadap kementrian konservatif. Pembaruan utama yang mula-mula dilakukan yaitu pe
+nurunan bunga, peringanan kerja buruh, dan penurunan harga pajak tanah di antara pihak saudagar dan para petani kecil 
+yang dianggap sebagai tulang punggung ekonomi Tiongkok dalam hal penghasil barang dan sumber penghasil pajak tanah ter
+besar.
+
+2023-10-21 11:20:56 - Rank 8: 1823957#0 [China Everbright Bank] - China Everbright Bank adalah sebuah perusahaan asal Republik Rakyat Tiongkok yang bergerak di sektor finansial. Industri yang menjadi fokus utama China Everbright Bank adalah industri perbankan. Pada tahun 2014, China Everbright Bank mendapatkan nilai penjualan sebesar AS$21,2 miliar dengan total keuntungan AS$4,2 miliar.
+
+2023-10-21 11:20:56 - Rank 9: 6770#0 [Renminbi] - Yuan (dikenal dengan nama Renminbi (RMB) di RRT) adalah mata uang Republik Rakyat Tiongkok. Mata uang ini dicetak dan diatur penggunaannya oleh Bank Rakyat Tiongkok. Renminbi pernah dipatok pada nilai 8,28 terhadap dolar AS selama 11 tahun hingga 21 Juli 2005. Hal ini menimbulkan kecaman dari Amerika Serikat yang menganggap hal ini dilakukan Tiongkok untuk menjaga agar barang-barang produksi negara tersebut tetap murah di pasar internasional. Bersamaan dengan diambangkannya kembali mata uang ringgit Malaysia, renminbi akhirnya dinilai ulang (revaluasi) pada 8,11 renminbi per 1 dolar AS pada 21 Juli 2005.
+Satu yuan Renminbi dibagi menjadi 100 "fen" atau 10 "jiao". Koin dengan nilai terkecil saat ini adalah 1 "jiao".
+
+2023-10-21 11:20:56 - Rank 10: 446126#0 [Kimpo] - Kimpo atau istilah panjangnya kim-goan-po (金元寶) adalah sejenis mata uang ingot perak atau emas yang digunakan di Cina hingga abad ke-20. Nama ini adalah adaptasi dari bahasa Min Nan (Hokkian) juga dari bahasa Kanton yang maknanya kira-kira "sutera murni" (istilah yang digunakan di dalam bahasa Inggris, "sycee" merujuk pada Bahasa Tionghoa=細絲; Hanyu Pinyin=xìsī; Peromawian Yale=saisì). Di Cina Utara, kata yuanbao (Hanzi yang Disederhanakan=元寶; Hanzi Tradisional=元宝; Hanyu Pinyin=yuánbǎo), yang ditransliterasi oleh para penulis berbahasa Inggris dari abad ke-19 adalah "yamboo" atau "yambu", yang juga digunakan untuk ingot yang sama.

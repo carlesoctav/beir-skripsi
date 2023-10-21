@@ -17,7 +17,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
                     handlers=[LoggingHandler()])
 #### /print debug information to stdout
 
-dataset = "mmarco"
+dataset = "mrtydi"
 
 #### Download nfcorpus.zip dataset and unzip the dataset
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
@@ -30,7 +30,7 @@ data_path = util.download_and_unzip(url, out_dir)
 # (2) nfcorpus/queries.jsonl (format: jsonlines)
 # (3) nfcorpus/qrels/test.tsv (format: tsv ("\t"))
 
-corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").load(split="dev")
+corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").load(split="test")
 
 #### Dense Retrieval using SBERT (Sentence-BERT) ####
 #### Provide any pretrained sentence-transformers model

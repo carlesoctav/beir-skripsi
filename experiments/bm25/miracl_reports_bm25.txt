@@ -1,0 +1,119 @@
+2023-10-21 10:57:24 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
+2023-10-21 10:57:24 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ig
+nore_identical_ids=False`` to ignore this.                                                                            
+2023-10-21 10:57:24 -                                                                                                 
+                                                                                                                      
+2023-10-21 10:57:24 - NDCG@1: 0.3510                                                                                  
+2023-10-21 10:57:24 - NDCG@3: 0.3373                                                                                  
+2023-10-21 10:57:24 - NDCG@5: 0.3531                                                                                  
+2023-10-21 10:57:24 - NDCG@10: 0.3915
+2023-10-21 10:57:24 - NDCG@100: 0.4935
+2023-10-21 10:57:24 - NDCG@1000: 0.5228
+2023-10-21 10:57:24 - 
+
+2023-10-21 10:57:24 - MAP@1: 0.1652
+2023-10-21 10:57:24 - MAP@3: 0.2395
+2023-10-21 10:57:24 - MAP@5: 0.2685
+2023-10-21 10:57:24 - MAP@10: 0.2987
+2023-10-21 10:57:24 - MAP@100: 0.3323
+2023-10-21 10:57:24 - MAP@1000: 0.3346
+2023-10-21 10:57:24 - 
+
+2023-10-21 10:57:24 - Recall@1: 0.1652
+2023-10-21 10:57:24 - Recall@3: 0.2899
+2023-10-21 10:57:24 - Recall@5: 0.3636
+2023-10-21 10:57:24 - Recall@10: 0.4734
+2023-10-21 10:57:24 - Recall@100: 0.8116
+2023-10-21 10:57:24 - Recall@1000: 0.9714
+2023-10-21 10:57:24 - 
+
+2023-10-21 10:57:24 - P@1: 0.3510
+2023-10-21 10:57:24 - P@3: 0.2427
+2023-10-21 10:57:24 - P@5: 0.1975
+2023-10-21 10:57:24 - P@10: 0.1352
+2023-10-21 10:57:24 - P@100: 0.0256
+2023-10-21 10:57:24 - P@1000: 0.0031
+2023-10-21 10:57:24 - 
+
+
+2023-10-21 10:57:25 - MRR@1: 0.3510
+2023-10-21 10:57:25 - MRR@3: 0.4385
+2023-10-21 10:57:25 - MRR@5: 0.4596
+2023-10-21 10:57:25 - MRR@10: 0.4723
+2023-10-21 10:57:25 - MRR@100: 0.4815
+2023-10-21 10:57:25 - MRR@1000: 0.4818
+2023-10-21 10:57:25 - 
+
+2023-10-21 10:57:25 - R_cap@1: 0.3510
+2023-10-21 10:57:25 - R_cap@3: 0.3436
+2023-10-21 10:57:25 - R_cap@5: 0.3813
+2023-10-21 10:57:25 - R_cap@10: 0.4739
+2023-10-21 10:57:25 - R_cap@100: 0.8112
+2023-10-21 10:57:25 - R_cap@1000: 0.9714
+2023-10-21 10:57:25 - 
+
+2023-10-21 10:57:25 - Hole@1: 0.6260
+2023-10-21 10:57:25 - Hole@3: 0.7330
+2023-10-21 10:57:25 - Hole@5: 0.7788
+2023-10-21 10:57:25 - Hole@10: 0.8422
+2023-10-21 10:57:25 - Hole@100: 0.9540
+2023-10-21 10:57:25 - Hole@1000: 0.9732
+
+Query : Apakah bahasa masyarakat Tiongkok?
+
+2023-10-21 10:57:25 - Doc 1: 972016#1 [Sekolah Wunu] - Yang disebut 'wu' dalam bahasa Tionghoa berarti 'tidak'. Kata '
+nu' berarti 'masyarakat budak', bukan 'budak atau perbudakan'. 'wunu' dalam bahasa Tionghoa berarti'ada masyarakat bud
+ak'. Beberapa sejarawan di Tiongkok advokat ada masyarakat budak dalam sejarah Tiongkok.
+
+2023-10-21 10:57:25 - Doc 2: 22835#0 [Bahasa Kanton] - Bahasa Kanton (广东话/廣東話, secara harafiah: bahasa Guangdong
+; di Indonesia sering disebut bahasa Konghu) adalah salah satu dari dialek bahasa Tionghoa Yue yang dituturkan di Guan
+gdong dan sekitarnya di Tiongkok selatan, Hong Kong, Makau, masyarakat keturunan Tionghoa di Asia Tenggara dan juga ma
+syarakat Tionghoa di belahan dunia lain. Bahasa Kanton merupakan dialek prestise tradisional dari Yue.
+
+2023-10-21 10:57:25 - Doc 3: 6327#21 [Tiongkok (istilah)] - Dalam bahasa Inggris, walaupun ada perbedaan kata antara n
+omina "China" dan adjektiva "Chinese", namun tidak ada pembedaan antara adjektiva Tiongkok dan Tionghoa, seperti dalam
+ bahasa Indonesia. Oleh karena itu "Chinese history" (sejarah Tiongkok) dan "Chinese language" (bahasa Tionghoa) mengg
+unakan istilah yang sama. Hal yang senada juga terjadi ketika Indonesia menggunakan istilah "Cina" pada periode waktu 
+1966 hingga 2014, karena tidak ada pembedaan istilah antara "sejarah Cina" dan "bahasa Cina", oleh sebab itu terjadi k
+esalahkaprahan bahasa, orang yang tidak memahami perbedaan tersebut dapat menggunakan adjektiva yang salah antara "Tio
+nghoa" dan "Tiongkok", misalnya menyebut "orang Tionghoa" dalam konteks warga negara Tiongkok, "budaya Tiongkok" dalam
+ konteks budaya Tionghoa-Indonesia, "bahasa Tiongkok", suatu istilah yang salah kaprah, dll.
+
+
+ 2023-10-21 10:57:25 - Doc 4: 6003#0 [Bahasa Kirgiz] - Bahasa Kirgiz merupakan anak cabang kelompok Kipchak dalam bahas
+a-bahasa Turki yang tersebar di wilayah Asia Tengah. Jumlah penutur bahasa ini secara keseluruhan mencapai lebih kuran
+g 5 juta jiwa termasuk 110 ribu orang Kirgiz yang hidup di Tiongkok dan masyarakat Kirgiz di wilayah Badakhsan, Afgani
+stan.
+
+2023-10-21 10:57:25 - Doc 5: 1728865#0 [Hubungan Tiongkok dengan Jepang] - Hubungan Tiongkok–Jepang (; "") secara geog
+rafi dipisahkan oleh Laut Tiongkok Timur. Jepang mendapatkan pengaruh yang kuat dari Tiongkok pada bahasanya, arsitekt
+urnya, budayanya, agamanya, filsafatnya, dan hukumnya. Ketika negara-negara Barat seperti Britania Raya dan Amerika Se
+rikat memaksa Jepang untuk membuka perdagangan pada pertengahan abad ke-19, Jepang yang mengalami modernisasi (Restora
+si Meiji), memandang Tiongkok sebagai sebuah masyarakat yang kuno, yang bertentangan dengan keadaan ketika Tiongkok da
+pat mempertahankan diri mereka sendiri dari pasukan Barat saat Perang Candu Pertama dan Kedua dan Ekspedisi Inggris-Pe
+rancis dari 1860an sampai 1880an.
+
+2023-10-21 10:57:25 - Doc 6: 2152299#0 [Islam di Tiongkok] - Islam di Tiongkok telah ada melalui 1.400 tahun dari inte
+raksi terus-menerus dengan masyarakat Tiongkok. Saat ini, umat Islam adalah signifikan kelompok minoritas di Tiongkok.
+ Muslim Hui yang mayoritas kelompok Muslim di Tiongkok. Konsentrasi terbesar di Xinjiang, dengan signifikan penduduk U
+yghur. Kecil tapi signifikan populasi tinggal di daerah Ningxia, Gansu, dan Qinghai. Berbagai sumber estimasi nomor ya
+ng berbeda dari penganut dengan beberapa sumber menunjukkan bahwa 1.5-4% dari total penduduk di Tiongkok adalah Muslim
+. Dari Tiongkok 55 resmi diakui masyarakat minoritas, sepuluh kelompok yang didominasi Muslim Sunni.
+
+2023-10-21 10:57:25 - Doc 7: 2146836#0 [Biro keamanan masyarakat Tiongkok] - Di Tiongkok, biro keamanan masyarakat (BK
+M) () merujuk kepada jabatan pemerintahan yang bertindak sebagai kantor polisi atau kepolisian lokal atau provinsial; 
+kantor polisi terkecil disebut pos polisi (). Sistem BKM mirip dengan konsep sistem Kōban Jepang, dan hadir di setiap 
+provinsi dan munisipalitas. Biasanya, BKM menangani kepolisian, keamanan masyarakat, dan tatanan sosial, tugas-tugas d
+ari jabatan semacam itu meliputi pendaftaran pemukiman ("hukou"), serta materi-materi migrasi internal dan eksternal, 
+seperti pendaftaran pemukim sementara (termasuk pendatang domestik dan asing).
+
+2023-10-21 10:57:25 - Doc 8: 6327#1 [Tiongkok (istilah)] - Kata "zhongguo" merupakan nama endonim negara tersebut. Eja
+an dalam bahasa Indonesia, "Tiongkok", berasal dari dialek Hokkian ("Tiong-kok"). Dalam bahasa-bahasa lain terdapat pu
+la varian-variannya, misalnya bahasa Jepang: Chūgoku; bahasa Korea: Jungguk/Chungguk; bahasa Vietnam: Trung Quốc; baha
+sa Tibet: Krung-go; bahasa Uighur: Junggo; bahasa Zhuang: Cunghgoz, dll. (selengkapnya, lihat Nama Tiongkok.)
+
+2023-10-21 10:57:25 - Doc 9: 2707#13 [Daftar bahasa menurut rumpun bahasa] - serta bahasa-bahasa di kawasan Indochina 
+dan Tiongkok selatan
+
+
+2023-10-21 10:57:25 - Doc 10: 2426959#2 [Hubungan Somalia dengan Tiongkok] - Hubungan antara Somalia dan Tiongkok bermula pada Abad Pertengahan. Melalui perdagangan, masyarakat di kedua kawasan tersebut menjalin hubungan baik. Jerapah, zebra dan kemenyan diekpor ke Kekaisaran Ming Tiongkok, yang menjadikan para pedagang Somalia sebagai para pemimpin dalam perdagangan antara Asia dan Afrika, dan dalam proses mempengaruhi bahasa Tionghoa dengan bahasa Somalia dan "vice versa". Tiongkok mengekspor perangkat seladon, rempah-rempah dan senapan lontak dalam pertukuran untuk kuda, hewan eksotis dan gading. Penjelajah, marinir, diplomat dan laksamana armada Tionghoa Hui berpengaruh, Cheng Ho, datang dalam perjalanan keempat dan kelimanya ke kota-kota Somalia Mogadishu, Zeila, Merca dan Berbera. Sa'id dari Mogadishu, seorang penjelajah Somalia datang ke Tiongkok pada abad ke-14, saat Tiongkok dikuasai oleh dinasti Yuan, dan mencatat komunitas perdagangan dari pelabuhan-pelabuhan dan kota-kota di Tiongkok.
