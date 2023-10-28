@@ -61,8 +61,12 @@ reranker = CrossEncoder('carles-undergrad-thesis/indobert-crossencoder-mmarco', 
 
 #### Saving benchmark times
 time_taken_all = {}
-
+count = 0
 for query_id in query_ids:
+
+    if count ==100:
+        break
+
     query = queries[query_id]
     
     #### Measure time to retrieve top-100 BM25 documents using single query latency
@@ -81,6 +85,7 @@ for query_id in query_ids:
     time_taken = time_taken.total_seconds() * 1000
     time_taken_all[query_id] = time_taken
     logging.info("{}: {} {:.2f}ms".format(query_id, query, time_taken))
+    count+=1
 
 time_taken = list(time_taken_all.values())
 logging.info("Average time taken: {:.2f}ms".format(sum(time_taken)/len(time_taken_all)))
