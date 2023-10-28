@@ -1,0 +1,33 @@
+BM25
+....
+2023-10-28 01:52:45 - 88831: Penyebab pemicu jari pada anak-anak 4.78ms
+2023-10-28 01:52:45 - 171906: Apakah permen karet yang tidak mengandung gula menyebabkan diare 6.18ms
+2023-10-28 01:52:45 - 205809: *hot to transfer music to my samsung s6 * 5.70ms
+2023-10-28 01:52:45 - 374799: cara membaca garis lintang dan bujur dengan menit 8.84ms
+2023-10-28 01:52:45 - 1090311: Definisi hukum berkelanjutan 4.29ms
+2023-10-28 01:52:45 - 20520: Definisi arbitrase 2.37ms
+2023-10-28 01:52:45 - 292225: Berapa banyak orang meninggal dalam banjir molase 3.53ms
+2023-10-28 01:52:45 - 290091: Berapa banyak gerakan di beethoven's moonlight sonata 4.60ms
+2023-10-28 01:52:45 - 1101282: Apakah anak laki-laki jaguar tumbuh lebih cepat daripada betina? 4.91ms
+2023-10-28 01:52:45 - 326719: Berapa banyak protein yang harus dimakan wanita 3.72ms
+2023-10-28 01:52:45 - 1090291: simeon emesa 1.30ms
+2023-10-28 01:52:45 - 147073: Perbedaan antara diskrit dan proses manufaktur 3.86ms
+2023-10-28 01:52:45 - 243761: Berapa lama abraham lincoln melayani 2.53ms
+2023-10-28 01:52:45 - 162662: Apakah jerawat rosacea dewasa memberikan Anda blepharitis 3.03ms
+2023-10-28 01:52:45 - 247194: Berapa lama Anda memanggang muffin 1.53ms
+2023-10-28 01:52:45 - 195199: glioma artinya 2.51ms
+2023-10-28 01:52:45 - Average time taken: 6.55ms
+
+
+
+BERTDOT
+...
+2023-10-28 02:21:00 - 1090291: simeon emesa 9.86ms
+2023-10-28 02:21:00 - 147073: Perbedaan antara diskrit dan proses manufaktur 9.80ms
+2023-10-28 02:21:00 - 243761: Berapa lama abraham lincoln melayani 9.80ms
+2023-10-28 02:21:00 - 162662: Apakah jerawat rosacea dewasa memberikan Anda blepharitis 9.83ms
+2023-10-28 02:21:00 - 247194: Berapa lama Anda memanggang muffin 9.74ms
+2023-10-28 02:21:00 - 195199: glioma artinya 9.73ms
+2023-10-28 02:21:00 - Average time taken: 9.94ms
+2023-10-28 02:21:10 - Number of documents: 1000000, Dim: 768
+2023-10-28 02:21:10 - Index size (in MB): 3072.00MB
