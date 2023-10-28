@@ -31,3 +31,14 @@ BERTDOT
 2023-10-28 02:21:00 - Average time taken: 9.94ms
 2023-10-28 02:21:10 - Number of documents: 1000000, Dim: 768
 2023-10-28 02:21:10 - Index size (in MB): 3072.00MB
+
+BERTCAT
+
+3-10-28 02:38:35 - 1089805: Unit terbesar dalam aliran gen dapat dengan mudah terjadi adalah... 175.78ms
+2023-10-28 02:38:35 - 1089804: Jaringan area luas terbesar yang pernah ada adalah ___. 136.61ms
+2023-10-28 02:38:35 - 1089787: makna sel haploid 162.95ms
+2023-10-28 02:38:35 - 1089776: ♪ the mean of stinchcombe ♪ 132.50ms
+2023-10-28 02:38:35 - 1089763: Nomor routing bank milik para penambang 159.72ms
+2023-10-28 02:38:35 - 1089760: cedera ligamen lutut yang paling umum melibatkan ___. 160.79ms
+2023-10-28 02:38:35 - 1089750: Britne oldford worth 120.50ms
+2023-10-28 02:38:36 - 1089727: # Peran seorang juara di tim perbaik

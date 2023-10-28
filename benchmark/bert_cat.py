@@ -88,4 +88,4 @@ for query_id in query_ids:
     count+=1
 
 time_taken = list(time_taken_all.values())
-logging.info("Average time taken: {:.2f}ms".format(sum(time_taken)/len(time_taken_all)))
+logging.info("Average time taken: {:.2f}ms".format(sum(time_taken)/count))
