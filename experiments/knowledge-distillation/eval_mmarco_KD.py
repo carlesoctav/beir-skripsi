@@ -1,24 +1,9 @@
-"""
-In this example, we show how to utilize different faiss indexes for evaluation in BEIR. We currently support 
-IndexFlatIP, IndexPQ and IndexHNSW from faiss indexes. Faiss indexes are stored and retrieved using the CPU.
-
-Some good notes for information on different faiss indexes can be found here:
-1. https://github.com/facebookresearch/faiss/wiki/Faiss-indexes#supported-operations
-2. https://github.com/facebookresearch/faiss/wiki/Faiss-building-blocks:-clustering,-PCA,-quantization 
-
-For more information, please refer here: https://github.com/facebookresearch/faiss/wiki
-
-PS: You can also save/load your corpus embeddings as a faiss index! Instead of exact search, use FlatIPFaissSearch
-which implements exhaustive search using a faiss index.
-
-Usage: python evaluate_faiss_dense.py
-"""
-
+from time import time
 from beir import util, LoggingHandler
 from beir.retrieval import models
 from beir.datasets.data_loader import GenericDataLoader
 from beir.retrieval.evaluation import EvaluateRetrieval
-from beir.retrieval.search.dense import PQFaissSearch, HNSWFaissSearch, FlatIPFaissSearch, HNSWSQFaissSearch    
+from beir.retrieval.search.dense import DenseRetrievalExactSearch as DRES
 
 import logging
 import pathlib, os
@@ -36,7 +21,6 @@ dataset = "mmarco"
 
 #### Download nfcorpus.zip dataset and unzip the dataset
 url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-# out_dir = os.path.join(pathlib.Path(__file__).parent.absolute(), "datasets")
 out_dir = here("datasets")
 data_path = util.download_and_unzip(url, out_dir)
 
@@ -48,77 +32,19 @@ data_path = util.download_and_unzip(url, out_dir)
 
 corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").load(split="dev")
 
-# Dense Retrieval using Different Faiss Indexes (Flat or ANN) ####
-# Provide any Sentence-Transformer or Dense Retriever model.
+#### Dense Retrieval using SBERT (Sentence-BERT) ####
+#### Provide any pretrained sentence-transformers model
+#### The model was fine-tuned using cosine-similarity.
+#### Complete list - https://www.sbert.net/docs/pretrained_models.html
 
-model_path = "carles-undergrad-thesis/st-distillbert-tasb-en-id-mmarco-knowledge-distillation"
-model = models.SentenceBERT(model_path)
-
-########################################################
-#### FLATIP: Flat Inner Product (Exhaustive Search) ####
-########################################################
-
-faiss_search = FlatIPFaissSearch(model, 
-                                 batch_size=128)
-
-######################################################
-#### PQ: Product Quantization (Exhaustive Search) ####
-######################################################
-
-# faiss_search = PQFaissSearch(model, 
-#                              batch_size=128, 
-#                              num_of_centroids=96, 
-#                              code_size=8)
-
-#####################################################
-#### HNSW: Approximate Nearest Neighbours Search ####
-#####################################################
-
-# faiss_search = HNSWFaissSearch(model, 
-#                                batch_size=128, 
-#                                hnsw_store_n=512, 
-#                                hnsw_ef_search=128,
-#                                hnsw_ef_construction=200)
-
-###############################################################
-#### HNSWSQ: Approximate Nearest Neighbours Search with SQ ####
-###############################################################
-
-# faiss_search = HNSWSQFaissSearch(model, 
-#                                 batch_size=128, 
-#                                 hnsw_store_n=128, 
-#                                 hnsw_ef_search=128,
-#                                 hnsw_ef_construction=200)
-
-#### Load faiss index from file or disk ####
-# We need two files to be present within the input_dir!
-# 1. input_dir/{prefix}.{ext}.faiss => which loads the faiss index.
-# 2. input_dir/{prefix}.{ext}.faiss => which loads mapping of ids i.e. (beir-doc-id \t faiss-doc-id).
-
-prefix = "distillbert-tasb-en-id-mmarco-knowledge-distillation"       # (default value)
-ext = "flat"              # or "pq", "hnsw", "hnsw-sq"
-input_dir = str(here("faiss-index"))
-
-if os.path.exists(os.path.join(input_dir, "{}.{}.faiss".format(prefix, ext))):
-    faiss_search.load(input_dir=input_dir, prefix=prefix, ext=ext)
+model = DRES(models.SentenceBERT("carles-undergrad-thesis/indobert-KD"), batch_size=128)
+retriever = EvaluateRetrieval(model, score_function="dot")
 
 #### Retrieve dense results (format of results is identical to qrels)
-retriever = EvaluateRetrieval(faiss_search, score_function="dot") # or "cos_sim"
+start_time = time()
 results = retriever.retrieve(corpus, queries)
-
-### Save faiss index into file or disk ####
-# Unfortunately faiss only supports integer doc-ids, We need save two files in output_dir.
-# 1. output_dir/{prefix}.{ext}.faiss => which saves the faiss index.
-# 2. output_dir/{prefix}.{ext}.faiss => which saves mapping of ids i.e. (beir-doc-id \t faiss-doc-id).
-
-prefix = "distillbert-tasb-en-id-mmarco-knowledge-distillation"      # (default value)
-ext = "flat"             # or "pq", "hnsw" 
-output_dir = str(here("faiss-index"))
-os.makedirs(output_dir, exist_ok=True)
-
-if not os.path.exists(os.path.join(output_dir, "{}.{}.faiss".format(prefix, ext))):
-    faiss_search.save(output_dir=output_dir, prefix=prefix, ext=ext)
-
+end_time = time()
+print("Time taken to retrieve: {:.2f} seconds".format(end_time - start_time))
 #### Evaluate your retrieval using NDCG@k, MAP@K ...
 
 logging.info("Retriever evaluation for k in: {}".format(retriever.k_values))

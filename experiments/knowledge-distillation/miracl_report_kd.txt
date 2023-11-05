@@ -1,165 +1,116 @@
-Time taken to retrieve: 523.46 seconds                                                                                
-2023-10-21 12:29:20 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                         
-2023-10-21 12:29:20 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``i$
-nore_identical_ids=False`` to ignore this.                                                                            
-2023-10-21 12:29:20 -                                                                                                 
+2023-11-05 13:03:44 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                  │······
+2023-11-05 13:03:44 - For evaluation, we ignore identical query and document ids (default), please explicitly s│······
+et ``ignore_identical_ids=False`` to ignore this.                                                              │······
+2023-11-05 13:03:45 -                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:45 - NDCG@1: 0.1698                                                                           │······
+2023-11-05 13:03:45 - NDCG@3: 0.1560                                                                           │······
+2023-11-05 13:03:45 - NDCG@5: 0.1605                                                                           │······
+2023-11-05 13:03:45 - NDCG@10: 0.1794                                                                          │······
+2023-11-05 13:03:45 - NDCG@100: 0.2470                                                                         │······
+2023-11-05 13:03:45 - NDCG@1000: 0.2923                                                                        │······
+2023-11-05 13:03:45 -
 
-2023-10-21 12:29:20 - NDCG@1: 0.1698
-2023-10-21 12:29:20 - NDCG@3: 0.1560
-2023-10-21 12:29:20 - NDCG@5: 0.1605
-2023-10-21 12:29:20 - NDCG@10: 0.1794
-2023-10-21 12:29:20 - NDCG@100: 0.2470
-2023-10-21 12:29:20 - NDCG@1000: 0.2923
-2023-10-21 12:29:20 - 
+2023-11-05 13:03:45 - MAP@1: 0.0675                                                                            │······
+2023-11-05 13:03:45 - MAP@3: 0.1023                                                                            │······
+2023-11-05 13:03:45 - MAP@5: 0.1135                                                                            │······
+2023-11-05 13:03:45 - MAP@10: 0.1257                                                                           │······
+2023-11-05 13:03:45 - MAP@100: 0.1426                                                                          │······
+2023-11-05 13:03:45 - MAP@1000: 0.1450                                                                         │······
+2023-11-05 13:03:45 -                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:45 - Recall@1: 0.0675                                                                         │······
+2023-11-05 13:03:45 - Recall@3: 0.1320                                                                         │······
+2023-11-05 13:03:45 - Recall@5: 0.1685                                                                         │······
+2023-11-05 13:03:45 - Recall@10: 0.2239                                                                        │······
+2023-11-05 13:03:45 - Recall@100: 0.4609                                                                       │······
+2023-11-05 13:03:45 - Recall@1000: 0.7259                                                                      │······
+2023-11-05 13:03:45 -                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:45 - P@1: 0.1698                                                                              │······
+2023-11-05 13:03:45 - P@3: 0.1181                                                                              │······
+2023-11-05 13:03:45 - P@5: 0.0917                                                                              │······
+2023-11-05 13:03:45 - P@10: 0.0644                                                                             │······
+2023-11-05 13:03:45 - P@100: 0.0143                                                                            │······
+2023-11-05 13:03:45 - P@1000: 0.0023                                                                           │······
+2023-11-05 13:03:45 -       
 
+2023-11-05 13:03:45 - MRR@1: 0.1698                                                                            │······
+2023-11-05 13:03:45 - MRR@3: 0.2186                                                                            │······
+2023-11-05 13:03:45 - MRR@5: 0.2298                                                                            │······
+2023-11-05 13:03:45 - MRR@10: 0.2392                                                                           │······
+2023-11-05 13:03:45 - MRR@100: 0.2492                                                                          │······
+2023-11-05 13:03:45 - MRR@1000: 0.2501                                                                         │······
+2023-11-05 13:03:45 -                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:46 - R_cap@1: 0.1698                                                                          │······
+2023-11-05 13:03:46 - R_cap@3: 0.1599                                                                          │······
+2023-11-05 13:03:46 - R_cap@5: 0.1768                                                                          │······
+2023-11-05 13:03:46 - R_cap@10: 0.2240                                                                         │······
+2023-11-05 13:03:46 - R_cap@100: 0.4609                                                                        │······
+2023-11-05 13:03:46 - R_cap@1000: 0.7259                                                                       │······
+2023-11-05 13:03:46 -                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Hole@1: 0.8052                                                                           │······
+2023-11-05 13:03:46 - Hole@3: 0.8542                                                                           │······
+2023-11-05 13:03:46 - Hole@5: 0.8777                                                                           │······
+2023-11-05 13:03:46 - Hole@10: 0.9062                                                                          │······
+2023-11-05 13:03:46 - Hole@100: 0.9663                                                                         │······
+2023-11-05 13:03:46 - Hole@1000: 0.9870                                                                        │······
+2023-11-05 13:03:46 - Query : dari manakah kucing bengal berasal? 
 
-2023-10-21 12:29:20 - MAP@1: 0.0675
-2023-10-21 12:29:20 - MAP@3: 0.1023
-2023-10-21 12:29:20 - MAP@5: 0.1135
-2023-10-21 12:29:20 - MAP@10: 0.1257
-2023-10-21 12:29:20 - MAP@100: 0.1426
-2023-10-21 12:29:20 - MAP@1000: 0.1450
-2023-10-21 12:29:20 - 
-
-2023-10-21 12:29:20 - Recall@1: 0.0675
-2023-10-21 12:29:20 - Recall@3: 0.1320
-2023-10-21 12:29:20 - Recall@5: 0.1685
-2023-10-21 12:29:20 - Recall@10: 0.2239
-2023-10-21 12:29:20 - Recall@100: 0.4609
-2023-10-21 12:29:20 - Recall@1000: 0.7259
-
-
-2023-10-21 12:29:20 - P@1: 0.1698                                                                                     
-2023-10-21 12:29:20 - P@3: 0.1181                                                                                     
-2023-10-21 12:29:20 - P@5: 0.0917                                                                                     
-2023-10-21 12:29:20 - P@10: 0.0644                                                                                    
-2023-10-21 12:29:20 - P@100: 0.0143                                                                                   
-2023-10-21 12:29:20 - P@1000: 0.0023                                                                                  
-2023-10-21 12:29:20 -                                                                                                 
-                                                                                                                      
-2023-10-21 12:29:21 - MRR@1: 0.1698
-2023-10-21 12:29:21 - MRR@3: 0.2186
-2023-10-21 12:29:21 - MRR@5: 0.2298
-2023-10-21 12:29:21 - MRR@10: 0.2392
-2023-10-21 12:29:21 - MRR@100: 0.2492
-2023-10-21 12:29:21 - MRR@1000: 0.2501
-2023-10-21 12:29:21 - 
-
-2023-10-21 12:29:21 - R_cap@1: 0.1698                                                                         [89/214]
-2023-10-21 12:29:21 - R_cap@3: 0.1599
-2023-10-21 12:29:21 - R_cap@5: 0.1768
-2023-10-21 12:29:21 - R_cap@10: 0.2240
-2023-10-21 12:29:21 - R_cap@100: 0.4609
-2023-10-21 12:29:21 - R_cap@1000: 0.7259
-2023-10-21 12:29:21 - 
-
-2023-10-21 12:29:22 - Hole@1: 0.8052
-2023-10-21 12:29:22 - Hole@3: 0.8542
-2023-10-21 12:29:22 - Hole@5: 0.8777
-2023-10-21 12:29:22 - Hole@10: 0.9062
-2023-10-21 12:29:22 - Hole@100: 0.9663
-2023-10-21 12:29:22 - Hole@1000: 0.9870
-2023-10-21 12:29:22 - Query : Apakah slogan sampo Sunsilk?
-
-                                                                                                                     
-2023-10-21 12:29:22 - Rank 1: 326887#21 [Daftar slogan NBC] - Slogan ini pernah dipakai dengan bahasa masing-masing di
- beberapa negara, seperti:                                                                                            
-Slogan ini pertama kali digunakan tahun 1988. Untuk ketiga angsuran dari slogan, slogan yang telah diperluas untuk mem
-baca "Come Home to the Best...Only on NBC". Musik telah berubah dari musik "gospel-rock" ke gaya kalipso lembut. Promo
--pihak yang telah seperti tema, mirip dengan dgn cara yg menyolok Something's Happening on ABC pada sesi yang sama. Ve
-rsi animasi dari logo tersebut adalah:                                                                                
-Promo ini pertama kali dipertunjukkan oleh fitur dengan presenter Tom Brokaw, dan Vanna White.                        
-Akhir tahun slogan yang digunakan, dengan falit Promosi tradisional. Tidak seperti sebelumnya yang digunakan nyata den
-gan set, satu ini menggunakan keseluruhan, latar belakang n Sukacita. Promo berbagai fitur NBC bintang di berbagai tem
-pat dan situasi yang animasi. Kali ini, Harry adalah satu-satunya vokalis dari versi 1987 dari slogan untuk meminjamka
-n dia kejujuran untuk variasi akhir. Pada saat kata-kata dari judul atau lirik dari NBC dari program yang mereka binta
-ng di kadang-kadang akan muncul dalam sebuah jendela menaungi / acak bar efek. Sebagai lagu kemajuan, bintang-bintang 
-"The Hogan Family" dilihat adalah membangun set baja untuk membentuk huruf nama logo NBC. Akhirnya setelah Bill Cosby 
-mengedipkan tanda nomor satu, layar terpotong-potong ke logo merak NBC diperbesar keluar ke garis vertikal abu-abu. Ka
-ta "Only On" muncul dalam huruf kecil huruf di atas logo NBC setelah melewati garis violet di atas
-
-
-2023-10-21 12:29:22 - Rank 2: 15055#43 [Microsoft] - Microsoft mengadopsi ""Pac-Man" Logo", yang didesain oleh Scott B
-aker, pada tahun 1987. Baker mengatakan bahwa, "Logo baru ini, dengan font Helvetica miring, memiliki celah di antara 
-"o" dan "s " untuk menekankan sisi ""soft""-nya dan memberi kiasan gerakan dan kecepatan." Dave Norris sempat membuat 
-lelucon internal untuk menyelamatkan logo lamanya yang berwarna hijau dan berhuruf besar dengan huruf "O" yang unik, m
-enjulukinya "blibbet", namun segera dihapus. Logo Microsoft dengan slogan ""Your potential. Our passion."" di bawah na
-ma perusahaan didesain berdasarkan slogan yang dipakai Microsoft tahun 2008. Pada tahun 2002, perusahaan ini mulai mem
-akai logo tersebut di Amerika Serikat dan memulai iklan televisi dengan slogan tersebut, berubah dari slogan sebelumny
-a, yaitu ""Where do you want to go today?"." Pada konferensi MGX (Microsoft Global Exchange) tahun 2010, Microsoft mel
-uncurkan slogan baru perusahaan, ""Be What's Next."".
-
-2023-10-21 12:29:22 - Rank 3: 1507955#0 [Don't be evil] - "Don't be evil " (Jangan berbuat jahat) adalah motto perusah
-aan tidak resmi (atau slogan) dari Google. Motto ini pertama kali disarankan baik oleh karyawan Google Paul Buchheit p
-ada rapat tentang nilai-nilai perusahaan yang terjadi pada awal tahun 2000 atau 2001, maupun, menurut sumber lain, ole
-h insinyur Google Amit Patel pada tahun 1999. Buchheit, yang merupakan tokoh di balik lahirnya Gmail, mengatakan ia "i
-ngin sesuatu yang, sekali Anda meletakkannya di sana, akan sulit untuk mengambilnya", sambil menambahkan bahwa slogan 
-tersebut "juga menjadi sedikit tusukan di banyak perusahaan lain, terutama pesaing kami, yang saat itu, menurut pendap
-at kami, mengeksploitasi pengguna sampai batas tertentu." Sementara filosofi perusahaan resmi Google tidak mengandung 
-kata-kata "Jangan berbuat jahat", slogan itu dimasukkan dalam prospektus (alias "S-1") dari IPO Google tahun 2004 (seb
-uah surat dari pendiri Google, kemudian disebut "Manifesto 'Jangan Berbuat Jahat'"): "Jangan berbuat jahat. Kami sanga
-t percaya bahwa dalam jangka panjang, kita akan lebih baik dilayani — sebagai pemegang saham dan dalam semua cara lain
- — oleh perusahaan yang melakukan hal-hal yang baik untuk dunia, bahkan jika kita melupakan beberapa keuntungan jangka
- pendek." Motto tersebut kadang-kadang disalahtuliskan menjadi "Do no evil", yang bermakna sama.
+2023-11-05 13:03:46 - Rank 1: 1597917#2 [Kucing raas] - Raas adalah kucing yang awal mulanya tidak diketahui. K│······
+emungkinan besar kucing ini terbentuk secara alami. Menurut penelitian Lasley Morgan dari Australia dan dr. Ron│······
+ny Rachman Noor dari Fakultas Peternakan IPB, raas dengan warna biru diyakini berasal dari ras korat yang beras│······
+al dari Thailand. Kucing ini juga diyakini berasal dari ras asia karena bentuk ekornya yang bengkok di bagian u│······
+jung.                                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 2: 1497370#0 [Kucing siprus] - Kucing siprus adalah salah satu ras lokal kucing dome│······
+stik yang diyakini berasal dari Mesir atau Palestina yang kemudian dibawa ke Siprus oleh Santa Helena untuk mem│······
+bersihkan pulau dari ular dan hama. Siprus tidak diakui resmi oleh organisasi pendaftaran kucing.              │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 3: 1567106#0 [Genetta] - Genetta adalah salah satu ras kucing domestik baru yang dic│······
+iptakan oleh Shannon Kiley di "Pawstruk Cattery" pada tahun 2006. Kucing ini adalah kucing yang termasuk kucing│······
+ kerdil. Genetta lahir dari persilangan ras Munchkin, Savannah dan Bengal. Kucing ini adalah kucing berkaki pen│······
+dek dengan pola warna tutul dan marmer yang eksotis yang dibuat agar menyerupai Genet Afrika.                  │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 4: 1608926#0 [Kucing tibetan] - Kucing tibetan adalah salah satu ras kucing domestik│······
+ yang berasal dari Belanda.                                                                                    │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 5: 1544402#0 [Kucing munchkin] - Kucing munchkin adalah salah satu ras kucing berkak│······
+i pendek yang terbentuk karena mutasi genetik alami. Ras ini baru mulai dikembangbiakkan sekitar tahun 1980-an │······
+di Amerika Serikat, negara asalnya. Karena kakinya yang pendek, munchkin menjadi salah satu ras kucing terkecil│······
+ di dunia.  
 
 
- 2023-10-21 12:29:22 - Rank 4: 831902#2 [GMA Network] - Kapuso ng Bawat Pilipino (Di Dalam Hati Setiap Terbenang) adala
-h slogan karakteristik GMA Network sekarang. Slogan ini awalnya digunakan dalam hubungannya dengan rebranding dari GMA
- Jaringan sebagai “Kapuso Network” pada 27 Oktober 2002. Tapi slogan lain dari jaringan Kapuso Mo, Anumang Kulay ng Bu
-hay (Satu Hati, dalam Setiap Warna Keceriaan) masih digunakan dalam keperluan lain terutama untuk situs web mereka "ww
-w.igma.tv". Berita GMA Network dan urusan publik departemen Sementara menggunakan slogan "Serbisyong Totoo" ("Layanan 
-yang sejati"). Ini adalah salah satu slogan terpanjang digunakan untuk menyiarkan berita promotion slogan Jaringan GMA
- menemukan dirinya di ujung lain dari pertempuran mengenai slogan, ketika ABS-CBN News Channel menggunakan slogan yang
- sama, dan segera dihentikan untuk menghindari kesulitan hukum dari GMA Network. Pada tahun 2006, departemen berita ju
-ga menggunakan slogan yang menyertai, "Hanya Berita", untuk kampanye promosi bersama-sama dengan perusahaan media beri
-ta mitra, INQ7.Net.
 
-2023-10-21 12:29:22 - Rank 5: 643121#34 [Olimpiade Musim Panas 2016] - Logo Rio 2016 dirancang oleh Tatil Design, sebu
-ah perusahaan Brasil, dan diresmikan pada 31 Desember 2010. Logo ini menggambarkan tiga sosok, dalam warna kuning, hij
-au, dan biru, mewakili warna bendera Brasil, yang saling berpegangan dan berangkulan. Bentuk keseluruhan logo mencermi
-nkan Sugarloaf Mountain. Logo tersebut berdasarkan pada empat konsep: energi yang menular, keragaman yang harmonis, ke
-gembiraan, dan semangat Olimpiade. Perusahaan Rio Tatil merancang logo pemenang yang kompetisinya diikuti oleh 139 age
-nsi. Menurut mantan presiden KOI Jacques Rogge, logo tersebut mewakili visi Rio de Janeiro dan Brasil dalam Olimpiade 
-ini. Logo ini dianggap membangkitkan kembali lukisan Henri Matisse, "Dance". Akan tetapi, logo tersebut dituduh menjip
-lak logo organisasi amal asal Colorado, Telluride Foundation, yang juga sama persis dengan logo "2004 Salvador Carniva
-l".
+ 2023-11-05 13:03:46 - Rank 6: 1550440#0 [Kucing birma] - Kucing birma adalah salah satu ras kucing alami yang b│······
+erasal dari Perancis.                                                                                          │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 7: 1575223#3 [Kucing kerdil] - Munchkin adalah ras kucing asli dari kucing kerdil. T│······
+he International Cat Association (TICA) telah memberikan pengakuan kepada Munchkin sebagai ras kucing pada tahu│······
+n 1994, bersamaan dengan ras campuran Persia-Munchkin, yaitu Napoleon. Ras kucing lainnya yang diketahui memili│······
+ki kaki pendek diantaranya adalah Skookum, Bambino, Minskin, Genetta, dan Lambkin. Kucing-kucing tersebut belum│······
+ mendapatkan pengakuan, namun pada ras campuran Munchkin-Sphynx, yaitu Minskin, sedang dalam studi penelitian. │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 8: 1039433#6 [Kucing gurun] - Berdasarkan studi DNA mitokondria dari 979 kucing dome│······
+stik dan liar dari Eropa, Asia, dan Afrika, Felis silvestris lybica memisahkan diri dari kucing liar Eropa seki│······
+tar 173.000 tahun yang lalu dan dari F. subspesies Asia s. ornata dan F. s. cafra sekitar 131.000 tahun yang la│······
+lu. Sekitar 10.000 tahun yang lalu, beberapa Felis silvestris lybica individu didomestikasi di Timur Tengah. Ku│······
+cing domestik modern berasal dari setidaknya lima "Eves mitokondria". Tak satu pun dari subspesies lain Felis s│······
+ilvestris berkontribusi dengan ras dalam negeri, dan banyak dari mereka sendiri mtDNA subspesies 'sedang dibanj│······
+iri oleh percampuran dengan kucing liar.Satu-satunya organisasi saat ini dikenal memiliki program khusus yang d│······
+itujukan untuk kucing liar Afrika melestarikan dan mengurangi apa yang beberapa sebut pencemaran genetik dengan│······
+ kucing domestik Alley Cat Rescue.                                                                             │······
+                                                                                                               │······
+2023-11-05 13:03:46 - Rank 9: 1066221#17 [Kucing merah] - Pada tahun 1874, John Edward Gray pertama kali menjel│······
+askan kucing merah berdasarkan binomial badia Felis atas dasar kulit dan tengkorak yang dikumpulkan di Sarawak │······
+pada tahun 1856. Kucing ini pertama kali dianggap sebagai anak kucing dari kucing emas Asia. Pada tahun 1932, R│······
+eginald Innes Pocock menempatkan spesies dalam genus monotypic Badiofelis. Pada tahun 1978, ia ditempatkan di g│······
+enus Catopuma. In 1978, it was placed in the genus "Catopuma".      
 
-2023-10-21 12:29:22 - Rank 6: 183427#0 [Slogan] - Slogan adalah motto atau frasa yang dipakai pada konteks politik, ko
-mersial, agama, dan lainnya, sebagai ekspresi sebuah ide atau tujuan yang mudah diingat. Kata "slogan" sendiri diambil
- dari istilah dalam bahasa Gaelik, "sluagh-ghairm", yang berarti "teriakan bertempur". Bentuk slogan bervariasi, dari 
-yang tertulis dan terlihat, sampai yang diucap dan yang vulgar. Pada umumnya bentuk retorika sederhananya memberikan r
-uang untuk menyampaikan informasi yang lebih rinci, selain itu juga disampaikan dalam bentuk ekspresi sosial dari tuju
-an bersama, daripada proyeksi dari beberapa orang saja.
-
-2023-10-21 12:29:22 - Rank 7: 527673#24 [Kota Surakarta] - Surakarta memiliki semboyan "Berseri". "Berseri" sendiri ad
-alah akronim dari "Bersih, Sehat, Rapi, dan Indah", sebagai slogan pemeliharaan keindahan kota. Untuk kepentingan pema
-saran pariwisata, Surakarta mengambil slogan pariwisata Solo, The Spirit of Java (Jiwanya Jawa) sebagai upaya pencitra
-an kota Surakarta sebagai pusat kebudayaan Jawa. Slogan "Solo The Spirit of Java" diperoleh dari hasil sayembara yang 
-diadakan oleh Pemerintah Kota Surakarta pada 4 Oktober sampai 14 November 2005 yang dimenangkan oleh Dwi Endang Setyor
-ini (warga Giriroto, Ngemplak, Boyolali). Logonya, dikerjakan oleh perusahaan periklanan pemenang pitching (tender), y
-aitu Freshblood Indonesia (Surakarta) dan didampingi oleh tim konsultan desain Optimaxi (Jakarta) di bawah pengawasan 
-GTZ dalam rangkaian program Regional Economic Development (RED) atau GTZ-RED.
-
-
-2023-10-21 12:29:22 - Rank 8: 126407#5 [Sprite] - Memasuki dasawarsa 1990-an, setiap motto Sprite secara terus-menerus
- digunakan sampai saat ini, sehingga menjadi ikon yang dimiliki oleh Sprite. Di seluruh dunia, Sprite dikampanyekan de
-ngan motto ""Obey Your Thirst"". Sedangkan di Filipina, Sprite dikampanyekan dengan motto ""Magpakatotoo Ka!"" ("jadil
-ah diri sendiri"). Pada tahun 1996, Sprite membuat logo dengan ikon lemon berwarna kuning dan jeruk nipis berwarna hij
-au di atas huruf "I". Kemudian, pada tahun 1997, Sprite membuat logo dengan ikon dua lingkaran berwarna kuning (melamb
-angkan rasa lemon) dan hijau (melambangkan rasa jeruk nipis).
-
-2023-10-21 12:29:22 - Rank 9: 287929#36 [Big Bang (grup musik)] - "Fandom" (singkatan dari "fans kingdom") merupakan i
-stilah yang digunakan untuk klub penggemar yang mengikuti atau mengagumi suatu grup. Klub penggemar di Korea memainkan
- peran penting dalam industri K-pop; struktur dan cara kerja mereka berbeda dengan klub penggemar di Barat. Setiap klu
-b memiliki nama dan warna masing-masing: penggemar Big Bang menjuluki diri mereka dengan sebutan "V.I.P." (diambil dar
-i singel grup dengan judul yang sama) dan memiliki tongkat lampu ("light stick") berbentuk mahkota berwarna kuning.
-
-2023-10-21 12:29:22 - Rank 10: 2404910#3 [Universiade Musim Panas 2017] - Logo pesta olahraga ini adalah gambar aksara
- Tionghoa, "Bei" (北), yang berarti Utara dan merupakan singkatan dari kota tuan rumah Universiade Musim Panas 2017, T
-aipei. Logo ini didasarkan pada bentuk huruf U yang bisa berarti "Universiade, United (persatuan), dan University (uni
-versitas)". Ini mewakili semangat inspirasional generasi muda, membawa harapan dan keyakinan yang tak terhingga. Bentu
-k logo berirama dan gerakan menari ke atas mewakili dedikasi tak berakhir Kota Taipei dalam mengejar keunggulan. Lima 
-warna cerah melambangkan harmoni dan persahabatan dunia. Secara keseluruhan, logo tersebut merupakan harapan terhadap 
-pesta olahraga ini dalam membuat dunia menjadi tempat yang lebih baik. Logo tersebut yang sebelumnya terpilih dari tig
-a desain akhir selama proses seleksi panitia, dirancang oleh Yu Ming-lung.
-
+2023-11-05 13:03:46 - Rank 10: 221251#3 [Kucing liar] - Suatu penelitian yang pernah dilakukan oleh Institut Ka│······
+nker Nasional Amerika Serikat menyatakan bahwa kucing liar diperkirakan merupakan nenek moyang kucing rumah. Di│······
+perkirakan kucing liar pernah dijadikan sebagai hewan peliharaan oleh sekelompok manusia kira-kira 10.000 tahun│······
+ lalu di suatu tempat di Timur Dekat. Diperkirakan pula "Felis silvestris" memiliki keturunan dekat dengan "Fel│······
+is margarita".  

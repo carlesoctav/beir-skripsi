@@ -1,109 +1,114 @@
-Time taken to retrieve: 4270.47 seconds                                                                                              [81/1496]
-2023-10-21 05:20:34 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                                                 
-2023-10-21 05:20:34 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False
-`` to ignore this.
-2023-10-21 05:20:37 - 
+Time taken to retrieve: 2231.43 seconds                                                                        
+2023-11-05 13:50:52 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]                                  
+2023-11-05 13:50:52 - For evaluation, we ignore identical query and document ids (default), please explicitly s
+et ``ignore_identical_ids=False`` to ignore this.                                                              
+2023-11-05 13:50:56 -                                                                                          
+                                                                                                               
+2023-11-05 13:50:56 - NDCG@1: 0.1053                                                                           
+2023-11-05 13:50:56 - NDCG@3: 0.1653                                                                           
+2023-11-05 13:50:56 - NDCG@5: 0.1882                                                                           
+2023-11-05 13:50:56 - NDCG@10: 0.2146                                                                          
+2023-11-05 13:50:56 - NDCG@100: 0.2712                                                                         
+2023-11-05 13:50:56 - NDCG@1000: 0.2950                                                                        
+2023-11-05 13:50:56 -
 
-2023-10-21 05:20:37 - NDCG@1: 0.0264
-2023-10-21 05:20:37 - NDCG@3: 0.0435
-2023-10-21 05:20:37 - NDCG@5: 0.0506
-2023-10-21 05:20:37 - NDCG@10: 0.0611
-2023-10-21 05:20:37 - NDCG@100: 0.0950
-2023-10-21 05:20:37 - NDCG@1000: 0.1269
-2023-10-21 05:20:37 - 
-
-2023-10-21 05:20:37 - MAP@1: 0.0259 
-2023-10-21 05:20:37 - MAP@3: 0.0389 
-2023-10-21 05:20:37 - MAP@5: 0.0429 
-2023-10-21 05:20:37 - MAP@10: 0.0471
-2023-10-21 05:20:37 - MAP@100: 0.0530
-2023-10-21 05:20:37 - MAP@1000: 0.0540
-2023-10-21 05:20:37 - 
-
-2023-10-21 05:20:37 - Recall@1: 0.0259
-2023-10-21 05:20:37 - Recall@3: 0.0559
-2023-10-21 05:20:37 - Recall@5: 0.0730
-2023-10-21 05:20:37 - Recall@10: 0.1056
-
-
-2023-10-21 05:20:37 - Recall@100: 0.2746                                                                                             [55/1496]
-2023-10-21 05:20:37 - Recall@1000: 0.5337                                                                                                     
-2023-10-21 05:20:37 -                                                                                                                         
-                                                                                                                                              
-2023-10-21 05:20:37 - P@1: 0.0264                                                                                                             
-2023-10-21 05:20:37 - P@3: 0.0192                                                                                                             
-2023-10-21 05:20:37 - P@5: 0.0151
-2023-10-21 05:20:37 - P@10: 0.0109
-2023-10-21 05:20:37 - P@100: 0.0029 
-2023-10-21 05:20:37 - P@1000: 0.0006
-2023-10-21 05:20:37 - 
-
-2023-10-21 05:20:40 - MRR@1: 0.0264 
-2023-10-21 05:20:40 - MRR@3: 0.0397 
-2023-10-21 05:20:40 - MRR@5: 0.0437 
-2023-10-21 05:20:40 - MRR@10: 0.0481
-2023-10-21 05:20:40 - MRR@100: 0.0541
-2023-10-21 05:20:40 - MRR@1000: 0.0551
-2023-10-21 05:20:41 - 
-
-2023-10-21 05:20:44 - R_cap@1: 0.0264
-2023-10-21 05:20:44 - R_cap@3: 0.0559
-2023-10-21 05:20:44 - R_cap@5: 0.0730
-2023-10-21 05:20:44 - R_cap@10: 0.1056
-2023-10-21 05:20:44 - R_cap@100: 0.2746
-2023-10-21 05:20:44 - R_cap@1000: 0.5337
-
-
-2023-10-21 05:20:47 - Hole@1: 0.9714                                                                                                 [27/1496]
-2023-10-21 05:20:47 - Hole@3: 0.9793
-2023-10-21 05:20:47 - Hole@5: 0.9836
-2023-10-21 05:20:47 - Hole@10: 0.9876
-2023-10-21 05:20:47 - Hole@100: 0.9957
-2023-10-21 05:20:47 - Hole@1000: 0.9981
-2023-10-21 05:20:47 - Query : Apa itu?!. populasi El Salvador
-
-2023-10-21 05:20:47 - Rank 1: 3990876 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memilik
-i populasi kira - kira 6,29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri 
-dari Mestizos, keturunan Eropa dan Indigenus Amerika.el salaáor], Pipil america
-
-2023-10-21 05:20:47 - Rank 2: 2040745 [] - Menurut laporan Sensus pada Juli 2007, El Salvador diperkirakan memiliki populasi 6.948.073 orang. 
-90% penduduk El Salvador adalah orang Spanyol dan India, yang disebut 'Mestizo'. 1% populasi berasal dari sebuah kelompok pribumi.
-
-2023-10-21 05:20:47 - Rank 3: 4894633 [] - El Salvador memiliki kepadatan penduduk 342 orang per kilometer persegi (885 / persegi mil), yang b
-erada di peringkat ke - 47 di dunia. Ibu kota dan kota terbesar adalah San Salvador, dengan populasi kota yang berpenduduk 568.000 orang dan p
-opulasi metropolitan 2,4 juta orang. San Salvador memiliki populasi Yahudi terbesar kedua di Amerika Tengah.
-
-2023-10-21 05:20:47 - Rank 4: 4894635 [] - El Salvador Penduduk 2015. El Salvador adalah negeri yang paling kecil tetapi padat penduduknya di 
-Amerika Tengah dengan jumlah penduduk diperkirakan 6,42 juta orang pada 2015, dari perkiraan 2013 tentang 6.140.000 orang. Ini menjadikan nega
-ra terbesar ke-108 oleh populasi, tetapi 153 dari total daerah.
-
-2023-10-21 05:20:47 - Rank 5: 2040737 [] - Total penduduk El Salvador diperkirakan berjumlah 6,2 juta orang pada 2016, menurut angka sensus te
-rbaru. Sewaktu mengenang kembali, pada tahun 1950, El Salvador memiliki populasi 2,2 juta orang. Populasi El Salvador menggambarkan 0,09 pers$
-n populasi total dunia yang konon berarti bahwa satu orang di setiap 1119 orang di planet ini adalah penduduk El Salvador. Halaman ini menyedi
-
-2023-10-21 05:20:47 - Rank 6: 3541271 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memilik
-i populasi sekitar 6.29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri dari
- Mestizos Eropa dan Indigenous Amerika. Pada 2013, El Salvador memiliki populasi sekitar 6. Populasinya sebagian besar terdiri dari Mestizos o
-rang Eropa dan Indigenus keturunan Amerika.
-
-2023-10-21 05:20:47 - Rank 7: 2040736 [] - Menurut laporan Sensus pada Juli 2007, El Salvador diperkirakan memiliki populasi. Dari 6.948.073 o
-rang. 90% penduduk El Salvador adalah orang Spanyol dan India, yang disebut 'Mestizo'. 1% populasi berasal dari sebuah kelompok pribumi.
-
-2023-10-21 05:20:47 - Rank 8: 2345277 [] - Populasi El Salvador adalah 6.218.000 orang pada 2010, dibandingkan dengan 2.200,000 orang pada tah
-un 1950. Pada 2010, persentase penduduk di bawah usia 15 tahun 32,1%, 61% berusia antara 15 dan 65 tahun, sedangkan 6,9% berusia 65 tahun atau
- lebih. Ibu kota San Salvador memiliki populasi sekitar 2,1 juta orang selama periode kolonial, El Salvador adalah bagian dari Jenderal Kapten
- Guatemala, yang juga dikenal sebagai Kerajaan Guatemala (Spanyol: Reino de Guatemala), yang diciptakan pada tahun 1609 sebagai divisi adminis
-tratif di Spanyol Baru
-
-2023-10-21 05:20:47 - Rank 9: 2040739 [] - San Salvador, ibu kota El Salvador memiliki penduduk 1,4 juta jiwa. 48% penduduk tinggal di pedesaa
-n negeri itu. Selama bertahun - tahun, jumlah penduduk di El Salvador semakin banyak. Pada tahun 2006, penduduk El Salvador berjumlah 6.82.378
- orang dan pada tahun 2000 berjumlah 6.435600 orang. Menurut catatan, pertumbuhan tahunan penduduk di negeri itu antara tahun 1991 hingga 1997
- adalah 2.2%. Menurut perkiraan tahun 2005, angka pertumbuhan tahunan populasi adalah 1,7%. Persentase kelompok etnis yang berbeda yang tingga
-l di El Salvador adalah:
-
-2023-10-21 05:20:47 - Rank 10: 2345281 [] - El Salvador adalah ibu kota dan kota terbesar di San Salvador. Pada tahun 2013, El Salvador memili
-ki populasi sekitar 6.29 juta orang, menjadikannya negara yang paling padat penduduknya di kawasan itu. Populasinya sebagian besar terdiri dar
-i Mestizos Eropa dan Indigenous Amerika. selama periode kolonial, El Salvador adalah bagian dari Kapten
+2023-11-05 13:50:56 - MAP@1: 0.1026                                                                    [70/473]
+2023-11-05 13:50:56 - MAP@3: 0.1491                                                                            
+2023-11-05 13:50:56 - MAP@5: 0.1618                                                                            
+2023-11-05 13:50:56 - MAP@10: 0.1729                                                                           
+2023-11-05 13:50:56 - MAP@100: 0.1836                                                                          
+2023-11-05 13:50:56 - MAP@1000: 0.1845                                                                         
+2023-11-05 13:50:56 -                                                                                          
+                                                                                                               
+2023-11-05 13:50:56 - Recall@1: 0.1026                                                                         
+2023-11-05 13:50:56 - Recall@3: 0.2091                                                                         
+2023-11-05 13:50:56 - Recall@5: 0.2643                                                                         
+2023-11-05 13:50:56 - Recall@10: 0.3445                                                                        
+2023-11-05 13:50:56 - Recall@100: 0.6156                                                                       
+2023-11-05 13:50:56 - Recall@1000: 0.8036                                                                      
+2023-11-05 13:50:56 -   
 
 
 
+2023-11-05 13:50:56 - P@1: 0.1053                                                                      [54/473]
+2023-11-05 13:50:56 - P@3: 0.0720                                                                              
+2023-11-05 13:50:56 - P@5: 0.0548                                                                              
+2023-11-05 13:50:56 - P@10: 0.0359                                                                             
+2023-11-05 13:50:56 - P@100: 0.0065                                                                            
+2023-11-05 13:50:56 - P@1000: 0.0008                                                                           
+2023-11-05 13:50:56 -                                                                                          
+                                                                                                               
+2023-11-05 13:50:58 - MRR@1: 0.1053                                                                            
+2023-11-05 13:50:58 - MRR@3: 0.1523                                                                            
+2023-11-05 13:50:58 - MRR@5: 0.1651                                                                            
+2023-11-05 13:50:58 - MRR@10: 0.1761                                                                           
+2023-11-05 13:50:58 - MRR@100: 0.1868                                                                          
+2023-11-05 13:50:58 - MRR@1000: 0.1876                                                                         
+2023-11-05 13:50:59 -                                                                                          
+                                                                                                               
+2023-11-05 13:51:02 - R_cap@1: 0.1053                                                                          
+2023-11-05 13:51:02 - R_cap@3: 0.2091                                                                          
+2023-11-05 13:51:02 - R_cap@5: 0.2645                                                                          
+2023-11-05 13:51:02 - R_cap@10: 0.3445                                                                         
+2023-11-05 13:51:02 - R_cap@100: 0.6156                                                                        
+2023-11-05 13:51:02 - R_cap@1000: 0.8036                                                                       
+2023-11-05 13:51:02 -                      
+
+
+2023-11-05 13:51:05 - Hole@1: 0.8921                                                                           
+2023-11-05 13:51:05 - Hole@3: 0.9259                                                                           
+2023-11-05 13:51:05 - Hole@5: 0.9432                                                                           
+2023-11-05 13:51:05 - Hole@10: 0.9624                                                                          
+2023-11-05 13:51:05 - Hole@100: 0.9923                                                                         
+2023-11-05 13:51:05 - Hole@1000: 0.9981
+2023-11-05 13:51:05 - Query : Apa gejala anafilaksis 
+
+2023-11-05 13:51:05 - Rank 1: 5979050 [] - Tanda - tanda dan gejala anafilaksis mencakup: 1 Reaksi kulit, terma
+suk gatal, dan kulit pucat. 2 Luka gores pada wajah, mata, bibir atau tenggorokan. 3 Kontriksi saluran udara, m
+enyebabkan sesak napas dan kesulitan bernapas. Sebuah lemah dan cepat 1 denyut. Mual, muntah atau diare. Pusing
+, pingsan atau tidak sadar.                                                                                    
+                                                                                                               
+2023-11-05 13:51:05 - Rank 2: 2867724 [] - Tanda - tanda anafilaksis antara lain adalah: 1 Tenggorokan atau ben
+jolan di tenggorokan Anda (penyempitan melalui udara) yang membuat Anda sulit bernapas. 2 Shock, dengan penurun
+an tekanan darahmu. 3 denyutan cepat. 4 pusing, pusing karena pusing atau pingsan.                             
+                                                                                                               
+2023-11-05 13:51:05 - Rank 3: 481330 [] - Gejala reaksi anafilaksis dapat mencakup: 1 Sulit bernapas. 2 Dada ke
+tat. 3 Pusing atau pusing. 4 Mual atau muntah. 5 Sulit menelan. 6 Pingsan. 7 gatal dan gatal-gatal. 8 Swelling,
+ wajah, mata, mulut, lidah dan tenggorokan.                                                                    
+                                                                                                               
+2023-11-05 13:51:05 - Rank 4: 2298528 [] - Gejala Anafilaksis terjadi secara mendadak dan dapat berkembang deng
+an cepat. Gejala - gejala awalnya mungkin ringan, seperti hidung yang berair, ruam kulit atau perasaan yang ane
+h. Gejala - gejala ini dapat dengan cepat menimbulkan problem yang lebih serius, termasuk: 1 Pernapasan yang Su
+lit. 2 Sarang atau bengkak. 3 kali lipat dari tenggorokan. 4 suara Hoarse. 5 Nausea. 6 Muntah. 7 penderitaan ab
+dominal. 
+
+
+
+2023-11-05 13:51:05 - Rank 5: 8529106 [] - Anaphylaxis adalah reaksi alergi yang langka dan mengancam jiwa yang
+ menyebabkan meluasnya disfungsi sistem tubuh. Tanda - tanda dan gejala anafilaksis antara lain adalah: 1 sesak
+nya saluran udara dan tenggorokan, sehingga sulit bernapas. 2 Nausea atau kram perut. Muntah atau diare.       
+                                                                                                               
+2023-11-05 13:51:05 - Rank 6: 8529102 [] - Anaphylaxis adalah reaksi alergi yang langka dan mengancam jiwa yang
+ menyebabkan meluasnya disfungsi sistem tubuh. Tanda - tanda dan gejala anafilaksis antara lain adalah: 1 sesak
+nya saluran udara dan tenggorokan, sehingga sulit bernapas. Nausea atau kram perut.                            
+                                                                                                               
+2023-11-05 13:51:05 - Rank 7: 2326265 [] - Gejala Anafilaksis terjadi secara mendadak dan dapat berkembang deng
+an cepat. Gejala - gejala awalnya mungkin ringan, seperti hidung yang berair, ruam kulit atau perasaan yang ane
+h. Gejala - gejala ini dapat dengan cepat menimbulkan problem yang lebih serius, termasuk: 1 Pernapasan yang Su
+lit. 2 Sarang atau bengkak. 3 kali lipat dari tenggorokan.                                                     
+                                                                                                               
+2023-11-05 13:51:05 - Rank 8: 7550142 [] - Gejala - gejala Anafilaksis mencakup kekakuan tenggorokan, susah ber
+napas, kesemutan, pusing, dan rengekan. Anaphylaxis tiba-tiba, reaksi mengancam jiwa yang perlu segera diobati.
+ Anafilaksis mungkin terjadi jika Anda berolahraga setelah terkena pemicu, seperti setelah Anda minum antibioti
+k.                                                                                                             
+                                                                                                               
+2023-11-05 13:51:05 - Rank 9: 4492470 [] - Anafilaksis biasanya mempengaruhi lebih dari satu bagian tubuh pada 
+waktu yang sama. Gejalanya termasuk kehangatan, kesemutan, ruam merah, gatal, perasaan pusing, sesak napas, ses
+ak tenggorokan, kecemasan, nyeri/keram dan/atau muntah dan diare.
+
+
+2023-11-05 13:51:05 - Rank 10: 2131690 [] - Itu mungkin mempengaruhi kulit, saluran udara, dan organ. Itu juga 
+terjadi sangat cepat setelah minum obat, sering kali dalam beberapa menit atau detik. Anaphylaxis adalah keadaa
+n darurat dan mengancam nyawa. Gejalanya antara lain: 1 Pernapasan atau tenggorokan terasa sesak. Kebingungan 2
+. 3 Kram. 4 pusing atau pingsan. 5 Sarang yang menutupi sebagian besar tubuhnya. 6 detak jantung tidak teratur.
+7 Shock atau pingsan.
