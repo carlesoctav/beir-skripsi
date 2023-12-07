@@ -1,0 +1,123 @@
+2023-12-07 04:46:41 - Loading Corpus...
+2023-12-07 04:46:49 - Loaded 1469399 TEST Documents.
+2023-12-07 04:46:49 - Doc Example: {'text': 'Asam deoksiribonukleat, lebih dikenal dengan singkatan DNA (bahasa Inggris: d</b>eoxyribo<b data-parsoid=\'{"dsr":[417,424,3,3]}\'>n</b>ucleic a</b>cid), adalah sejenis biomolekul yang menyimpan dan menyandi instruksi-instruksi genetika setiap organisme dan banyak jenis virus. Instruksi-instruksi genetika ini berperan penting dalam pertumbuhan, perkembangan, dan fungsi organisme dan virus. DNA merupakan asam nukleat; bersamaan dengan protein dan karbohidrat, asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui. Kebanyakan molekul DNA terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda. Dua unting DNA ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuan-satuan molekul yang disebut nukleotida. Tiap-tiap nukleotida terdiri atas salah satu jenis basa nitrogen (guanina (G), adenina (A), timina (T), atau sitosina (C)), gula monosakarida yang disebut deoksiribosa, dan gugus fosfat. Nukleotida-nukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya. Hasilnya adalah rantai punggung gula-fosfat yang berselang-seling. Menurut kaidah pasangan basa (A dengan T dan C dengan G), ikatan hidrogen mengikat basa-basa dari kedua unting polinukleotida membentuk DNA unting ganda', 'title': ''}
+2023-12-07 04:46:49 - Loading Queries...
+2023-12-07 04:46:49 - Loaded 829 TEST Queries.
+2023-12-07 04:46:49 - Query Example: Siapakah yang menemuka benua Amerika ?
+2023-12-07 04:46:49 - Load pretrained SentenceTransformer: carles-undergrad-thesis/indoBERT-Knowledge-distillation-en-id-SBERT
+2023-12-07 04:46:50 - Use pytorch device: cuda
+2023-12-07 04:46:50 - Encoding Queries...
+2023-12-07 04:46:53 - Sorting Corpus by document length (Longest first)...
+2023-12-07 04:46:55 - Encoding Corpus in batches... Warning: This might take a while!
+2023-12-07 04:46:55 - Scoring Function: Dot Product (dot)
+2023-12-07 04:46:55 - Encoding Batch 1/30...
+2023-12-07 04:48:20 - Encoding Batch 2/30...
+2023-12-07 04:49:44 - Encoding Batch 3/30...
+2023-12-07 04:50:59 - Encoding Batch 4/30...
+2023-12-07 04:52:05 - Encoding Batch 5/30...
+2023-12-07 04:53:03 - Encoding Batch 6/30...
+2023-12-07 04:53:56 - Encoding Batch 7/30...
+2023-12-07 04:54:45 - Encoding Batch 8/30...
+2023-12-07 04:55:30 - Encoding Batch 9/30...
+2023-12-07 04:56:11 - Encoding Batch 10/30...
+2023-12-07 04:56:49 - Encoding Batch 11/30...
+2023-12-07 04:57:23 - Encoding Batch 12/30...
+2023-12-07 04:57:55 - Encoding Batch 13/30...
+2023-12-07 04:58:24 - Encoding Batch 14/30...
+2023-12-07 04:58:51 - Encoding Batch 15/30...
+2023-12-07 04:59:14 - Encoding Batch 16/30...
+2023-12-07 04:59:33 - Encoding Batch 17/30...
+2023-12-07 04:59:52 - Encoding Batch 18/30...
+2023-12-07 05:00:09 - Encoding Batch 19/30...
+2023-12-07 05:00:27 - Encoding Batch 20/30...
+2023-12-07 05:00:47 - Encoding Batch 21/30...
+2023-12-07 05:01:04 - Encoding Batch 22/30...
+2023-12-07 05:01:17 - Encoding Batch 23/30...
+2023-12-07 05:01:31 - Encoding Batch 24/30...
+2023-12-07 05:01:45 - Encoding Batch 25/30...
+2023-12-07 05:01:57 - Encoding Batch 26/30...
+2023-12-07 05:02:08 - Encoding Batch 27/30...
+2023-12-07 05:02:17 - Encoding Batch 28/30...
+2023-12-07 05:02:25 - Encoding Batch 29/30...
+2023-12-07 05:02:32 - Encoding Batch 30/30...
+Time taken to retrieve: 944.48 seconds
+2023-12-07 05:02:35 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-12-07 05:02:35 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-07 05:02:35 - 
+
+2023-12-07 05:02:35 - NDCG@1: 0.2955
+2023-12-07 05:02:35 - NDCG@3: 0.3734
+2023-12-07 05:02:35 - NDCG@5: 0.4030
+2023-12-07 05:02:35 - NDCG@10: 0.4255
+2023-12-07 05:02:35 - NDCG@100: 0.4657
+2023-12-07 05:02:35 - NDCG@1000: 0.4824
+2023-12-07 05:02:35 - 
+
+2023-12-07 05:02:35 - MAP@1: 0.2680
+2023-12-07 05:02:35 - MAP@3: 0.3450
+2023-12-07 05:02:35 - MAP@5: 0.3622
+2023-12-07 05:02:35 - MAP@10: 0.3719
+2023-12-07 05:02:35 - MAP@100: 0.3806
+2023-12-07 05:02:35 - MAP@1000: 0.3812
+2023-12-07 05:02:35 - 
+
+2023-12-07 05:02:35 - Recall@1: 0.2680
+2023-12-07 05:02:35 - Recall@3: 0.4323
+2023-12-07 05:02:35 - Recall@5: 0.5022
+2023-12-07 05:02:35 - Recall@10: 0.5700
+2023-12-07 05:02:35 - Recall@100: 0.7513
+2023-12-07 05:02:35 - Recall@1000: 0.8820
+2023-12-07 05:02:35 - 
+
+2023-12-07 05:02:35 - P@1: 0.2955
+2023-12-07 05:02:35 - P@3: 0.1616
+2023-12-07 05:02:35 - P@5: 0.1129
+2023-12-07 05:02:35 - P@10: 0.0640
+2023-12-07 05:02:35 - P@100: 0.0086
+2023-12-07 05:02:35 - P@1000: 0.0010
+2023-12-07 05:02:35 - 
+
+2023-12-07 05:02:36 - MRR@1: 0.2955
+2023-12-07 05:02:36 - MRR@3: 0.3693
+2023-12-07 05:02:36 - MRR@5: 0.3849
+2023-12-07 05:02:36 - MRR@10: 0.3936
+2023-12-07 05:02:36 - MRR@100: 0.4013
+2023-12-07 05:02:36 - MRR@1000: 0.4018
+2023-12-07 05:02:36 - 
+
+2023-12-07 05:02:36 - R_cap@1: 0.2955
+2023-12-07 05:02:36 - R_cap@3: 0.4323
+2023-12-07 05:02:36 - R_cap@5: 0.5028
+2023-12-07 05:02:36 - R_cap@10: 0.5700
+2023-12-07 05:02:36 - R_cap@100: 0.7513
+2023-12-07 05:02:36 - R_cap@1000: 0.8820
+2023-12-07 05:02:36 - 
+
+2023-12-07 05:02:37 - Hole@1: 0.6924
+2023-12-07 05:02:37 - Hole@3: 0.8295
+2023-12-07 05:02:37 - Hole@5: 0.8784
+2023-12-07 05:02:37 - Hole@10: 0.9293
+2023-12-07 05:02:37 - Hole@100: 0.9879
+2023-12-07 05:02:37 - Hole@1000: 0.9969
+2023-12-07 05:02:37 - Query : Kapan Petrus Lombardus lahir?
+
+2023-12-07 05:02:37 - Rank 1: 696856#1 [] - Petrus Lombardus mungkin dilahirkan di Novara; atau kemungkinan lainnya adalah di Lumellogno[7] (saat itu sebuah komune pedesaan, sekarang menjadi bagian dari Provinsi Novara, Piemonte), di barat laut Italia, dari suatu keluarga miskin.[8] Kelahirannya diperkirakan antara tahun 1095-1100.
+
+2023-12-07 05:02:37 - Rank 2: 754216#1 [] - Paullus Fabius Persicus dipercaya lahir pada tahun 2 atau 1 Sebelum Era Umum. "Cognomen"-nya - seperti "praenomen" (Paullus) yang ia miliki bersama ayahnya - diberikan kepadanya untuk mengumumkan keturunan paternal alaminya dengan Lucius Aemilius Paullus Macedonicus, yang mengalahkan monarki Makedonia yang terakhir, Perseus, pada tahun 146 Sebelum Era Umum.
+
+2023-12-07 05:02:37 - Rank 3: 1826866#1 [] - Diadumenian dilahirkan pada tanggal 14 September 208 atau, menurut "Historia Augusta", pada tanggal 19 September karena tanggal lahirnya sama dengan Kaisar Antoninus Pius. Ibunya adalah Ratu Nonia Celsa, tidak banyak yang diketahui tentang dirinya, ia hanya disebutkan dalam "Historia Augusta". Ia lahir dengan nama "Marcus Opellius Diadumenianus", tetapi namanya diganti dan diberi tambahan "Antoninus" untuk memperkuat hubungan dengan keluarga Marcus Aurelius seperti yang dilakukan oleh Caracalla.
+
+2023-12-07 05:02:37 - Rank 4: 2399467#0 [] - Petrus Gonsalvus (, b.1537-d.1618?), disebut oleh Ulisse Aldrovandi sebagai "manusia hutan," lahir tahun 1537 di Tenerife. Hidupnya telah dicatat dengan baik saat ia menjadi terkenal selama hidupnya karena kondisinya (hipertrikosis).
+
+2023-12-07 05:02:37 - Rank 5: 2532844#0 [] - Aurelius Prudentius Clemens adalah seorang penyair Kristen Romawi, yang lahir di provinsi Romawi Tarraconensis (sekarang Spanyol Utara) pada 348. Ia diyakini wafat di Semenanjung Iberia beberapa masa setelah 405, mungkin sekitar 413. Tempat kelahirannya tak jelas, namun diyakini adalah Caesaraugusta (Saragossa), Tarraco (Tarragona), atau Calagurris (Calahorra).
+
+2023-12-07 05:02:37 - Rank 6: 64815#0 [] - Innosentius VIII, nama lahir Giovanni Battista Cibo (1432 – 25 Juli 1492), adalah Paus dari 1484 sampai wafatnya, dilahirkan di Genoa, dan anak Aran Cibo yang menjadi senator di Roma selama masa jabatan Paus Kallixtus III (1455–58). Selama masa pemerintahannya Ia menghukum orang orang yang di anggap Bid'ah.
+
+2023-12-07 05:02:37 - Rank 7: 235783#1 [] - Dua bersaudara ini dilahirkan di Tesalonika, di Yunani masa kini; Sirilus lahir antara tahun 827–828 dan Metodius antara tahun 815–820. Dikatakan bahwa Sirilus adalah bungsu dari tujuh bersaudara; ia terlahir dengan nama Konstantinus, namun menggunakan nama Sirilus setelah menjadi seorang rahib di Roma tidak lama sebelum ia wafat, sebagaimana tertulis dalam ""Vita Cyrilli"" ("Kehidupan Sirilus"). Metodius terlahir dengan nama Mikael dan menggunakan nama Metodius setelah menjadi rahib di Olympus Mysia (Uludağ masa kini), di barat laut Turki. Ayah mereka bernama Leo, seorang "droungarios" di Tesalonika, salah satu thema Bizantin, dan ibu mereka bernama Maria.
+
+2023-12-07 05:02:37 - Rank 8: 292399#1 [] - Ia lahir di Naples. Paus Paul II menjadikannya kardinal Santi Marcellino e Pietro pada tanggal 18 September 1467.
+
+2023-12-07 05:02:37 - Rank 9: 514056#0 [] - Tiberius Claudius Caesar Augustus Germanicus, singkatnya Claudius (1 Agustus 10 SM – 13 Oktober 54 M), adalah kaisar Romawi ke-4 yang berkuasa dari 24 Januari 41 hingga kematiannya tahun 54 karena diracuni oleh istrinya, Aggripina, yang juga ibu Nero. Lahir di Lugdunum di Galia (kini Lyon) dari pasangan Drusus dan , ia adalah kaisar Romawi pertama yang terlahir di luar Italia.
+
+2023-12-07 05:02:37 - Rank 10: 107287#0 [] - Paskalis II, nama lahir Ranierius (wafat di Roma, Italia, 21 Januari 1118), adalah Paus Gereja Katolik Roma sejak 13 Agustus 1099 sampai 21 Januari 1118.
+

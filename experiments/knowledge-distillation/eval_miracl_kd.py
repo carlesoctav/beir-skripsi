@@ -27,7 +27,7 @@ corpus, queries, qrels = GenericDataLoader(
     qrels_file=qrels_path).load_custom()
 
 
-model = DRES(models.SentenceBERT("carles-undergrad-thesis/st-distillbert-tasb-en-id-mmarco-knowledge-distillation"), batch_size=128)
+model = DRES(models.SentenceBERT("carles-undergrad-thesis/indoBERT-Knowledge-distillation-en-id-SBERT"), batch_size=128)
 retriever = EvaluateRetrieval(model, score_function="dot")
 
 #### Retrieve dense results (format of results is identical to qrels)

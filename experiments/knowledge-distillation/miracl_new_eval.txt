@@ -1,0 +1,122 @@
+2023-12-07 04:26:41 - Loading Corpus...
+2023-12-07 04:26:48 - Loaded 1446315 Documents.
+2023-12-07 04:26:48 - Doc Example: {'text': 'Larva kumbang ini biasanya mengebor ke dalam kayu dan dapat menyebabkan kerusakan pada batang kayu hidup atau kayu yang telah ditebang.', 'title': 'Colobothea biguttata'}
+2023-12-07 04:26:48 - Loading Queries...
+2023-12-07 04:26:48 - Loaded 960 Queries.
+2023-12-07 04:26:48 - Query Example: Dimana James Hepburn meninggal?
+2023-12-07 04:26:48 - Load pretrained SentenceTransformer: carles-undergrad-thesis/indoBERT-Knowledge-distillation-en-id-SBERT
+2023-12-07 04:28:21 - Use pytorch device: cuda
+2023-12-07 04:28:21 - Encoding Queries...
+2023-12-07 04:28:23 - Sorting Corpus by document length (Longest first)...
+2023-12-07 04:28:26 - Encoding Corpus in batches... Warning: This might take a while!
+2023-12-07 04:28:26 - Scoring Function: Dot Product (dot)
+2023-12-07 04:28:26 - Encoding Batch 1/29...
+2023-12-07 04:29:51 - Encoding Batch 2/29...
+2023-12-07 04:31:15 - Encoding Batch 3/29...
+2023-12-07 04:32:30 - Encoding Batch 4/29...
+2023-12-07 04:33:35 - Encoding Batch 5/29...
+2023-12-07 04:34:34 - Encoding Batch 6/29...
+2023-12-07 04:35:27 - Encoding Batch 7/29...
+2023-12-07 04:36:16 - Encoding Batch 8/29...
+2023-12-07 04:37:02 - Encoding Batch 9/29...
+2023-12-07 04:37:43 - Encoding Batch 10/29...
+2023-12-07 04:38:21 - Encoding Batch 11/29...
+2023-12-07 04:38:57 - Encoding Batch 12/29...
+2023-12-07 04:39:29 - Encoding Batch 13/29...
+2023-12-07 04:39:58 - Encoding Batch 14/29...
+2023-12-07 04:40:25 - Encoding Batch 15/29...
+2023-12-07 04:40:49 - Encoding Batch 16/29...
+2023-12-07 04:41:10 - Encoding Batch 17/29...
+2023-12-07 04:41:29 - Encoding Batch 18/29...
+2023-12-07 04:41:49 - Encoding Batch 19/29...
+2023-12-07 04:42:08 - Encoding Batch 20/29...
+2023-12-07 04:42:28 - Encoding Batch 21/29...
+2023-12-07 04:42:46 - Encoding Batch 22/29...
+2023-12-07 04:43:00 - Encoding Batch 23/29...
+2023-12-07 04:43:16 - Encoding Batch 24/29...
+2023-12-07 04:43:31 - Encoding Batch 25/29...
+2023-12-07 04:43:44 - Encoding Batch 26/29...
+2023-12-07 04:43:56 - Encoding Batch 27/29...
+2023-12-07 04:44:06 - Encoding Batch 28/29...
+2023-12-07 04:44:16 - Encoding Batch 29/29...
+Time taken to retrieve: 961.70 seconds
+2023-12-07 04:44:23 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-12-07 04:44:23 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-07 04:44:23 - 
+
+2023-12-07 04:44:23 - NDCG@1: 0.3719
+2023-12-07 04:44:23 - NDCG@3: 0.3419
+2023-12-07 04:44:23 - NDCG@5: 0.3503
+2023-12-07 04:44:23 - NDCG@10: 0.3741
+2023-12-07 04:44:23 - NDCG@100: 0.4542
+2023-12-07 04:44:23 - NDCG@1000: 0.4840
+2023-12-07 04:44:23 - 
+
+2023-12-07 04:44:23 - MAP@1: 0.1635
+2023-12-07 04:44:23 - MAP@3: 0.2388
+2023-12-07 04:44:23 - MAP@5: 0.2655
+2023-12-07 04:44:23 - MAP@10: 0.2864
+2023-12-07 04:44:23 - MAP@100: 0.3114
+2023-12-07 04:44:23 - MAP@1000: 0.3134
+2023-12-07 04:44:23 - 
+
+2023-12-07 04:44:23 - Recall@1: 0.1635
+2023-12-07 04:44:23 - Recall@3: 0.2883
+2023-12-07 04:44:23 - Recall@5: 0.3552
+2023-12-07 04:44:23 - Recall@10: 0.4322
+2023-12-07 04:44:23 - Recall@100: 0.7025
+2023-12-07 04:44:23 - Recall@1000: 0.8718
+2023-12-07 04:44:23 - 
+
+2023-12-07 04:44:23 - P@1: 0.3719
+2023-12-07 04:44:23 - P@3: 0.2465
+2023-12-07 04:44:23 - P@5: 0.1933
+2023-12-07 04:44:23 - P@10: 0.1247
+2023-12-07 04:44:23 - P@100: 0.0221
+2023-12-07 04:44:23 - P@1000: 0.0028
+2023-12-07 04:44:23 - 
+
+2023-12-07 04:44:24 - MRR@1: 0.3719
+2023-12-07 04:44:24 - MRR@3: 0.4509
+2023-12-07 04:44:24 - MRR@5: 0.4697
+2023-12-07 04:44:24 - MRR@10: 0.4788
+2023-12-07 04:44:24 - MRR@100: 0.4855
+2023-12-07 04:44:24 - MRR@1000: 0.4859
+2023-12-07 04:44:24 - 
+
+2023-12-07 04:44:24 - R_cap@1: 0.3719
+2023-12-07 04:44:24 - R_cap@3: 0.3446
+2023-12-07 04:44:24 - R_cap@5: 0.3715
+2023-12-07 04:44:24 - R_cap@10: 0.4323
+2023-12-07 04:44:24 - R_cap@100: 0.7025
+2023-12-07 04:44:24 - R_cap@1000: 0.8718
+2023-12-07 04:44:24 - 
+
+2023-12-07 04:44:25 - Hole@1: 0.6052
+2023-12-07 04:44:25 - Hole@3: 0.7236
+2023-12-07 04:44:25 - Hole@5: 0.7798
+2023-12-07 04:44:25 - Hole@10: 0.8498
+2023-12-07 04:44:25 - Hole@100: 0.9603
+2023-12-07 04:44:25 - Hole@1000: 0.9871
+2023-12-07 04:44:25 - Query : Dimana Jamie Richard Vardy lahir?
+
+2023-12-07 04:44:25 - Rank 1: 1852373#0 [Jamie Vardy] - Jamie Richard Vardy (lahir dengan nama Gill; 11 January 1987) adalah pemain sepak bola Inggris yang bermain di klub Premiere League Leicester City dan tim nasional Inggris. Ia bermain sebagai striker, namun juga bisa bermain di sayap.
+
+2023-12-07 04:44:25 - Rank 2: 1852373#3 [Jamie Vardy] - Lahir di Sheffield, South Yorkshire, Vardy memulai kariernya di tim muda Stocksbridge Park Steels pada umur 16 tahun setelah dilepas Sheffield Wednesday. Ia masuk ke tim reserve dan tim utama dibawah arahan Gary Marrow tahun 2007, menerima £30 perminggu di klub. Setelah performa menakjubkannya, beberapa tim dari Football League tertarik dan tahun 2009 ia menghabiskan seminggu melakukan trial dengan Crewe Alexandra. Transfer itu tidak terjadi dan ia lalu menolak kontrak jangka pendek dengan Rotherham United.
+
+2023-12-07 04:44:25 - Rank 3: 2605616#1 [Jamie Blackley] - Jamie Blackley lahir di Douglas, Pulau Man, dan dibesarkan di London, Inggris, bersama ayahnya Martin, ibunya Marina, serta kakaknya Holly-Anna. Peran pertamanya sebagai Hanschen dalam drama "Spring Awakening" di London. Ia memiliki peran kecil sebagai Iain dalam film "Snow White and the Huntsman" (2012), namun beberapa perannya yang menonjol antara lain dalam film "Uwantme2killhim?" (2013), "The Fifth Estate" (2013) dan "If I Stay" (2014). Ia berperan sebagai Freddie Hamilton dalam serial televisi "The Halcyon".
+
+2023-12-07 04:44:25 - Rank 4: 2126040#1 [Richard Porson] - Ia lahir di East Ruston, dekat North Walsham, Norfolk, sebagai putra sulung dari Huggin Person. Ibunya adalah putri seorang pembuat sepatu dari desa tetangga Bacton.
+
+2023-12-07 04:44:25 - Rank 5: 2335297#1 [Richard Dysart] - Richard Dysart merupakan putera dari Alice (née Hennigar) dan Douglas Dysart, seorang dokter, lahir di Boston, Massachusetts pada 30 Maret 1929. Dysart tumbuh dan besar di Skowhegan, Maine dan Augusta, Maine. Dia menempuh studi di Gould Academy Bethel, Maine. Atas dorongan ibunya, Dysart tampil dalam summer stock di The Lakewood Theater dekat Skowhegan. Dia juga bekerja di sebuah stasiun radio lokal.
+
+2023-12-07 04:44:25 - Rank 6: 813971#1 [Jamie Cullum] - Ia lahir di Rochford, Essex. Dia dibesarkan di Hullavington, Wiltshire.
+
+2023-12-07 04:44:25 - Rank 7: 835889#1 [Jamie Chung] - Jamie Chung lahir dan dibesarkan di San Francisco, California. Menurut MTV 2004 halaman biografi untuknya, dia adalah generasi kedua Korea-Amerika yang dibesarkan oleh "tradisional" orang tua, dan WS Dikenal "menceritakannya seperti itu ". Chung memasuki University of California, Riverside, di mana ia menjadi anggota perkumpulan Kappa Kappa Gamma.
+
+2023-12-07 04:44:25 - Rank 8: 608478#4 [Richard II dari Inggris] - Richard lahir pada tanggal 6 Januari 1367 di Biara St. Andrew di Bordeaux, kepangeranan Inggris Aquitaine. Menurut sumber kontemporer, tiga raja - "Raja Kastilia, Raja Navarra, dan Raja Portugal" - hadir pada saat kelahirannya.
+
+2023-12-07 04:44:25 - Rank 9: 2659471#1 [Richard Harmon] - Richard Harmon lahir di Mississauga, Ontario, Kanada pada 18 Agustus 1991. Orang tuanya adalah sutradara Allan Harmon dari keluarga Harmon yang kaya di Scarborough Ontario dan produser Cynde Harmon; saudara perempuannya adalah aktris Jessica Harmon. Dia membuat debut aktingnya di serial televisi tahun 2002, "Yeremia".
+
+2023-12-07 04:44:25 - Rank 10: 1557876#2 [Richard Cromwell] - Cromwell lahir di Huntingdon pada 4 Oktober 1626, anak ketiga dari Oliver Cromwell dan Elizabeth Cromwell. Ia belajar di Felsted School sewaktu kecil. Tidak ada catatan kuliah dari Cromwell. Pada Mei 1626, ia bergabung dengan "Lincoln's Inn. Pada tahun 1647, ia menjadi seorang kapten di tim penyelamat Thomas Faifax selama akhir 1640an, namun bukti atas karier itu pun minim.
+

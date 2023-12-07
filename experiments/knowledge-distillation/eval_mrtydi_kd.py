@@ -37,7 +37,7 @@ corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").
 #### The model was fine-tuned using cosine-similarity.
 #### Complete list - https://www.sbert.net/docs/pretrained_models.html
 
-model = DRES(models.SentenceBERT("carles-undergrad-thesis/st-distillbert-tasb-en-id-mmarco-knowledge-distillation"), batch_size=128)
+model = DRES(models.SentenceBERT("carles-undergrad-thesis/indoBERT-Knowledge-distillation-en-id-SBERT"), batch_size=128)
 retriever = EvaluateRetrieval(model, score_function="dot")
 
 #### Retrieve dense results (format of results is identical to qrels)
