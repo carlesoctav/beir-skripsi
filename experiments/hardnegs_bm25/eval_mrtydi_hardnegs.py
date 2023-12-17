@@ -17,25 +17,14 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
                     handlers=[LoggingHandler()])
 #### /print debug information to stdout
 
-dataset = "mrtydi"
+corpus_path = str(here('datasets/mrtydi/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mrtydi/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mrtydi/indonesian/qrels/dev.tsv'))
 
-#### Download nfcorpus.zip dataset and unzip the dataset
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = util.download_and_unzip(url, out_dir)
-
-#### Provide the data path where nfcorpus has been downloaded and unzipped to the data loader
-# data folder would contain these files: 
-# (1) nfcorpus/corpus.jsonl  (format: jsonlines)
-# (2) nfcorpus/queries.jsonl (format: jsonlines)
-# (3) nfcorpus/qrels/test.tsv (format: tsv ("\t"))
-
-corpus, queries, qrels = GenericDataLoader(data_folder=data_path+"/indonesian").load(split="test")
-
-#### Dense Retrieval using SBERT (Sentence-BERT) ####
-#### Provide any pretrained sentence-transformers model
-#### The model was fine-tuned using cosine-similarity.
-#### Complete list - https://www.sbert.net/docs/pretrained_models.html
+corpus, queries, qrels = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
 model = DRES(models.SentenceBERT("carles-undergrad-thesis/indobert-mmarco-hardnegs-bm25"), batch_size=128)
 retriever = EvaluateRetrieval(model, score_function="dot")

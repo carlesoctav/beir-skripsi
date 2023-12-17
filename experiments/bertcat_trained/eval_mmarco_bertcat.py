@@ -17,22 +17,14 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
                     handlers=[LoggingHandler()])
 #### /print debug information to stdout
 
-#### Download trec-covid.zip dataset and unzip the dataset
-dataset = "mmarco"
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = str(here("datasets/mmarco"))
+corpus_path = str(here('datasets/mmarco/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mmarco/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mmarco/indonesian/qrels/dev.tsv'))
 
-#### Provide the data path where trec-covid has been downloaded and unzipped to the data loader
-# data folder would contain these files: 
-# (1) trec-covid/corpus.jsonl  (format: jsonlines)
-# (2) trec-covid/queries.jsonl (format: jsonlines)
-# (3) trec-covid/qrels/test.tsv (format: tsv ("\t"))
-
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="dev")
-#########################################
-#### (1) RETRIEVE Top-100 docs using BM25
-#########################################
+corpus, queries, qrels = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
 #### Provide parameters for Elasticsearch
 hostname = "localhost" #localhost
@@ -43,27 +35,14 @@ language = "indonesian"
 model = BM25(index_name=index_name, hostname=hostname, initialize=initialize,language=language)
 retriever = EvaluateRetrieval(model)
 
-#### Retrieve dense results (format of results is identical to qrels)
 results = retriever.retrieve(corpus, queries)
 
-################################################
-#### (2) RERANK Top-100 docs using Cross-Encoder
-################################################
-
-#### Reranking using Cross-Encoder models #####
-#### https://www.sbert.net/docs/pretrained_cross-encoders.html
 cross_encoder_model = CrossEncoder('carles-undergrad-thesis/indobert-crossencoder-mmarco', max_length = 512)
-
-#### Or use MiniLM, TinyBERT etc. CE models (https://www.sbert.net/docs/pretrained-models/ce-msmarco.html)
-# cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
-# cross_encoder_model = CrossEncoder('cross-encoder/ms-marco-TinyBERT-L-6')
-
 reranker = Rerank(cross_encoder_model, batch_size=256)
 
-# Rerank top-100 results using the reranker provided
+
 rerank_results = reranker.rerank(corpus, queries, results, top_k=1000)
 
-#### Evaluate your retrieval using NDCG@k, MAP@K ...
 ndcg, _map, recall, precision = EvaluateRetrieval.evaluate(qrels, rerank_results, retriever.k_values)
 
 
@@ -71,8 +50,6 @@ mrr = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metri
 recall_cap = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metric="r_cap")
 hole = retriever.evaluate_custom(qrels, rerank_results, retriever.k_values, metric="hole")
 
-
-#### Print top-k documents retrieved ####
 top_k = 10
 
 query_id, ranking_scores = random.choice(list(rerank_results.items()))

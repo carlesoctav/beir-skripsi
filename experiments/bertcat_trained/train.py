@@ -1,93 +1,89 @@
-from beir.datasets.data_loader import GenericDataLoader
-import gzip
-import pathlib, os
-import logging
-import random
-from pyprojroot import here
-from torch.utils.data import DataLoader
-from sentence_transformers import LoggingHandler, util
-from sentence_transformers.cross_encoder import CrossEncoder
-from sentence_transformers.evaluation.SequentialEvaluator import SequentialEvaluator
-from sentence_transformers import InputExample
-from datetime import datetime
-import tarfile
-import tqdm
-import time
+import torch
+import argparse
+from datasets import load_dataset
+from transformers import (
+    Trainer,
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
+    AutoConfig,
+    TrainingArguments,
+)
 
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--output_dir", required=True)
+    parser.add_argument(
+        "--model", default="indolem/indobert-base-uncased", type=str, required=False
+    )
 
-#### Just some code to print debug information to stdout
-logging.basicConfig(format='%(asctime)s - %(message)s',
-                    datefmt='%Y-%m-%d %H:%M:%S',
-                    level=logging.INFO,
-                    handlers=[LoggingHandler()])
-#### /print debug information to stdout
+    parser.add_argument("--learning_rate", default=2e-5, type=float, required=False)
+    parser.add_argument("--batch_size", default=16, type=int, required=False)
+    parser.add_argument("--max_samples", default=250_000, type=int, required=False)
+    args = parser.parse_args()
 
-model_name = 'indolem/indobert-base-uncased'
-train_batch_size = 32
-num_epochs = 5
-model_save_path = 'output/training_mm-marco_cross-encoder-'+model_name.replace("/", "-")+'-'+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-pos_neg_ration = 3
-max_train_samples = 500_000
-model = CrossEncoder(model_name, num_labels=1, max_length=512)
+    tokenizer = AutoTokenizer.from_pretrained(args.model)
+    config = AutoConfig.from_pretrained(args.model)
+    config.num_labels = 1
+    config.problem_type = "multi_label_classification"
+    model = AutoModelForSequenceClassification.from_pretrained(
+        args.model, config=config
+    )
 
-dataset = "mmarco"
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = str(here("datasets/mmarco"))
+    dataset = load_dataset("carles-undergrad-thesis/indo-mmarco-500k")["train"]
+    if args.max_samples:
+        dataset = dataset.select(range(args.max_samples))
 
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="train")
+    def split_examples(batch):
+        queries = []
+        passages = []
+        labels = []
+        for label in ["positive", "negative"]:
+            for (query, passage) in zip(batch["query"], batch[label]):
+                queries.append(query)
+                passages.append(passage)
+                labels.append(int(label == "positive"))
+        return {"query": queries, "passage": passages, "label": labels}
 
+    dataset = dataset.map(
+        split_examples, batched=True, remove_columns=["positive", "negative"]
+    )
 
-train_filepath = os.path.join(out_dir, 'msmarco-qidpidtriples.rnd-shuf.train.tsv.gz')
-if not os.path.exists(train_filepath):
-    logging.info("Download "+os.path.basename(train_filepath))
-    util.http_get('https://sbert.net/datasets/msmarco-qidpidtriples.rnd-shuf.train.tsv.gz', train_filepath)
+    def tokenize(batch):
+        tokenized = tokenizer(
+            batch["query"],
+            batch["passage"],
+            padding=True,
+            truncation="only_second",
+            max_length=512,
+        )
+        tokenized["labels"] = [[float(label)] for label in batch["label"]]
+        return tokenized
 
+    dataset = dataset.map(
+        tokenize, batched=True, remove_columns=["query", "passage", "label"]
+    )
+    dataset.set_format("torch")
 
-train_samples = []
+    print(len(dataset))
 
-cnt = 0
-with gzip.open(train_filepath, 'rt') as fIn:
-    for line in tqdm.tqdm(fIn, unit_scale=True):
-        qid, pos_id, neg_id = line.strip().split()
+    training_args = TrainingArguments(
+        output_dir=args.output_dir,
+        # fp16=True,
+        # fp16_backend="amp",
+        per_device_train_batch_size=args.batch_size,
+        logging_steps=10_000,
+        warmup_steps=0.1*len(dataset)*args.batch_size,
+        save_total_limit=1,
+        num_train_epochs=1,
+        
+    )
+    trainer = Trainer(
+        model,
+        training_args,
+        train_dataset=dataset,
+        tokenizer=tokenizer,
+    )
 
-        query = queries[qid]
-        if (cnt % (pos_neg_ration+1)) == 0:
-            passage = corpus[pos_id]["text"]
-            label = 1
-        else:
-            passage = corpus[neg_id]["text"]
-            label = 0
-
-        train_samples.append(InputExample(texts=[query, passage], label=label))
-        cnt += 1
-
-        if cnt >= max_train_samples:
-            break
-
-for x in train_samples[:5]:
-    print(x)
-
-train_dataloader = DataLoader(train_samples, shuffle=True, batch_size=train_batch_size)
-evaluator = SequentialEvaluator([], main_score_function=lambda x: time.time())
-
-
-warmup_steps = 0.1 * num_epochs * len(train_samples) / train_batch_size
-print(f"==>> warmup_steps: {warmup_steps}")
-logging.info("Warmup-steps: {}".format(warmup_steps))
-
-
-# Train the model
-model.fit(train_dataloader=train_dataloader,
-          epochs=num_epochs,
-          evaluation_steps=1_000_000_000,
-          warmup_steps=warmup_steps,
-          output_path=model_save_path,
-          use_amp=True)
-
-#Save latest model
-model.save(model_save_path+'-latest')
-
-model.model.push_to_hub('carles-undergrad-thesis/indobert-crossencoder-mmarco')
-model.tokenizer.push_to_hub('carles-undergrad-thesis/indobert-crossencoder-mmarco')
+    train_result = trainer.train()
+    trainer.save_model()

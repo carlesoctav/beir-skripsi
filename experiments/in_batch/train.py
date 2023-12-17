@@ -7,35 +7,28 @@ import logging
 from pyprojroot import here
 import torch
 
-
-
-with torch.no_grad():
-    torch.cuda.empty_cache()
-
-
-
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.INFO,
                     handlers=[LoggingHandler()])
 
 dataset = "mmarco"
+corpus_path = str(here('datasets/mmarco/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mmarco/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mmarco/indonesian/qrels/dev.tsv'))
 
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-print(f"==>> out_dir: {out_dir}")
-
-data_path = util.download_and_unzip(url, out_dir)
-
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="train")
+corpus, queries, qrels = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
 model_name = "indolem/indobert-base-uncased" 
-word_embedding_model = models.Transformer(model_name, max_seq_length=350)
+word_embedding_model = models.Transformer(model_name, max_seq_length=256)
 pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode = "cls")
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
 
-retriever = TrainRetriever(model=model, batch_size=64)
+retriever = TrainRetriever(model=model, batch_size=32)
 
 train_samples = retriever.load_train(corpus, queries, qrels)
 train_dataloader = retriever.prepare_train(train_samples, shuffle=True)
@@ -47,9 +40,9 @@ ir_evaluator = retriever.load_dummy_evaluator()
 model_save_path = os.path.join(pathlib.Path(__file__).parent.absolute(), "output", "{}-v1-{}".format(model_name, dataset))
 os.makedirs(model_save_path, exist_ok=True)
 
-#### Configure Train params
+
 num_epochs = 5
-evaluation_steps = 5000
+evaluation_steps = 1_000_000
 warmup_steps = int(len(train_samples) * num_epochs / retriever.batch_size * 0.1)
 
 retriever.fit(train_objectives=[(train_dataloader, train_loss)], 
@@ -61,4 +54,4 @@ retriever.fit(train_objectives=[(train_dataloader, train_loss)],
                 use_amp=True)
 
 
-model.save_to_hub("st-indobert-mmarco-v1", "carles-undergrad-thesis")
+# model.save_to_hub("st-indobert-mmarco-v1", "carles-undergrad-thesis")

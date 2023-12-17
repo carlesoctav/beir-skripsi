@@ -13,18 +13,18 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
                     handlers=[LoggingHandler()])
 
 
+corpus_path = str(here('datasets/mrtydi/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mrtydi/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mrtydi/indonesian/qrels/dev.tsv'))
 
-dataset = "mrtydi"
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = util.download_and_unzip(url, out_dir)
-
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="test")
+corpus, queries, qrels = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
 hostname = "localhost" 
 index_name = "mrtydi-indo" 
 
-# if there's hit error change to True
 initialize = True
 
 language = "indonesian" 

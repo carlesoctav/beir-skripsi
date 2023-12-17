@@ -2,6 +2,6 @@ git+https://github.com/UKPLab/sentence-transformers.git
 beir
 gdown
 torch
-torchvision
-torchaudio
 pyprojroot
+transformers-interpret
+accelerate

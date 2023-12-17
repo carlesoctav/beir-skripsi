@@ -14,12 +14,14 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 
 
 
-dataset = "mmarco"
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = util.download_and_unzip(url, out_dir)
+corpus_path = str(here('datasets/mmarco/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mmarco/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mmarco/indonesian/qrels/dev.tsv'))
 
-corpus, queries, qrels = GenericDataLoader(data_path+"/indonesian").load(split="dev")
+corpus, queries, qrels = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
 hostname = "localhost" 
 index_name = "mmarco-indo" 

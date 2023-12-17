@@ -1,24 +1,3 @@
-'''
-This example shows how to train a SOTA Bi-Encoder for the MS Marco dataset (https://github.com/microsoft/MSMARCO-Passage-Ranking).
-The model is trained using hard negatives which were specially mined with different dense and lexical search methods for MSMARCO. 
-
-This example has been taken from here with few modifications to train SBERT (MSMARCO-v3) models: 
-(https://github.com/UKPLab/sentence-transformers/blob/master/examples/training/ms_marco/train_bi-encoder-v3.py)
-
-The queries and passages are passed independently to the transformer network to produce fixed sized embeddings.
-These embeddings can then be compared using cosine-similarity to find matching passages for a given query.
-
-For training, we use MultipleNegativesRankingLoss. There, we pass triplets in the format:
-(query, positive_passage, negative_passage)
-
-Negative passage are hard negative examples, that were mined using different dense embedding methods and lexical search methods.
-Each positive and negative passage comes with a score from a Cross-Encoder. This allows denoising, i.e. removing false negative
-passages that are actually relevant for the query.
-
-Running this script:
-python train_msmarco_v3.py
-'''
-
 from sentence_transformers import SentenceTransformer, models, losses, InputExample
 from beir import util, LoggingHandler
 from beir.datasets.data_loader import GenericDataLoader
@@ -30,30 +9,26 @@ import logging
 import random
 from pyprojroot import here
 
-#### Just some code to print debug information to stdout
+
 logging.basicConfig(format='%(asctime)s - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S',
                     level=logging.INFO,
                     handlers=[LoggingHandler()])
-#### /print debug information to stdout
 
-#### Download msmarco.zip dataset and unzip the dataset
-dataset = "mmarco"
-url = "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{}.zip".format(dataset)
-out_dir = here("datasets")
-data_path = util.download_and_unzip(url, out_dir)
 
-### Load BEIR MSMARCO training dataset, this will be used for query and corpus for reference.
-corpus, queries, _ = GenericDataLoader(data_path+"/indonesian").load(split="train")
+corpus_path = str(here('datasets/mmarco/indonesian/corpus.jsonl'))
+query_path = str(here('datasets/mmarco/indonesian/queries.jsonl'))
+qrels_path = str(here('datasets/mmarco/indonesian/qrels/dev.tsv'))
 
-#################################
-#### Parameters for Training ####
-#################################
+corpus, queries, _ = GenericDataLoader(
+    corpus_file=corpus_path, 
+    query_file=query_path, 
+    qrels_file=qrels_path).load_custom()
 
-train_batch_size = 32           # Increasing the train batch size improves the model performance, but requires more GPU memory (O(n))
-max_seq_length = 250            # Max length for passages. Increasing it, requires more GPU memory (O(n^2))
-ce_score_margin = 3             # Margin for the CrossEncoder score between negative and positive passagesu
-num_negs_per_system = 5         # We used different systems to mine hard negatives. Number of hard negatives to add from each system
+train_batch_size = 32           
+max_seq_length = 250            
+ce_score_margin = 3             
+num_negs_per_system = 5         
 
 ##################################################
 #### Download MSMARCO Hard Negs Triplets File ####
@@ -136,16 +111,16 @@ class MSMARCODataset(Dataset):
     def __len__(self):
         return len(self.queries)
 
-# We construct the SentenceTransformer bi-encoder from scratch with mean-pooling
+
 model_name = "indolem/indobert-base-uncased" 
 word_embedding_model = models.Transformer(model_name, max_seq_length=max_seq_length)
 pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(), pooling_mode = "cls")
 model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
-#### Provide a high batch-size to train better with triplets!
+
 retriever = TrainRetriever(model=model, batch_size=train_batch_size)
 
-# For training the SentenceTransformer model, we need a dataset, a dataloader, and a loss used for training.
+
 train_dataset = MSMARCODataset(train_queries, corpus=corpus)
 
 print(len(train_dataset))
@@ -159,10 +134,10 @@ train_loss = losses.MultipleNegativesRankingLoss(model=retriever.model, similari
 ir_evaluator = retriever.load_dummy_evaluator()
 
 #### Provide model save path
-model_save_path = os.path.join(pathlib.Path(__file__).parent.absolute(), "output", "{}-v3-{}".format(model_name, dataset))
+model_save_path = os.path.join(pathlib.Path(__file__).parent.absolute(), "output", "{}-hardnegs-{}".format(model_name, dataset))
 os.makedirs(model_save_path, exist_ok=True)
 
-#### Configure Train params
+
 num_epochs = 5
 evaluation_steps = 10000
 warmup_steps = int(0.1 * num_epochs * len(train_dataset) / train_batch_size )    #10% of train data for warm-up
@@ -175,4 +150,4 @@ retriever.fit(train_objectives=[(train_dataloader, train_loss)],
                 use_amp=True)
 
 
-model.save_to_hub("indobert-mmarco-hardnegs-bm25", "carles-undergrad-thesis")
+# model.save_to_hub("indobert-mmarco-hardnegs-bm25", "carles-undergrad-thesis")
