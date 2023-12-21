@@ -15,7 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s',
 dataset = "mmarco"
 corpus_path = str(here('datasets/mmarco/indonesian/corpus.jsonl'))
 query_path = str(here('datasets/mmarco/indonesian/queries.jsonl'))
-qrels_path = str(here('datasets/mmarco/indonesian/qrels/dev.tsv'))
+qrels_path = str(here('datasets/mmarco/indonesian/qrels/train.tsv'))
 
 corpus, queries, qrels = GenericDataLoader(
     corpus_file=corpus_path, 
