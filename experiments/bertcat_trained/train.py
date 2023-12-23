@@ -18,8 +18,8 @@ if __name__ == "__main__":
     )
 
     parser.add_argument("--learning_rate", default=2e-5, type=float, required=False)
-    parser.add_argument("--batch_size", default=16, type=int, required=False)
-    parser.add_argument("--max_samples", default=250_000, type=int, required=False)
+    parser.add_argument("--batch_size", default=32, type=int, required=False)
+    parser.add_argument("--max_samples", default=266384, type=int, required=False)
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.model)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
             batch["passage"],
             padding=True,
             truncation="only_second",
-            max_length=512,
+            max_length=256,
         )
         tokenized["labels"] = [[float(label)] for label in batch["label"]]
         return tokenized
@@ -69,13 +69,13 @@ if __name__ == "__main__":
 
     training_args = TrainingArguments(
         output_dir=args.output_dir,
-        # fp16=True,
-        # fp16_backend="amp",
+        fp16=True,
+        fp16_backend="amp",
         per_device_train_batch_size=args.batch_size,
         logging_steps=10_000,
-        warmup_steps=0.1*len(dataset)*args.batch_size,
+        warmup_steps=int(0.1*len(dataset)/args.batch_size),
         save_total_limit=1,
-        num_train_epochs=1,
+        num_train_epochs=5,
         
     )
     trainer = Trainer(
@@ -87,3 +87,5 @@ if __name__ == "__main__":
 
     train_result = trainer.train()
     trainer.save_model()
+
+

@@ -5,3 +5,4 @@ torch
 pyprojroot
 transformers-interpret
 accelerate
+datasets
