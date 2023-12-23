@@ -4,22 +4,25 @@ from beir.retrieval import models
 from beir.datasets.data_loader import GenericDataLoader
 from beir.retrieval.evaluation import EvaluateRetrieval
 from beir.retrieval.search.dense import DenseRetrievalExactSearch as DRES
-
 import logging
-import pathlib, os
 import random
 from pyprojroot import here
 
+logging.basicConfig(format='%(asctime)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S',
+                    level=logging.INFO,
+                    handlers=[LoggingHandler()])
+
 corpus_path = str(here('datasets/mrtydi/indonesian/corpus.jsonl'))
 query_path = str(here('datasets/mrtydi/indonesian/queries.jsonl'))
-qrels_path = str(here('datasets/mrtydi/indonesian/qrels/dev.tsv'))
+qrels_path = str(here('datasets/mrtydi/indonesian/qrels/test.tsv'))
 
 corpus, queries, qrels = GenericDataLoader(
     corpus_file=corpus_path, 
     query_file=query_path, 
     qrels_file=qrels_path).load_custom()
 
-model = DRES(models.SentenceBERT("carles-undergrad-thesis/indobert-mmarco-v1"), batch_size=128)
+model = DRES(models.SentenceBERT("carles-undergrad-thesis/st-indobert-mmarco-inbatch"), batch_size=128)
 retriever = EvaluateRetrieval(model, score_function="dot")
 
 
@@ -34,7 +37,6 @@ ndcg, _map, recall, precision = retriever.evaluate(qrels, results, retriever.k_v
 mrr = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="mrr")
 recall_cap = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="r_cap")
 hole = retriever.evaluate_custom(qrels, results, retriever.k_values, metric="hole")
-
 
 top_k = 10
 

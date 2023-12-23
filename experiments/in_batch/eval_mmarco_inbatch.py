@@ -27,7 +27,7 @@ corpus, queries, qrels = GenericDataLoader(
     qrels_file=qrels_path).load_custom()
 
 
-model = DRES(models.SentenceBERT("carles-undergrad-thesis/indobert-mmarco-v1"), batch_size=128)
+model = DRES(models.SentenceBERT("carles-undergrad-thesis/st-indobert-mmarco-inbatch"), batch_size=128)
 retriever = EvaluateRetrieval(model, score_function="dot")
 
 

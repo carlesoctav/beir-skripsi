@@ -1,0 +1,122 @@
+2023-12-23 12:34:28 - Loading Corpus...
+2023-12-23 12:34:33 - Loaded 1446315 Documents.
+2023-12-23 12:34:33 - Doc Example: {'text': 'Larva kumbang ini biasanya mengebor ke dalam kayu dan dapat menyebabkan kerusakan pada batang kayu hidup atau kayu yang telah ditebang.', 'title': 'Colobothea biguttata'}
+2023-12-23 12:34:33 - Loading Queries...
+2023-12-23 12:34:33 - Loaded 960 Queries.
+2023-12-23 12:34:33 - Query Example: Dimana James Hepburn meninggal?
+2023-12-23 12:34:33 - Load pretrained SentenceTransformer: carles-undergrad-thesis/st-indobert-mmarco-inbatch
+2023-12-23 12:34:35 - Use pytorch device_name: cuda
+2023-12-23 12:34:35 - Encoding Queries...
+2023-12-23 12:34:36 - Sorting Corpus by document length (Longest first)...
+2023-12-23 12:34:37 - Encoding Corpus in batches... Warning: This might take a while!
+2023-12-23 12:34:37 - Scoring Function: Dot Product (dot)
+2023-12-23 12:34:37 - Encoding Batch 1/29...
+2023-12-23 12:36:19 - Encoding Batch 2/29...
+2023-12-23 12:37:56 - Encoding Batch 3/29...
+2023-12-23 12:39:22 - Encoding Batch 4/29...
+2023-12-23 12:40:39 - Encoding Batch 5/29...
+2023-12-23 12:41:48 - Encoding Batch 6/29...
+2023-12-23 12:42:51 - Encoding Batch 7/29...
+2023-12-23 12:43:50 - Encoding Batch 8/29...
+2023-12-23 12:44:44 - Encoding Batch 9/29...
+2023-12-23 12:45:34 - Encoding Batch 10/29...
+2023-12-23 12:46:19 - Encoding Batch 11/29...
+2023-12-23 12:47:02 - Encoding Batch 12/29...
+2023-12-23 12:47:41 - Encoding Batch 13/29...
+2023-12-23 12:48:17 - Encoding Batch 14/29...
+2023-12-23 12:48:50 - Encoding Batch 15/29...
+2023-12-23 12:49:19 - Encoding Batch 16/29...
+2023-12-23 12:49:45 - Encoding Batch 17/29...
+2023-12-23 12:50:09 - Encoding Batch 18/29...
+2023-12-23 12:50:33 - Encoding Batch 19/29...
+2023-12-23 12:50:57 - Encoding Batch 20/29...
+2023-12-23 12:51:22 - Encoding Batch 21/29...
+2023-12-23 12:51:44 - Encoding Batch 22/29...
+2023-12-23 12:52:01 - Encoding Batch 23/29...
+2023-12-23 12:52:21 - Encoding Batch 24/29...
+2023-12-23 12:52:39 - Encoding Batch 25/29...
+2023-12-23 12:52:55 - Encoding Batch 26/29...
+2023-12-23 12:53:08 - Encoding Batch 27/29...
+2023-12-23 12:53:19 - Encoding Batch 28/29...
+2023-12-23 12:53:30 - Encoding Batch 29/29...
+Time taken to retrieve: 1142.68 seconds
+2023-12-23 12:53:38 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-12-23 12:53:38 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-23 12:53:38 - 
+
+2023-12-23 12:53:38 - NDCG@1: 0.2385
+2023-12-23 12:53:38 - NDCG@3: 0.2655
+2023-12-23 12:53:38 - NDCG@5: 0.2834
+2023-12-23 12:53:38 - NDCG@10: 0.3196
+2023-12-23 12:53:38 - NDCG@100: 0.4188
+2023-12-23 12:53:38 - NDCG@1000: 0.4495
+2023-12-23 12:53:38 - 
+
+2023-12-23 12:53:38 - MAP@1: 0.1089
+2023-12-23 12:53:38 - MAP@3: 0.1827
+2023-12-23 12:53:38 - MAP@5: 0.2062
+2023-12-23 12:53:38 - MAP@10: 0.2302
+2023-12-23 12:53:38 - MAP@100: 0.2600
+2023-12-23 12:53:38 - MAP@1000: 0.2622
+2023-12-23 12:53:38 - 
+
+2023-12-23 12:53:38 - Recall@1: 0.1089
+2023-12-23 12:53:38 - Recall@3: 0.2475
+2023-12-23 12:53:38 - Recall@5: 0.3145
+2023-12-23 12:53:38 - Recall@10: 0.4146
+2023-12-23 12:53:38 - Recall@100: 0.7415
+2023-12-23 12:53:38 - Recall@1000: 0.9133
+2023-12-23 12:53:38 - 
+
+2023-12-23 12:53:38 - P@1: 0.2385
+2023-12-23 12:53:38 - P@3: 0.2004
+2023-12-23 12:53:38 - P@5: 0.1631
+2023-12-23 12:53:38 - P@10: 0.1144
+2023-12-23 12:53:38 - P@100: 0.0232
+2023-12-23 12:53:38 - P@1000: 0.0029
+2023-12-23 12:53:38 - 
+
+2023-12-23 12:53:39 - MRR@1: 0.2385
+2023-12-23 12:53:39 - MRR@3: 0.3450
+2023-12-23 12:53:39 - MRR@5: 0.3658
+2023-12-23 12:53:39 - MRR@10: 0.3808
+2023-12-23 12:53:39 - MRR@100: 0.3920
+2023-12-23 12:53:39 - MRR@1000: 0.3923
+2023-12-23 12:53:39 - 
+
+2023-12-23 12:53:39 - R_cap@1: 0.2385
+2023-12-23 12:53:39 - R_cap@3: 0.2880
+2023-12-23 12:53:39 - R_cap@5: 0.3278
+2023-12-23 12:53:39 - R_cap@10: 0.4147
+2023-12-23 12:53:39 - R_cap@100: 0.7415
+2023-12-23 12:53:39 - R_cap@1000: 0.9133
+2023-12-23 12:53:39 - 
+
+2023-12-23 12:53:39 - Hole@1: 0.7500
+2023-12-23 12:53:39 - Hole@3: 0.7872
+2023-12-23 12:53:39 - Hole@5: 0.8204
+2023-12-23 12:53:39 - Hole@10: 0.8687
+2023-12-23 12:53:39 - Hole@100: 0.9644
+2023-12-23 12:53:39 - Hole@1000: 0.9900
+2023-12-23 12:53:39 - Query : Kapankah hari kemerdekaan Ukraina?
+
+2023-12-23 12:53:39 - Rank 1: 2343791#6 [Referendum kemerdekaan Ukraina 1991] - Hasil survei menunjukkan bahwa 63% mendukung kemerdekaan pada September 1991; dukungan ini bertambah menjadi 77% pada minggu pertama Oktober 1991 dan 88% pada pertengahan November 1991.
+
+2023-12-23 12:53:39 - Rank 2: 2343791#0 [Referendum kemerdekaan Ukraina 1991] - Referendum mengenai Deklarasi Kemerdekaan adalah sebuah referendum yang diadakan di Ukraina pada tanggal 1 Desember 1991. 92,3% pemilih mendukung Deklarasi Kemerdekaan yang dikumandangkan oleh Verkhovna Rada pada 24 Agustus 1991.
+
+2023-12-23 12:53:39 - Rank 3: 2343791#3 [Referendum kemerdekaan Ukraina 1991] - Semenjak 2 Desember 1991, Ukraina diakui sebagai negara merdeka oleh negara-negara lainnya. Pada hari itu pula Presiden Rusia Boris Yeltsin melakukan hal yang sama. Presiden Uni Soviet Mikhail Gorbachev mengirim telegram yang mengucapkan selamat kepada Kravchuk dan mengharapkan pemahaman dan kerjasama yang erat dalam "pembentukan perserikatan negara-negara berdaulat".
+
+2023-12-23 12:53:39 - Rank 4: 2088037#2 [Konstitusi Ukraina] - Sejak tahun 1996, 28 Juni ditetapkan sebagai Hari Konstitusi dan merupakan hari libur nasional.
+
+2023-12-23 12:53:39 - Rank 5: 19833#14 [Republik Makedonia] - Makedonia merayakan kemerdekaan pada tanggal 8 September 1991, dinamakan Hari Kemerdekaan (Ден на независноста, Den na nezavisnosta), setelah diadakannya referendum untuk meraih kemerdekaan atau tetap membentuk federasi Yugoslavia. Perayaan mulanya pemberontakan Ilinden-Preobrazhenie yang bertepatan dengan hari Santo Eliyah pada tanggal 2 Agustus juga dirayakan sebagai hari kemerdekaan secara luas di Makedonia.
+
+2023-12-23 12:53:39 - Rank 6: 1182009#2 [Hari Merdeka (lagu nasional)] - "Itulah hari kemerdekaan kita"
+
+2023-12-23 12:53:39 - Rank 7: 2504673#0 [Hari Kemerdekaan (Estonia)] - Hari Kemerdekaan () adalah hari libur nasional di Estonia yang menandai peringatan tahunan Deklarasi Kemerdekaan Estonia pada tahun 1918. Hari ini biasanya dirayakan dengan kembang api, konser, pawai obor, pawai, dan pesta. Hari ini adalah hari nasional Estonia.
+
+2023-12-23 12:53:39 - Rank 8: 1873401#21 [Hari Angkatan Laut] - DiUkraina Hari Angkatan Laut termasuk dalam hari libur bekerja yang diperingati setiap Minggu pertama bulan Juli. Hari tersebut pertama kali diperingati sejak 1996, kemudian selalu diperingati pada 1 Agustus sampai pada 2012. Sejak 2012 sampai 2015, Ukraina memiliki hari yang sama dengan Rusia dan Uni Soviet (seperti Rusia, Ukraina adalah bekas bagian dari Uni Soviet); Uni Soviet menetapkan hari angkatan laut pada Juni 1939 untuk memperingati Pertempuran Gangut. Pada 24 Agustus 2014, Presiden Ukraina, Petro Poroshenko, mengatakan bahwa Ukraina seharusnya tidak memperingati "hari sejarah militer Rusia", namun "menghargai jasa para pahlawan bangsa kita sendiri, bukan bangsa lain". Pada 12 Juni 2015, Poroshenko memutuskan untuk mengganti Hari Angkatan Laut Ukraina menjadi setiap hari Minggu pertama bulan Juli.
+
+2023-12-23 12:53:39 - Rank 9: 21341#5 [Bahasa Ukraina] - Ukraina menikmati masa pendek kemerdekaan dari 1918 sampai 1919, lalu diambil alih USSR dan mendeklarasikan Republik Uni Soviet. Selama masa Uni Soviet, bahasa Rusia merupakan bahasa utama dan pekerjaan sedangkan bahasa Ukraina terpinggirkan.
+
+2023-12-23 12:53:39 - Rank 10: 2089063#41 [Sejarah Ukraina] - Dengan runtuhnya Uni Soviet pada tahun 1991, Ukraina menjadi negara merdeka, diformalkan dengan referendum pada Desember 1991.
+

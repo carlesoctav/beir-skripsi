@@ -1,0 +1,123 @@
+2023-12-23 12:09:14 - Loading Corpus...
+2023-12-23 12:09:20 - Loaded 1469399 Documents.
+2023-12-23 12:09:20 - Doc Example: {'text': 'Asam deoksiribonukleat, lebih dikenal dengan singkatan DNA (bahasa Inggris: d</b>eoxyribo<b data-parsoid=\'{"dsr":[417,424,3,3]}\'>n</b>ucleic a</b>cid), adalah sejenis biomolekul yang menyimpan dan menyandi instruksi-instruksi genetika setiap organisme dan banyak jenis virus. Instruksi-instruksi genetika ini berperan penting dalam pertumbuhan, perkembangan, dan fungsi organisme dan virus. DNA merupakan asam nukleat; bersamaan dengan protein dan karbohidrat, asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui. Kebanyakan molekul DNA terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda. Dua unting DNA ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuan-satuan molekul yang disebut nukleotida. Tiap-tiap nukleotida terdiri atas salah satu jenis basa nitrogen (guanina (G), adenina (A), timina (T), atau sitosina (C)), gula monosakarida yang disebut deoksiribosa, dan gugus fosfat. Nukleotida-nukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya. Hasilnya adalah rantai punggung gula-fosfat yang berselang-seling. Menurut kaidah pasangan basa (A dengan T dan C dengan G), ikatan hidrogen mengikat basa-basa dari kedua unting polinukleotida membentuk DNA unting ganda', 'title': ''}
+2023-12-23 12:09:20 - Loading Queries...
+2023-12-23 12:09:20 - Loaded 829 Queries.
+2023-12-23 12:09:20 - Query Example: Siapakah yang menemuka benua Amerika ?
+2023-12-23 12:09:20 - Load pretrained SentenceTransformer: carles-undergrad-thesis/st-indobert-mmarco-inbatch
+2023-12-23 12:09:21 - Use pytorch device_name: cuda
+2023-12-23 12:09:22 - Encoding Queries...
+2023-12-23 12:09:22 - Sorting Corpus by document length (Longest first)...
+2023-12-23 12:09:24 - Encoding Corpus in batches... Warning: This might take a while!
+2023-12-23 12:09:24 - Scoring Function: Dot Product (dot)
+2023-12-23 12:09:24 - Encoding Batch 1/30...
+2023-12-23 12:11:05 - Encoding Batch 2/30...
+2023-12-23 12:12:43 - Encoding Batch 3/30...
+2023-12-23 12:14:12 - Encoding Batch 4/30...
+2023-12-23 12:15:31 - Encoding Batch 5/30...
+2023-12-23 12:16:41 - Encoding Batch 6/30...
+2023-12-23 12:17:46 - Encoding Batch 7/30...
+2023-12-23 12:18:46 - Encoding Batch 8/30...
+2023-12-23 12:19:40 - Encoding Batch 9/30...
+2023-12-23 12:20:30 - Encoding Batch 10/30...
+2023-12-23 12:21:16 - Encoding Batch 11/30...
+2023-12-23 12:21:58 - Encoding Batch 12/30...
+2023-12-23 12:22:38 - Encoding Batch 13/30...
+2023-12-23 12:23:14 - Encoding Batch 14/30...
+2023-12-23 12:23:47 - Encoding Batch 15/30...
+2023-12-23 12:24:16 - Encoding Batch 16/30...
+2023-12-23 12:24:40 - Encoding Batch 17/30...
+2023-12-23 12:25:03 - Encoding Batch 18/30...
+2023-12-23 12:25:24 - Encoding Batch 19/30...
+2023-12-23 12:25:47 - Encoding Batch 20/30...
+2023-12-23 12:26:11 - Encoding Batch 21/30...
+2023-12-23 12:26:32 - Encoding Batch 22/30...
+2023-12-23 12:26:48 - Encoding Batch 23/30...
+2023-12-23 12:27:06 - Encoding Batch 24/30...
+2023-12-23 12:27:23 - Encoding Batch 25/30...
+2023-12-23 12:27:37 - Encoding Batch 26/30...
+2023-12-23 12:27:50 - Encoding Batch 27/30...
+2023-12-23 12:28:00 - Encoding Batch 28/30...
+2023-12-23 12:28:09 - Encoding Batch 29/30...
+2023-12-23 12:28:17 - Encoding Batch 30/30...
+Time taken to retrieve: 1137.14 seconds
+2023-12-23 12:28:19 - Retriever evaluation for k in: [1, 3, 5, 10, 100, 1000]
+2023-12-23 12:28:19 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-23 12:28:19 - 
+
+2023-12-23 12:28:19 - NDCG@1: 0.1918
+2023-12-23 12:28:19 - NDCG@3: 0.2916
+2023-12-23 12:28:19 - NDCG@5: 0.3413
+2023-12-23 12:28:19 - NDCG@10: 0.3858
+2023-12-23 12:28:19 - NDCG@100: 0.4391
+2023-12-23 12:28:19 - NDCG@1000: 0.4484
+2023-12-23 12:28:19 - 
+
+2023-12-23 12:28:19 - MAP@1: 0.1707
+2023-12-23 12:28:19 - MAP@3: 0.2603
+2023-12-23 12:28:19 - MAP@5: 0.2883
+2023-12-23 12:28:19 - MAP@10: 0.3077
+2023-12-23 12:28:19 - MAP@100: 0.3194
+2023-12-23 12:28:19 - MAP@1000: 0.3198
+2023-12-23 12:28:19 - 
+
+2023-12-23 12:28:19 - Recall@1: 0.1707
+2023-12-23 12:28:19 - Recall@3: 0.3639
+2023-12-23 12:28:19 - Recall@5: 0.4811
+2023-12-23 12:28:19 - Recall@10: 0.6118
+2023-12-23 12:28:19 - Recall@100: 0.8520
+2023-12-23 12:28:19 - Recall@1000: 0.9234
+2023-12-23 12:28:19 - 
+
+2023-12-23 12:28:19 - P@1: 0.1918
+2023-12-23 12:28:19 - P@3: 0.1367
+2023-12-23 12:28:19 - P@5: 0.1086
+2023-12-23 12:28:19 - P@10: 0.0698
+2023-12-23 12:28:19 - P@100: 0.0098
+2023-12-23 12:28:19 - P@1000: 0.0011
+2023-12-23 12:28:19 - 
+
+2023-12-23 12:28:20 - MRR@1: 0.1918
+2023-12-23 12:28:20 - MRR@3: 0.2788
+2023-12-23 12:28:20 - MRR@5: 0.3068
+2023-12-23 12:28:20 - MRR@10: 0.3249
+2023-12-23 12:28:20 - MRR@100: 0.3349
+2023-12-23 12:28:20 - MRR@1000: 0.3352
+2023-12-23 12:28:20 - 
+
+2023-12-23 12:28:20 - R_cap@1: 0.1918
+2023-12-23 12:28:20 - R_cap@3: 0.3639
+2023-12-23 12:28:20 - R_cap@5: 0.4811
+2023-12-23 12:28:20 - R_cap@10: 0.6118
+2023-12-23 12:28:20 - R_cap@100: 0.8520
+2023-12-23 12:28:20 - R_cap@1000: 0.9234
+2023-12-23 12:28:20 - 
+
+2023-12-23 12:28:20 - Hole@1: 0.8010
+2023-12-23 12:28:20 - Hole@3: 0.8569
+2023-12-23 12:28:20 - Hole@5: 0.8849
+2023-12-23 12:28:20 - Hole@10: 0.9226
+2023-12-23 12:28:20 - Hole@100: 0.9874
+2023-12-23 12:28:20 - Hole@1000: 0.9976
+2023-12-23 12:28:20 - Query : Apakah agama Muhammad Ibnu Abbad?
+
+2023-12-23 12:28:20 - Rank 1: 57116#2 [] - Di Fez, Ibnu Abbad kembali belajar fiqih Maliki dan teologi. Mentor termasyhur Ibnu Abbad di bidang fiqih adalah asy-Syarif at-Talimsani, seorang pemimpin kebangkitan kembali Malikisme. Sementara itu di bidang teologi, ia belajar teologi Asy’ariyah kepada al-Abili, dengan kajian kitab Al-Irsyad, karya al-Juwaini (w. 1086), salah seorang guru al-Ghazali. Di samping kedua pokok kajian tersebut, ia juga mempelajari himpunan hadits Nabi Shahih Muslim, karya Muslim al-Muwaththa’ dan karya Malik bin Anas.
+
+2023-12-23 12:28:20 - Rank 2: 57116#1 [] - Pada saat berusia tujuh, Ibnu Abbad sudah dapat menghafah al-Qur’an dan mulai mempelajari fiqih Madzhab Maliki. Pada tahun 1347, ia terpaksa hijrah ke Fez, Maroko, akibat tekanan dan penaklukan kembali orang-orang Kristen yang berhasil mengalahkan Sultan Mariniyah pada tahun 1340.
+
+2023-12-23 12:28:20 - Rank 3: 1482205#28 [] - 3. Al 'Allamah KH.Abdullah Syafi'i
+
+2023-12-23 12:28:20 - Rank 4: 57116#0 [] - Muhammad Ibnu Abbad (1332-1390) adalah seorang tokoh sufi Tarekat Syadziliyah terkemuka kelahiran Spanyol pada abad ke-14. Ia lahir pada tahun 1332 di Ronda, sebuah kota di puncak bukit di Spanyol, yang waktu itu berada di bawah kekuasaan Dinasti Mariniyah.
+
+2023-12-23 12:28:20 - Rank 5: 57116#3 [] - Situasi kota Fez yang sangat kacau akibat perebutan kekuasaan setelah meninggalnya Sultan Abu Inan pada tahun 1358, memaksa Ibnu Abbad untuk kembali meninggalkan kota ini menuju ke barat (Sale), sebuah kota di tepi laut Atlantik. Di sana ia berguru kepada Ibnu Asyir, seorang wali yang dikenal sebagai tokoh poros kebangkitan tasawuf di luar tarekat. Ia kemudian menjadi murid kesayangan dari Ibnu Asyir. Di bawah bimbingan Ibnu Asyir, Ibnu Abbad banyak mengetahui dan membaca tasawuf dari berbagai cabang tarekat serta gayanya, sampai pada akhirnya ia memutuskan menjadi anggota Tarekat Syadziliyah.
+
+2023-12-23 12:28:20 - Rank 6: 1482205#30 [] - 5. Muhaddits Al Haramain As Sayyid Muhammad bin Alwi Al Maliki
+
+2023-12-23 12:28:20 - Rank 7: 1153107#26 [] - Ibnu Khordadbeh Islam di Indonesia Masjid di Indonesia Penyebaran Islam di Asia Tenggara Penyebaran Islam
+
+2023-12-23 12:28:20 - Rank 8: 36871#12 [] - 6 Ar-Radd 'ala Ibni ar-Rāwandi fi ash-Shifāt wa al-Qur'ān
+
+2023-12-23 12:28:20 - Rank 9: 257090#0 [] - Abbad bin Bisyr (, lahir tahun 33 sebelum hijrah (591) – meninggal di Yamamah, tahun 12 H (633)) adalah Sahabat Nabi Muhammad.
+
+2023-12-23 12:28:20 - Rank 10: 1482205#183 [] - - Al ‘Allamah Muhaddits Al Haramain As Sayyid Muhammad bin Alawi Al Maliki
+
