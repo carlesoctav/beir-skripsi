@@ -54,4 +54,4 @@ retriever.fit(train_objectives=[(train_dataloader, train_loss)],
                 use_amp=True)
 
 
-# model.save_to_hub("st-indobert-mmarco-v1", "carles-undergrad-thesis")
+model.save_to_hub("st-indobert-mmarco-inbatch", "carles-undergrad-thesis")
