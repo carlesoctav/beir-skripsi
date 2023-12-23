@@ -42,7 +42,7 @@ for corpus_id in random.sample(remaining_corpus, sample):
     corpus_new[corpus_id] = corpus[corpus_id]
 
 hostname = "localhost"
-index_name = dataset
+index_name = "mmarco"
 initialize = True
 language = "indonesian" 
 model = BM25(index_name=index_name, hostname=hostname, initialize=initialize, language=language)

@@ -1,0 +1,34 @@
+Dataset:  for_datasets_analysis/bert_corpus_length_dist_miracl dev set.json
+                  0
+count  1.446315e+06
+mean   6.532923e+01
+std    6.030816e+01
+min    2.000000e+00
+25%    2.700000e+01
+50%    4.800000e+01
+75%    8.600000e+01
+max    6.747000e+03
+Percentile: 
+          0
+0.10   15.0
+0.25   27.0
+0.50   48.0
+0.75   86.0
+0.95  171.0
+Dataset:  for_datasets_analysis/whitespace_corpus_length_dist_miracl dev set.json
+                  0
+count  1.446315e+06
+mean   4.594594e+01
+std    4.353509e+01
+min    1.000000e+00
+25%    2.000000e+01
+50%    3.300000e+01
+75%    6.100000e+01
+max    4.462000e+03
+Percentile: 
+          0
+0.10    9.0
+0.25   20.0
+0.50   33.0
+0.75   61.0
+0.95  123.0
