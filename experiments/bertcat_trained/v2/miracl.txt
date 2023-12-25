@@ -1,0 +1,92 @@
+2023-12-25 11:42:50 - Loading Corpus...
+2023-12-25 11:42:57 - Loaded 1446315 Documents.
+2023-12-25 11:42:57 - Doc Example: {'text': 'Larva kumbang ini biasanya mengebor ke dalam kayu dan dapat menyebabkan kerusakan pada batang kayu hidup atau kayu yang telah ditebang.', 'title': 'Colobothea biguttata'}
+2023-12-25 11:42:57 - Loading Queries...
+2023-12-25 11:42:57 - Loaded 960 Queries.
+2023-12-25 11:42:57 - Query Example: Dimana James Hepburn meninggal?
+2023-12-25 11:42:57 - Activating Elasticsearch....
+2023-12-25 11:42:57 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'miracl-indo', 'keys': {'title': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 'default', 'language': 'indonesian'}
+2023-12-25 11:42:57 - Deleting previous Elasticsearch-Index named - miracl-indo
+2023-12-25 11:43:00 - Creating fresh Elasticsearch-Index named - miracl-indo
+2023-12-25 11:45:25 - Use pytorch device: cuda
+2023-12-25 11:45:30 - Starting To Rerank Top-1000....
+2023-12-25 12:10:14 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:15 - NDCG@1: 0.2938
+2023-12-25 12:10:15 - NDCG@3: 0.2984
+2023-12-25 12:10:15 - NDCG@5: 0.3226
+2023-12-25 12:10:15 - NDCG@10: 0.3673
+2023-12-25 12:10:15 - NDCG@100: 0.4802
+2023-12-25 12:10:15 - NDCG@1000: 0.5031
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:15 - MAP@1: 0.1302
+2023-12-25 12:10:15 - MAP@3: 0.2059
+2023-12-25 12:10:15 - MAP@5: 0.2360
+2023-12-25 12:10:15 - MAP@10: 0.2657
+2023-12-25 12:10:15 - MAP@100: 0.3010
+2023-12-25 12:10:15 - MAP@1000: 0.3032
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:15 - Recall@1: 0.1302
+2023-12-25 12:10:15 - Recall@3: 0.2701
+2023-12-25 12:10:15 - Recall@5: 0.3564
+2023-12-25 12:10:15 - Recall@10: 0.4802
+2023-12-25 12:10:15 - Recall@100: 0.8535
+2023-12-25 12:10:15 - Recall@1000: 0.9714
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:15 - P@1: 0.2938
+2023-12-25 12:10:15 - P@3: 0.2212
+2023-12-25 12:10:15 - P@5: 0.1829
+2023-12-25 12:10:15 - P@10: 0.1288
+2023-12-25 12:10:15 - P@100: 0.0267
+2023-12-25 12:10:15 - P@1000: 0.0031
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:15 - MRR@1: 0.2938
+2023-12-25 12:10:15 - MRR@3: 0.3951
+2023-12-25 12:10:15 - MRR@5: 0.4210
+2023-12-25 12:10:15 - MRR@10: 0.4373
+2023-12-25 12:10:15 - MRR@100: 0.4467
+2023-12-25 12:10:15 - MRR@1000: 0.4469
+2023-12-25 12:10:15 - 
+
+2023-12-25 12:10:16 - R_cap@1: 0.2938
+2023-12-25 12:10:16 - R_cap@3: 0.3153
+2023-12-25 12:10:16 - R_cap@5: 0.3703
+2023-12-25 12:10:16 - R_cap@10: 0.4807
+2023-12-25 12:10:16 - R_cap@100: 0.8535
+2023-12-25 12:10:16 - R_cap@1000: 0.9714
+2023-12-25 12:10:16 - 
+
+2023-12-25 12:10:16 - Hole@1: 0.6937
+2023-12-25 12:10:16 - Hole@3: 0.7583
+2023-12-25 12:10:16 - Hole@5: 0.7975
+2023-12-25 12:10:16 - Hole@10: 0.8524
+2023-12-25 12:10:16 - Hole@100: 0.9533
+2023-12-25 12:10:16 - Hole@1000: 0.9732
+2023-12-25 12:10:16 - Query : Apakah novel pertama dari Trilogi Rajawali?
+
+2023-12-25 12:10:16 - Rank 1: 25197#0 [Legenda Pendekar Pemanah Rajawali] - Legenda Pendekar Pemanah Rajawali (tradisional: 射鵰英雄傳; sederhana: 射雕英雄传; pinyin: "Shèdiāo Yīngxióng Zhuàn") adalah novel dari tahun 1957, bagian pertama dari Trilogi Rajawali, yang ditulis oleh Jin Yong, nama pena penulis Louis Cha. Novel dan trilogi ini sangat terkenal di Tiongkok dan negara-negara dengan masyarakat keturunan Tionghoa dan telah diadaptasi ke dalam berbagai film, serial televisi, anime, manga dan sebagainya.
+
+2023-12-25 12:10:16 - Rank 2: 75813#1 [Kembalinya Pendekar Pemanah Rajawali] - Novel ini pertama kali diterbitkan 20 Mei 1959 pada harian Ming Pao selama 3 tahun. Novel ini adalah bagian ke dua dari Trilogi Rajawali. Tokoh utama dalam novel ini adalah Yang Guo putra Yang Kang dan kekasihnya Xiaolongnü.
+
+2023-12-25 12:10:16 - Rank 3: 2513377#0 [The Sword of the Lictor] - The Sword of the Lictor adalah sebuah novel fantasi ilmiah karya penulis Amerika Gene Wolfe, yang pertama kali rilis pada 1982. Novel tersebut adalah volume ketiga dalam serial empat volume "The Book of the New Sun".
+
+2023-12-25 12:10:16 - Rank 4: 2382850#0 [The Scarlet Pimpernel] - The Scarlet Pimpernel adalah novel pertama dalam sebuah serial fiksi sejarah karya Baroness Orczy yang berlatar belakang Masa Pemerintahan Teror setelah dimulainya Revolusi Perancis, yang mula-mula diterbitkan pada 1905. Novel tersebut ditulis berdasarkan pada permainan panggung Orczy berjudul sama yang lama ditampilkan di London dan meraih kesuksesan pada 1905, setelah pertama kali ditampilkan di Nottingham pada 1903.
+
+2023-12-25 12:10:16 - Rank 5: 1105614#0 [Garuda Riders] - Garuda Riders adalah sebuah novel fantasi pewayangan berbahasa Indonesia karya A.R. Wirawan yang diterbitkan tahun 2013 oleh Gramedia Jakarta. Novel ini merupakan buku pertama dari trilogi kisah The Adventures of Wanara. Ilustrasi sampul novel dibuat oleh Gerry Arthur dan ilustrasi novel dibuat oleh Bonnie Soeherman. Novel Garuda Riders ini telah dikembangkan dalam bentuk apps komik interaktif
+
+2023-12-25 12:10:16 - Rank 6: 830691#0 [Kisah Pedang Langit dan Golok Pembunuh Naga] - Kisah Pedang Langit dan Golok Pembunuh Naga (tradisional: 倚天屠龍記; sederhana: 倚天屠龙记; pinyin: "Yǐ Tiān Tú Lóng Jì") adalah novel silat karangan Jin Yong, merupakan bagian ketiga dari Trilogi Rajawali. Pertama kali diterbitkan sebagai serial di harian "Ming Pao" bulan Juli tahun 1961.
+
+2023-12-25 12:10:16 - Rank 7: 2512029#0 [Glory Season] - Glory Season adalah sebuah novel fiksi ilmiah tahun 1993 karya David Brin. Novel tersebut dinominasikan untuk Penghargaan Hugo dan Penghargaan Locus pada 1994. Sebuah pengumuman di bagian belakang edisi pertama "Earth" adalah untuk sebuah novel berjudul "Stratos", yang dirilis pada musim semi 1992. Ini tampaknya ditunda, dan berganti nama menjadi "Glory Season".
+
+2023-12-25 12:10:16 - Rank 8: 2531347#0 [The Hundred Thousand Kingdoms] - The Hundred Thousand Kingdoms adalah sebuah novel fantasi tahun 2010 karya N. K. Jemisin, buku pertama dari "Trilogi The Inheritance". Novel debut Jemisin, karya tersebut diterbitkan oleh Orbit Books pada 2010.
+
+2023-12-25 12:10:16 - Rank 9: 2503637#0 [Throne of the Crescent Moon] - Throne of the Crescent Moon adalah sebuah novel fantasi yang ditulis oleh penulis Amerika Saladin Ahmed. Novel tersebut adalah buku pertama dalam serial "The Crescent Moon Kingdoms". Buku tersebut diterbitkan oleh DAW Books pada Februari 2012.
+
+2023-12-25 12:10:16 - Rank 10: 2504751#0 [The White Dragon (novel)] - The White Dragon adalah sebuah novel fiksi ilmiah karya pengarang Amerika-Irlandia Anne McCaffrey.
+Novel tersebut menuntaskan trilogi asli "Dragonriders" dalam serial "Dragonriders of Pern", tujuh tahun setelah buku keduanya. Buku tersebut pertama kali diterbitkan oleh Del Rey Books pada Juni 1978, setahun sebelum trilogi dewasa muda "Harper Hall".
+

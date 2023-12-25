@@ -1,0 +1,91 @@
+2023-12-25 09:09:53 - Loading Corpus...
+2023-12-25 09:10:38 - Loaded 8841823 Documents.
+2023-12-25 09:10:38 - Doc Example: {'text': 'Kehadiran komunikasi di tengah pikiran ilmiah sama pentingnya dengan keberhasilan Proyek Manhattan seperti kecerdasan ilmiah. Kehadiran komunikasi di tengah pikiran ilmiah sama pentingnya dengan keberhasilan Proyek Manhattan seperti kecerdasan ilmiah. Satu - satunya awan yang menggantung di atas prestasi mengesankan para peneliti dan insinyur atom adalah apa sebenarnya tujuan kesuksesan mereka; ratusan ribu nyawa yang tidak bersalah dilenyapkan.', 'title': ''}
+2023-12-25 09:10:38 - Loading Queries...
+2023-12-25 09:10:41 - Loaded 6980 Queries.
+2023-12-25 09:10:41 - Query Example: Berapa tahun William Bradford melayani sebagai gubernur koloni Plymouth?
+2023-12-25 09:10:41 - Activating Elasticsearch....
+2023-12-25 09:10:41 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mmarco-indo', 'keys': {'title': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 'default', 'language': 'indonesian'}
+2023-12-25 09:10:41 - Deleting previous Elasticsearch-Index named - mmarco-indo
+2023-12-25 09:10:43 - Creating fresh Elasticsearch-Index named - mmarco-indo
+2023-12-25 09:27:33 - Use pytorch device: cuda
+2023-12-25 09:28:10 - Starting To Rerank Top-1000....
+2023-12-25 11:35:28 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-25 11:35:32 - 
+
+2023-12-25 11:35:32 - NDCG@1: 0.1055
+2023-12-25 11:35:32 - NDCG@3: 0.1644
+2023-12-25 11:35:32 - NDCG@5: 0.1900
+2023-12-25 11:35:32 - NDCG@10: 0.2182
+2023-12-25 11:35:32 - NDCG@100: 0.2638
+2023-12-25 11:35:32 - NDCG@1000: 0.2736
+2023-12-25 11:35:32 - 
+
+2023-12-25 11:35:32 - MAP@1: 0.1026
+2023-12-25 11:35:32 - MAP@3: 0.1482
+2023-12-25 11:35:32 - MAP@5: 0.1625
+2023-12-25 11:35:32 - MAP@10: 0.1742
+2023-12-25 11:35:32 - MAP@100: 0.1833
+2023-12-25 11:35:32 - MAP@1000: 0.1837
+2023-12-25 11:35:32 - 
+
+2023-12-25 11:35:32 - Recall@1: 0.1026
+2023-12-25 11:35:32 - Recall@3: 0.2074
+2023-12-25 11:35:32 - Recall@5: 0.2691
+2023-12-25 11:35:32 - Recall@10: 0.3551
+2023-12-25 11:35:32 - Recall@100: 0.5685
+2023-12-25 11:35:32 - Recall@1000: 0.6421
+2023-12-25 11:35:32 - 
+
+2023-12-25 11:35:32 - P@1: 0.1055
+2023-12-25 11:35:32 - P@3: 0.0717
+2023-12-25 11:35:32 - P@5: 0.0560
+2023-12-25 11:35:32 - P@10: 0.0371
+2023-12-25 11:35:32 - P@100: 0.0060
+2023-12-25 11:35:32 - P@1000: 0.0007
+2023-12-25 11:35:32 - 
+
+2023-12-25 11:35:34 - MRR@1: 0.1053
+2023-12-25 11:35:34 - MRR@3: 0.1519
+2023-12-25 11:35:34 - MRR@5: 0.1660
+2023-12-25 11:35:34 - MRR@10: 0.1776
+2023-12-25 11:35:34 - MRR@100: 0.1865
+2023-12-25 11:35:34 - MRR@1000: 0.1869
+2023-12-25 11:35:35 - 
+
+2023-12-25 11:35:38 - R_cap@1: 0.1053
+2023-12-25 11:35:38 - R_cap@3: 0.2072
+2023-12-25 11:35:38 - R_cap@5: 0.2689
+2023-12-25 11:35:38 - R_cap@10: 0.3543
+2023-12-25 11:35:38 - R_cap@100: 0.5673
+2023-12-25 11:35:38 - R_cap@1000: 0.6408
+2023-12-25 11:35:38 - 
+
+2023-12-25 11:35:41 - Hole@1: 0.8910
+2023-12-25 11:35:41 - Hole@3: 0.9245
+2023-12-25 11:35:41 - Hole@5: 0.9401
+2023-12-25 11:35:41 - Hole@10: 0.9581
+2023-12-25 11:35:41 - Hole@100: 0.9818
+2023-12-25 11:35:41 - Hole@1000: 0.9786
+2023-12-25 11:35:41 - Query : ♪ What is spotting ♪
+
+2023-12-25 11:35:41 - Rank 1: 6762527 [] - ♪ What is a meniscus? ♪ Mengiskus adalah kurva di permukaan suatu zat molekuler (air, tentu saja) sewaktu menyentuh bahan lain. Dengan air, Anda dapat menganggapnya seolah - olah air masuk ke dalam gelas. Adesi bertanggung jawab atas meniskus dan hal ini berkaitan dengan ketegangan permukaan air yang cukup tinggi.
+
+2023-12-25 11:35:41 - Rank 2: 1461597 [] - ♪ What cutting Is. ♪ Cutting adalah jenis harm diri sendiri di mana remaja sengaja memotong atau menggaruk diri dengan pisau, pisau cukur, atau benda tajam lainnya, tetapi tidak dengan niat untuk mencoba bunuh diri.
+
+2023-12-25 11:35:41 - Rank 3: 8496938 [] - ♪ What Is ♪ Embargo adalah pencegahan ekspor pemerintah terhadap negara tertentu. Dalam dunia media, embargo adalah rilis informasi dengan syarat bahwa itu tidak dapat diterbitkan atau disebarluaskan sebelum tanggal tertentu. Perusahaan - perusahaan sering menyebarkan berita pers, yang berarti mereka menyebarkannya ke media dengan syarat bahwa media tidak akan melaporkan kisah itu hingga setelah tanggal tertentu.
+
+2023-12-25 11:35:41 - Rank 4: 4715661 [] - ♪ What is Remind? ♪ Pengingat adalah aplikasi SMS gratis yang membantu para guru, siswa, dan orang tua berkomunikasi dengan cepat dan efisien. Fast: Pesan dikirim secara langsung ke seluruh kelas, kelompok kecil, atau hanya satu orang. Anda juga dapat menjadwalkan pengumuman sebelumnya dan memasang foto serta berkas lainnya.
+
+2023-12-25 11:35:41 - Rank 5: 1420215 [] - ♪ What is default? ♪ Untuk baku berarti Anda gagal untuk membuat pembayaran Anda pinjaman mahasiswa seperti yang dijadwalkan sesuai dengan ketentuan surat perintah Anda, dokumen hukum mengikat Anda menandatangani pada saat Anda mengambil pinjaman Anda.
+
+2023-12-25 11:35:41 - Rank 6: 368075 [] - ♪ What Is ♪ Toko eceran adalah pameran produk ritel di lingkungan tempat pelanggan dapat berbelanja dan membeli barang. Tampilan ini dapat mengambil bentuk toko batu bata-dan-abadi di mal tertutup atau outdoor strip mall, tapi etalase dapat bervariasi sesuai dengan kebutuhan dan penawaran dari pengecer.
+
+2023-12-25 11:35:41 - Rank 7: 178061 [] - "♪ What is hoovering? ♪ Hoovering adalah teknik yang dinamakan dengan nama Hoover Vacuum cleaner, dan digunakan oleh Narcissists (dan orang lain manipulatif) untuk ""menghisap"" korban mereka kembali ke dalam hubungan dengan mereka. Hoovering sering dilakukan setelah perlakuan diam diberikan atau korban telah meninggalkan mereka."
+
+2023-12-25 11:35:41 - Rank 8: 749662 [] - ♪ What is a meniscus? ♪ Sebuah meniscus adalah apa yang terjadi ketika Anda menempatkan cairan ke dalam wadah. Ketika Anda memasukkan air ke dalam tabung atau tabung uji, Anda melihat permukaan yang melengkung. Dengan cairan yang paling banyak, daya tarik antara cairan dan wadah itu lebih besar daripada daya tarik antara setiap molekul cair. Jadi cairan menempel di sisi kontainer.
+
+2023-12-25 11:35:41 - Rank 9: 3304459 [] - ♪ What is apendiks pain? ♪ Apendix nyeri yang secara medis disebut usus buntu adalah pembengkakan usus buntu yang menyakitkan yang terdapat dalam cecum usus besar. Jika tidak tepat waktu, itu bisa meledak dan mengancam nyawa. Dengan terus menekan daerah itu, batuk atau berjalan kaki dapat memperparah keadaan.
+
+2023-12-25 11:35:41 - Rank 10: 6063483 [] - ♪ What is palpation? ♪ Palpation adalah penggunaan indra peraba untuk memeriksa jaringan tubuh secara fisik. Untuk penilaian yang tepat agar efektif, sang terapis harus dapat merasakan mutu jaringan dan juga dapat menafsirkan apa yang mereka rasakan.
+

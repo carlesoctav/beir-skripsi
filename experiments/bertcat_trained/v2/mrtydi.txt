@@ -1,0 +1,91 @@
+2023-12-25 12:12:35 - Loading Corpus...
+2023-12-25 12:12:43 - Loaded 1469399 Documents.
+2023-12-25 12:12:43 - Doc Example: {'text': 'Asam deoksiribonukleat, lebih dikenal dengan singkatan DNA (bahasa Inggris: d</b>eoxyribo<b data-parsoid=\'{"dsr":[417,424,3,3]}\'>n</b>ucleic a</b>cid), adalah sejenis biomolekul yang menyimpan dan menyandi instruksi-instruksi genetika setiap organisme dan banyak jenis virus. Instruksi-instruksi genetika ini berperan penting dalam pertumbuhan, perkembangan, dan fungsi organisme dan virus. DNA merupakan asam nukleat; bersamaan dengan protein dan karbohidrat, asam nukleat adalah makromolekul esensial bagi seluruh makhluk hidup yang diketahui. Kebanyakan molekul DNA terdiri dari dua unting biopolimer yang berpilin satu sama lainnya membentuk heliks ganda. Dua unting DNA ini dikenal sebagai polinukleotida karena keduanya terdiri dari satuan-satuan molekul yang disebut nukleotida. Tiap-tiap nukleotida terdiri atas salah satu jenis basa nitrogen (guanina (G), adenina (A), timina (T), atau sitosina (C)), gula monosakarida yang disebut deoksiribosa, dan gugus fosfat. Nukleotida-nukelotida ini kemudian tersambung dalam satu rantai ikatan kovalen antara gula satu nukleotida dengan fosfat nukelotida lainnya. Hasilnya adalah rantai punggung gula-fosfat yang berselang-seling. Menurut kaidah pasangan basa (A dengan T dan C dengan G), ikatan hidrogen mengikat basa-basa dari kedua unting polinukleotida membentuk DNA unting ganda', 'title': ''}
+2023-12-25 12:12:43 - Loading Queries...
+2023-12-25 12:12:43 - Loaded 1224 Queries.
+2023-12-25 12:12:43 - Query Example: Dimana James Hepburn meninggal?
+2023-12-25 12:12:43 - Activating Elasticsearch....
+2023-12-25 12:12:43 - Elastic Search Credentials: {'hostname': 'localhost', 'index_name': 'mrtydi-indo', 'keys': {'title': 'title', 'body': 'txt'}, 'timeout': 100, 'retry_on_timeout': True, 'maxsize': 24, 'number_of_shards': 'default', 'language': 'indonesian'}
+2023-12-25 12:12:43 - Deleting previous Elasticsearch-Index named - mrtydi-indo
+2023-12-25 12:12:45 - Creating fresh Elasticsearch-Index named - mrtydi-indo
+2023-12-25 12:15:12 - Use pytorch device: cuda
+2023-12-25 12:15:19 - Starting To Rerank Top-1000....
+2023-12-25 12:46:29 - For evaluation, we ignore identical query and document ids (default), please explicitly set ``ignore_identical_ids=False`` to ignore this.
+2023-12-25 12:46:30 - 
+
+2023-12-25 12:46:30 - NDCG@1: 0.2459
+2023-12-25 12:46:30 - NDCG@3: 0.3563
+2023-12-25 12:46:30 - NDCG@5: 0.3905
+2023-12-25 12:46:30 - NDCG@10: 0.4274
+2023-12-25 12:46:30 - NDCG@100: 0.4700
+2023-12-25 12:46:30 - NDCG@1000: 0.4742
+2023-12-25 12:46:30 - 
+
+2023-12-25 12:46:30 - MAP@1: 0.2459
+2023-12-25 12:46:30 - MAP@3: 0.3287
+2023-12-25 12:46:30 - MAP@5: 0.3476
+2023-12-25 12:46:30 - MAP@10: 0.3630
+2023-12-25 12:46:30 - MAP@100: 0.3719
+2023-12-25 12:46:30 - MAP@1000: 0.3720
+2023-12-25 12:46:30 - 
+
+2023-12-25 12:46:30 - Recall@1: 0.2459
+2023-12-25 12:46:30 - Recall@3: 0.4363
+2023-12-25 12:46:30 - Recall@5: 0.5196
+2023-12-25 12:46:30 - Recall@10: 0.6332
+2023-12-25 12:46:30 - Recall@100: 0.8301
+2023-12-25 12:46:30 - Recall@1000: 0.8619
+2023-12-25 12:46:30 - 
+
+2023-12-25 12:46:30 - P@1: 0.2459
+2023-12-25 12:46:30 - P@3: 0.1454
+2023-12-25 12:46:30 - P@5: 0.1039
+2023-12-25 12:46:30 - P@10: 0.0633
+2023-12-25 12:46:30 - P@100: 0.0083
+2023-12-25 12:46:30 - P@1000: 0.0009
+2023-12-25 12:46:30 - 
+
+2023-12-25 12:46:31 - MRR@1: 0.2459
+2023-12-25 12:46:31 - MRR@3: 0.3288
+2023-12-25 12:46:31 - MRR@5: 0.3479
+2023-12-25 12:46:31 - MRR@10: 0.3631
+2023-12-25 12:46:31 - MRR@100: 0.3720
+2023-12-25 12:46:31 - MRR@1000: 0.3722
+2023-12-25 12:46:31 - 
+
+2023-12-25 12:46:31 - R_cap@1: 0.2459
+2023-12-25 12:46:31 - R_cap@3: 0.4363
+2023-12-25 12:46:31 - R_cap@5: 0.5204
+2023-12-25 12:46:31 - R_cap@10: 0.6332
+2023-12-25 12:46:31 - R_cap@100: 0.8301
+2023-12-25 12:46:31 - R_cap@1000: 0.8619
+2023-12-25 12:46:31 - 
+
+2023-12-25 12:46:32 - Hole@1: 0.7418
+2023-12-25 12:46:32 - Hole@3: 0.8415
+2023-12-25 12:46:32 - Hole@5: 0.8820
+2023-12-25 12:46:32 - Hole@10: 0.9250
+2023-12-25 12:46:32 - Hole@100: 0.9806
+2023-12-25 12:46:32 - Hole@1000: 0.9821
+2023-12-25 12:46:32 - Query : Apakah kepanjangan dari TNI?
+
+2023-12-25 12:46:32 - Rank 1: 1566566#0 [] - Komando Pembina Doktrin, Pendidikan dan Latihan Tentara Nasional Indonesia atau (Kodiklat TNI) adalah Badan Pelaksana Pusat Tentara Nasional Indonesia yang memiliki fungsi dan tugas untuk menyelenggarakan pembinaan doktrin, pendidikan pertama integratif dan pendidikan pengembangan spesialisasi serta latihan gabungan, latihan bersama dan latihan kesiapsiagaan operasional yang diselenggarakan oleh Mabes TNI dan Kotama jajaran TNI.
+
+2023-12-25 12:46:32 - Rank 2: 130499#0 [] - Badan Intelijen Strategis (disingkat BAIS TNI) adalah organisasi yang khusus menangani intelijen kemiliteran dan berada di bawah komando Markas Besar Tentara Nasional Indonesia. BAIS bertugas untuk menyuplai analisis-analisis intelijen dan strategis yang aktual maupun perkiraan ke depan -biasa disebut jangka pendek, jangka menengah, dan jangka panjang- kepada Panglima TNI dan Departemen Pertahanan. Markas BAIS terletak di kawasan Kalibata, Pancoran, Jakarta Selatan.
+
+2023-12-25 12:46:32 - Rank 3: 1586496#0 [] - Dinas Pendidikan TNI AL disingkat (Disdikal) adalah badan pelaksana pusat TNI AL yang berkedudukan langsung di bawah Kasal. Disdikal bertugas menyelenggarakan pembinaan fungsi pendidikan yang meliputi analisa kebutuhan, perencanaan pendidikan, pengembangan pendidikan dan operasi pendidikan serta pengawasan, pengendalian dan evaluasi pendidikan di lingkungan TNI Angkatan Laut.
+
+2023-12-25 12:46:32 - Rank 4: 948350#31 [] - a. Panji-panji Kesatuan TNI AD
+
+2023-12-25 12:46:32 - Rank 5: 2346873#1 [] - Pembentukan Pusinfolahta TNI adalah merupakan salah satu upaya yang dilakukan oleh pimpinan TNI dalam rangka mengoptimalkan pembinaan sistem informasi berbasis teknologi informasi di lingkungan Mabes TNI, dimana teknologi informasi sudah menjadi suatu kebutuhan Satker dalam rangka mendukung kelancaran pelaksanaan tugas pokok. Keberadaan Pusinfolahta TNI sangat dibutuhkan untuk melakukan pemeliharaan perangkat dan infrastruktur jaringan, pengembangan aplikasi, peningkatan kemampuan SDM dan pengamanan sistem informasi serta mengintegrasikan sistem informasi yang telah dibangun dan dikembangkan di Angkatan untuk dapat menyajikan informasi kepada pimpinan TNI secara lengkap dalam rangka mengambil suatu keputusan. Pada awal terbentuknya Pusinfolahta TNI untuk sementara kantor masih menempati Gedung A.H. Nasution Lantai-2 (Perpustakaan Pusjarah TNI), dengan prioritas kegiatan rutin yang harus segera dilaksanakan pada saat itu adalah proses pengolahan DPP (Daftar Pembayaran Penghasilan) personel Mabes TNI dimulai pada bulan Maret 2007 yang sebelumnya ditangani oleh Pusdatin Dephan RI. Dengan mempertimbangkan telah terpenuhinya personel sesuai DSP dan pengembangan perangkat serta infrastruktur jaringan untuk memberikan pelayanan akses internet dan sistem informasi di lingkungan Mabes TNI, maka pada bulan Maret 2012 pimpinan TNI mengambil kebijakan untuk mengalihkan pemanfaatan gedung A.H Nasution sepenuhnya sebagai kantor Pusinfolahta TNI.
+
+2023-12-25 12:46:32 - Rank 6: 2392396#0 [] - Detasemen Markas Besar Tentara Nasional Indonesia disebut (Denmabes TNI) (Validasi Orgas) Denma TNI merupakan badan pelayanan yang berkedudukan langsung dibawah Panglima TNI, memiliki tugas untuk menyelenggarakan pelayanan dan urusan dalam dilingkungan Mabes TNI diantaranya penegakan tata tertib, disiplin, tertib hukum termasuk pengamanan personel, materiil yang ada di seluruh instalasi Mabes TNI, termasuk dalam hal perawatan, pembinaan mental dan kesejahteraan personel di lingkungan Mabes Tentara Nasional Indonesia.
+
+2023-12-25 12:46:32 - Rank 7: 2016845#0 [] - Badan Pembekalan Tentara Nasional Indonesia (Babek TNI) adalah satuan pelaksana di lingkungan Tentara Nasional Indonesia (TNI). Yang menyelenggarakan pembinaan di bidang Pembekalan bekal umum TNI”. Dengan demikian secara yuridis konseptual Babek TNI telah ada sejak tahun 1969, namun pada saat itu rumusan dan bentuk organisasi masih sangat sederhana. Kemudian pada pertengahan tahun 1970 secara bertahap mulai terealisasi diawali dengan penugasan Mayjen TNI Jansen Rambe yang pada waktu itu adalah Direktur Intendans TNI Angkatan Darat (sekarang Ditbekangad) untuk menjabat sebagai Kepala Badan Pembekalan TNI (Kababek TNI). Pelantikan Mayjen TNI Jansen Rambe sebagai Kababek TNI dilakukan pada tanggal 29 Juni 1970. Peristiwa pelantikan inilah kemudian dijadikan tonggak awal sejarah kelahiran Babek ABRI, yang setiap tahunnya diperingati.
+
+2023-12-25 12:46:32 - Rank 8: 2346885#0 [] - Badan Pembinaan Hukum Tentara Nasional Indonesia atau (Babinkum TNI) adalah Badan Pelaksana Pusat pada tingkat Markas Besar TNI yang berkedudukan langsung di bawah Panglima TNI yang memiliki tugas membantu Panglima TNI dalam menyelenggarakan pembinaan hukum dan HAM di lingkungan TNI, pembinaan penyelenggaraan Oditurat dan Pemasyarakatan Militer dalam lingkungan Peradilan Militer.
+
+2023-12-25 12:46:32 - Rank 9: 130613#0 [] - Daftar istilah militer Tentara Nasional Indonesia adalah istilah-istilah yang sering digunakan oleh militer, dalam hal ini Tentara Nasional Indonesia. Bagi masyarakat awam, istilah-istilah militer sering membingungkan. Hal tersebut selain kebijakan di ketentaraan sendiri, untuk menggunakan istilah/singkatan yang hanya diketahui kalangan dalam, juga sekaligus untuk menjaga kerahasiaan dan juga untuk memperpendek istilah yang panjang. Di bawah ini adalah singkatan-singkatan militer yang sering digunakan di TNI.
+
+2023-12-25 12:46:32 - Rank 10: 2016845#2 [] - Berdasarkan Surat Keputusan Menhankam/Pangab nomor Skep/295/P/IV/1999 tanggal 21 April 1999 tentang Pengesahan sebutan nama Kesatuan, Jabatan, Kopstuk, Tulisan dinas, Lambang dan Cap dinas, dimana sebutan Badan Pembekalan Angkatan Bersenjata Republik Indonesia (Babek ABRI) berubah menjadi Badan Pembekalan Tentara Nasional Indonesia (Babek TNI). Kemudian dengan adanya validasi secara umum dalam tubuh organisasi TNI maka berdampak pula pada perubahan organisasi ke seluruh Balakpus Mabes TNI termasuk Babek TNI. Maka sesuai Keputusan Panglima TNI nomor Kep/09/VII/2002 tanggal 18 Juli 2002 terjadilah validasi organisasi Babek TNI, namun pada saat tahap evaluasi dipandang perlu dapat disampaikan saran penyempurnaan atas Keputusan Panglima TNI tersebut. Maka berdasarkan Keputusan Panglima TNI nomor Kep/13/IX/2002 tanggal 9 September 2002 terbitlah Keputusan tentang penyempurnaan Pokok-pokok Organisasi dan Prosedur (POP) Babek TNI, selanjutnya Keputusan tersebut ditindaklanjuti dengan Surat Keputusan Kababek TNI nomor 01/I/2003 tanggal 20 Januari 2003 tentang Naskah Sementara Prosedur dan Mekanisme Kerja Babek TNI.
+

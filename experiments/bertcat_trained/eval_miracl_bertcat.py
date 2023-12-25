@@ -38,10 +38,10 @@ retriever = EvaluateRetrieval(model)
 
 
 results = retriever.retrieve(corpus, queries)
-cross_encoder_model = CrossEncoder('carles-undergrad-thesis/indobert-crossencoder-mmarco', max_length = 512)
+cross_encoder_model = CrossEncoder('carles-undergrad-thesis/Indobertcat', max_length = 256)
 reranker = Rerank(cross_encoder_model, batch_size=256)
 
-rerank_results = reranker.rerank(corpus, queries, results, top_k=100)
+rerank_results = reranker.rerank(corpus, queries, results, top_k=1000)
 
 ndcg, _map, recall, precision = EvaluateRetrieval.evaluate(qrels, rerank_results, retriever.k_values)
 
